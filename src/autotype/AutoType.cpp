@@ -152,6 +152,7 @@ AutoType::AutoType(QObject* parent, bool test)
 #endif
     }
 
+    connect(this, SIGNAL(autotypeFinished()), SLOT(resetAutoTypeState()));
     connect(qApp, SIGNAL(aboutToQuit()), SLOT(unloadPlugin()));
 }
 
@@ -352,7 +353,6 @@ void AutoType::executeAutoTypeActions(const Entry* entry,
         }
     }
 
-    resetAutoTypeState();
     m_inAutoType.unlock();
     emit autotypeFinished();
 }
@@ -487,11 +487,9 @@ void AutoType::performGlobalAutoType(const QList<QSharedPointer<Database>>& dbLi
                                            m_windowForGlobal,
                                            virtualMode ? AutoTypeExecutor::Mode::VIRTUAL
                                                        : AutoTypeExecutor::Mode::NORMAL);
-                    resetAutoTypeState();
                 });
         connect(selectDialog, &QDialog::rejected, this, [this] {
             restoreWindowState();
-            resetAutoTypeState();
             emit autotypeFinished();
         });
 
@@ -505,10 +503,8 @@ void AutoType::performGlobalAutoType(const QList<QSharedPointer<Database>>& dbLi
     } else if (!matchList.isEmpty()) {
         // Only one match and not asking, do it!
         executeAutoTypeActions(matchList.first().first, matchList.first().second, m_windowForGlobal);
-        resetAutoTypeState();
     } else {
         // We should never get here
-        resetAutoTypeState();
         emit autotypeFinished();
     }
 }
