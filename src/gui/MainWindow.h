@@ -152,6 +152,7 @@ private slots:
     void updateProgressBar(int percentage, QString message);
     void updateEntryCountLabel();
     void focusSearchWidget();
+    void clearSSHAgent();
 
 private:
     static void setShortcut(QAction* action, QKeySequence::StandardKey standard, int fallback = 0);
