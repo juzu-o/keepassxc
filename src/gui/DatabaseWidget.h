@@ -146,6 +146,7 @@ signals:
     void
     requestOpenDatabase(const QString& filePath, bool inBackground, const QString& password, const QString& keyFile);
     void databaseMerged(QSharedPointer<Database> mergedDb);
+    void updateSyncProgress(int progress, const QString& message);
     void groupContextMenuRequested(const QPoint& globalPos);
     void entryContextMenuRequested(const QPoint& globalPos);
     void listModeAboutToActivate();
@@ -157,6 +158,8 @@ signals:
     void clearSearch();
     void requestGlobalAutoType(const QString& search);
     void requestSearch(const QString& search);
+    void reloadBegin();
+    void reloadEnd();
 
 public slots:
     bool lock();
@@ -269,7 +272,7 @@ private slots:
     void mergeDatabase(bool accepted);
     void emitCurrentModeChanged();
     // Database autoreload slots
-    void reloadDatabaseFile();
+    void reloadDatabaseFile(bool triggeredBySave);
     void restoreGroupEntryFocus(const QUuid& groupUuid, const QUuid& EntryUuid);
     void onConfigChanged(Config::ConfigKey key);
 
@@ -318,6 +321,7 @@ private:
 
     // Autoreload
     bool m_blockAutoSave;
+    bool m_reloading;
 
     // Autosave delay
     QPointer<QTimer> m_autosaveTimer;
