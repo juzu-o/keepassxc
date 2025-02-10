@@ -92,6 +92,11 @@ DatabaseWidget::DatabaseWidget(QSharedPointer<Database> db, QWidget* parent)
 {
     Q_ASSERT(m_db);
 
+    // Read public headers if the database hasn't been opened yet
+    if (!m_db->isInitialized()) {
+        m_db->open(nullptr);
+    }
+
     m_messageWidget->setHidden(true);
 
     auto mainLayout = new QVBoxLayout();
@@ -1929,6 +1934,7 @@ bool DatabaseWidget::lock()
     switchToOpenDatabase(m_db->filePath());
 
     auto newDb = QSharedPointer<Database>::create(m_db->filePath());
+    newDb->open(nullptr);
     replaceDatabase(newDb);
 
     m_attemptingLock = false;
