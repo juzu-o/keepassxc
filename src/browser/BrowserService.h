@@ -1,5 +1,5 @@
 /*
- *  Copyright (C) 2024 KeePassXC Team <team@keepassxc.org>
+ *  Copyright (C) 2025 KeePassXC Team <team@keepassxc.org>
  *  Copyright (C) 2017 Sami Vänttinen <sami.vanttinen@protonmail.com>
  *  Copyright (C) 2013 Francois Ferrand
  *
@@ -196,7 +196,9 @@ private:
     bool handleURL(const QString& entryUrl,
                    const QString& siteUrl,
                    const QString& formUrl,
-                   const bool omitWwwSubdomain = false);
+                   const bool omitWwwSubdomain = false,
+                   const bool allowWildcards = false);
+    bool handleURLWithWildcards(const QUrl& entryQUrl, const QString& siteUrl);
     QString getDatabaseRootUuid();
     QString getDatabaseRecycleBinUuid();
     bool checkLegacySettings(QSharedPointer<Database> db);
