@@ -60,6 +60,7 @@ set(keepassx_SOURCES
         format/BitwardenReader.cpp
         format/CsvExporter.cpp
         format/CsvParser.cpp
+        format/HtmlExporter.cpp
         format/KeePass1Reader.cpp
         format/KeePass2.cpp
         format/KeePass2RandomStream.cpp
@@ -104,7 +105,7 @@ set(keepassx_SOURCES
         gui/FileDialog.cpp
         gui/Font.cpp
         gui/GuiTools.cpp
-        gui/HtmlExporter.cpp
+        gui/HtmlGuiExporter.cpp
         gui/IconModels.cpp
         gui/KMessageWidget.cpp
         gui/MainWindow.cpp
