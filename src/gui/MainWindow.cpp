@@ -726,11 +726,6 @@ MainWindow::MainWindow()
 
     restoreConfigState();
     updateMenuActionState();
-
-    // Check the current screen and hide the status bar if it is the WelcomeScreen
-    if (m_ui->stackedWidget->currentIndex() == WelcomeScreen) {
-        statusBar()->hide();
-    }
 }
 
 MainWindow::~MainWindow()
@@ -1235,10 +1230,10 @@ void MainWindow::switchToDatabases()
 {
     if (m_ui->tabWidget->currentIndex() == -1) {
         m_ui->stackedWidget->setCurrentIndex(WelcomeScreen);
-        statusBar()->hide();
+        statusBar()->setAutoFillBackground(false);
     } else {
         m_ui->stackedWidget->setCurrentIndex(DatabaseTabScreen);
-        statusBar()->show();
+        statusBar()->setAutoFillBackground(true);
     }
 }
 
@@ -1247,6 +1242,7 @@ void MainWindow::switchToSettings(bool enabled)
     if (enabled) {
         m_ui->settingsWidget->loadSettings();
         m_ui->stackedWidget->setCurrentIndex(SettingsScreen);
+        statusBar()->setAutoFillBackground(true);
     } else {
         switchToDatabases();
     }
@@ -1258,6 +1254,7 @@ void MainWindow::togglePasswordGenerator(bool enabled)
         m_ui->passwordGeneratorWidget->loadSettings();
         m_ui->passwordGeneratorWidget->regeneratePassword();
         m_ui->stackedWidget->setCurrentIndex(PasswordGeneratorScreen);
+        statusBar()->setAutoFillBackground(false);
     } else {
         m_ui->passwordGeneratorWidget->saveSettings();
         switchToDatabases();
@@ -1326,10 +1323,10 @@ void MainWindow::databaseTabChanged(int tabIndex)
 {
     if (tabIndex != -1 && m_ui->stackedWidget->currentIndex() == WelcomeScreen) {
         m_ui->stackedWidget->setCurrentIndex(DatabaseTabScreen);
-        statusBar()->show();
+        statusBar()->setAutoFillBackground(true);
     } else if (tabIndex == -1 && m_ui->stackedWidget->currentIndex() == DatabaseTabScreen) {
         m_ui->stackedWidget->setCurrentIndex(WelcomeScreen);
-        statusBar()->hide();
+        statusBar()->setAutoFillBackground(false);
     }
 
     m_actionMultiplexer.setCurrentObject(m_ui->tabWidget->currentDatabaseWidget());
