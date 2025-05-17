@@ -50,6 +50,7 @@ private slots:
     void testSubdomainsAndPaths();
     void testBestMatchingCredentials();
     void testBestMatchingWithAdditionalURLs();
+    void testRestrictBrowserKey();
 
 private:
     QList<Entry*> createEntries(QStringList& urls, Group* root, bool additionalUrl = false) const;

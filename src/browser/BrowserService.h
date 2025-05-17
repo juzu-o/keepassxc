@@ -124,6 +124,8 @@ public:
     void requestGlobalAutoType(const QString& search);
     static void convertAttributesToCustomData(QSharedPointer<Database> db);
 
+    static QString decodeCustomDataRestrictKey(const QString& key);
+
     static const QString KEEPASSXCBROWSER_NAME;
     static const QString KEEPASSXCBROWSER_OLD_NAME;
     static const QString OPTION_SKIP_AUTO_SUBMIT;
@@ -131,6 +133,7 @@ public:
     static const QString OPTION_ONLY_HTTP_AUTH;
     static const QString OPTION_NOT_HTTP_AUTH;
     static const QString OPTION_OMIT_WWW;
+    static const QString OPTION_RESTRICT_KEY;
 
 signals:
     void requestUnlock();
@@ -163,6 +166,7 @@ private:
     QList<Entry*> searchEntries(const QSharedPointer<Database>& db,
                                 const QString& siteUrl,
                                 const QString& formUrl,
+                                const QStringList& keys = {},
                                 bool passkey = false);
     QList<Entry*>
     searchEntries(const QString& siteUrl, const QString& formUrl, const StringPairList& keyList, bool passkey = false);

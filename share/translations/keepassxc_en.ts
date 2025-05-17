@@ -1001,7 +1001,7 @@ Do you want to delete the entry?
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>KeePassXC - New key association request</source>
+        <source>Disable</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1021,7 +1021,7 @@ Do you want to delete the entry?
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Passkey</source>
+        <source>KeePassXC - New key association request</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1030,6 +1030,10 @@ Do you want to delete the entry?
     </message>
     <message>
         <source>Register a new passkey to this entry:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Register</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1042,7 +1046,7 @@ Do you want to overwrite the passkey in %1 - %2?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Register</source>
+        <source>Passkey</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3397,6 +3401,14 @@ Would you like to correct it?</source>
     </message>
     <message>
         <source>Omit WWW subdomain from matching toggle for this and sub groups</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Restrict matching to given browser key:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Restrict matching to given browser key toggle for this and sub groups</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
