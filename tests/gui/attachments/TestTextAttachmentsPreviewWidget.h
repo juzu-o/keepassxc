@@ -17,32 +17,20 @@
 
 #pragma once
 
-#include "attachments/AttachmentTypes.h"
+#include <attachments/TextAttachmentsPreviewWidget.h>
 
-#include <core/Tools.h>
+#include <QObject>
+#include <QScopedPointer>
 
-#include <QDialog>
-#include <QPointer>
-
-namespace Ui
-{
-    class PreviewEntryAttachmentsDialog;
-}
-
-class PreviewEntryAttachmentsDialog : public QDialog
+class TestTextAttachmentsPreviewWidget : public QObject
 {
     Q_OBJECT
 
-public:
-    explicit PreviewEntryAttachmentsDialog(QWidget* parent = nullptr);
-    ~PreviewEntryAttachmentsDialog() override;
+private slots:
+    void initTestCase();
 
-    void setAttachment(attachments::Attachment attachment);
-
-signals:
-    void openAttachment(const QString& name);
-    void saveAttachment(const QString& name);
+    void testDetectMimeByFile();
 
 private:
-    QScopedPointer<Ui::PreviewEntryAttachmentsDialog> m_ui;
+    QScopedPointer<TextAttachmentsPreviewWidget> m_widget{};
 };

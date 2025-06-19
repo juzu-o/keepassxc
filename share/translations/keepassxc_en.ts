@@ -664,6 +664,17 @@
     </message>
 </context>
 <context>
+    <name>AttachmentWidget</name>
+    <message>
+        <source>Attachment Viewer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Unknown attachment type</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>AutoType</name>
     <message>
         <source>The requested Auto-Type sequence cannot be used due to an error:</source>
@@ -2574,6 +2585,14 @@ This is definitely a bug, please report it to the developers.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Enter a unique name or overwrite an existing search from the list:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Save Search</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Lock Database?</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2673,14 +2692,6 @@ Disable safe saves and try again?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Enter a unique name or overwrite an existing search from the list:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Save Search</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>The database file &quot;%1&quot; was modified externally</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2726,6 +2737,13 @@ Disable safe saves and try again?</source>
     </message>
     <message>
         <source>Failed to save backup database: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>EditEntryAttachmentsDialog</name>
+    <message>
+        <source>Edit: %1</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -3796,21 +3814,6 @@ This may cause the affected plugins to malfunction.</source>
     </message>
 </context>
 <context>
-    <name>EntryAttachmentsDialog</name>
-    <message>
-        <source>Form</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>File name</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>File contents...</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>EntryAttachmentsModel</name>
     <message>
         <source>Name</source>
@@ -3836,10 +3839,6 @@ This may cause the affected plugins to malfunction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Add</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Remove selected attachment</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3857,10 +3856,6 @@ This may cause the affected plugins to malfunction.</source>
     </message>
     <message>
         <source>Save selected attachment to disk</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Save</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3957,15 +3952,27 @@ Would you like to overwrite the existing attachment?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>New</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Preview</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Failed to preview an attachment: Attachment not found</source>
+        <source>Edit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>New Text Document</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Add file…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Load from Disk…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Save…</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -4528,6 +4535,13 @@ You can enable the DuckDuckGo website icon service in the security section of th
     </message>
     <message>
         <source>Downloading favicons (%1/%2)…</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ImageAttachmentsWidget</name>
+    <message>
+        <source>Zoom:</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -6177,25 +6191,6 @@ We recommend you use the AppImage available on our downloads page.</source>
     </message>
 </context>
 <context>
-    <name>NewEntryAttachmentsDialog</name>
-    <message>
-        <source>Attachment name cannot be empty</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Attachment with the same name already exists</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Save attachment</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>New entry attachment</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>NixUtils</name>
     <message>
         <source>Password Manager</source>
@@ -6944,15 +6939,15 @@ Do you want to overwrite it?</source>
 <context>
     <name>PreviewEntryAttachmentsDialog</name>
     <message>
-        <source>Preview entry attachment</source>
+        <source>Form</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>No preview available</source>
+        <source>Preview: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Image format not supported</source>
+        <source>Save…</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -8851,6 +8846,10 @@ This option is deprecated, use --set-key-file instead.</source>
         <source>Tags</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Fit</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>QtIOCompressor</name>
@@ -9751,6 +9750,24 @@ This option is deprecated, use --set-key-file instead.</source>
     </message>
     <message>
         <source>Remove tag &quot;%1&quot; from all entries in this database?</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>TextAttachmentsEditWidget</name>
+    <message>
+        <source>Preview</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>TextAttachmentsPreviewWidget</name>
+    <message>
+        <source>Form</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Type:</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

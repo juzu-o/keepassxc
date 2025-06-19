@@ -17,32 +17,30 @@
 
 #pragma once
 
-#include "attachments/AttachmentTypes.h"
+#include <QGraphicsView>
 
-#include <core/Tools.h>
-
-#include <QDialog>
-#include <QPointer>
-
-namespace Ui
-{
-    class PreviewEntryAttachmentsDialog;
-}
-
-class PreviewEntryAttachmentsDialog : public QDialog
+class ImageAttachmentsView : public QGraphicsView
 {
     Q_OBJECT
-
 public:
-    explicit PreviewEntryAttachmentsDialog(QWidget* parent = nullptr);
-    ~PreviewEntryAttachmentsDialog() override;
+    explicit ImageAttachmentsView(QWidget* parent = nullptr);
 
-    void setAttachment(attachments::Attachment attachment);
+    void enableAutoFitInView();
+    void disableAutoFitInView();
+    bool isAutoFitInViewActivated() const;
+
+    double calculateFitInViewFactor() const;
 
 signals:
-    void openAttachment(const QString& name);
-    void saveAttachment(const QString& name);
+    void ctrlWheelEvent(QWheelEvent* event);
+
+protected:
+    void wheelEvent(QWheelEvent* event) override;
+    void showEvent(QShowEvent* event) override;
+    void resizeEvent(QResizeEvent* event) override;
 
 private:
-    QScopedPointer<Ui::PreviewEntryAttachmentsDialog> m_ui;
+    void fitSceneInView();
+
+    bool m_autoFitInView = false;
 };

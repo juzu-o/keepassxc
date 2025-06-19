@@ -19,30 +19,27 @@
 
 #include "attachments/AttachmentTypes.h"
 
-#include <core/Tools.h>
-
 #include <QDialog>
 #include <QPointer>
 
 namespace Ui
 {
-    class PreviewEntryAttachmentsDialog;
+    class EditEntryAttachmentsDialog;
 }
 
-class PreviewEntryAttachmentsDialog : public QDialog
+class EntryAttachments;
+
+class EditEntryAttachmentsDialog : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit PreviewEntryAttachmentsDialog(QWidget* parent = nullptr);
-    ~PreviewEntryAttachmentsDialog() override;
+    explicit EditEntryAttachmentsDialog(QWidget* parent = nullptr);
+    ~EditEntryAttachmentsDialog() override;
 
     void setAttachment(attachments::Attachment attachment);
-
-signals:
-    void openAttachment(const QString& name);
-    void saveAttachment(const QString& name);
+    attachments::Attachment getAttachment() const;
 
 private:
-    QScopedPointer<Ui::PreviewEntryAttachmentsDialog> m_ui;
+    QScopedPointer<Ui::EditEntryAttachmentsDialog> m_ui;
 };

@@ -17,32 +17,21 @@
 
 #pragma once
 
-#include "attachments/AttachmentTypes.h"
+#include <QByteArray>
+#include <QString>
 
-#include <core/Tools.h>
-
-#include <QDialog>
-#include <QPointer>
-
-namespace Ui
+namespace attachments
 {
-    class PreviewEntryAttachmentsDialog;
-}
+    struct Attachment
+    {
+        QString name;
+        QByteArray data;
+    };
 
-class PreviewEntryAttachmentsDialog : public QDialog
-{
-    Q_OBJECT
+    enum class OpenMode
+    {
+        ReadOnly,
+        ReadWrite
+    };
 
-public:
-    explicit PreviewEntryAttachmentsDialog(QWidget* parent = nullptr);
-    ~PreviewEntryAttachmentsDialog() override;
-
-    void setAttachment(attachments::Attachment attachment);
-
-signals:
-    void openAttachment(const QString& name);
-    void saveAttachment(const QString& name);
-
-private:
-    QScopedPointer<Ui::PreviewEntryAttachmentsDialog> m_ui;
-};
+} // namespace attachments

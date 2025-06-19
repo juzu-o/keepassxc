@@ -17,32 +17,33 @@
 
 #pragma once
 
-#include "attachments/AttachmentTypes.h"
+#include <attachments/ImageAttachmentsWidget.h>
 
-#include <core/Tools.h>
+#include <QComboBox>
+#include <QObject>
+#include <QScopedPointer>
 
-#include <QDialog>
-#include <QPointer>
+class ImageAttachmentsView;
 
-namespace Ui
-{
-    class PreviewEntryAttachmentsDialog;
-}
-
-class PreviewEntryAttachmentsDialog : public QDialog
+class TestImageAttachmentsWidget : public QObject
 {
     Q_OBJECT
 
-public:
-    explicit PreviewEntryAttachmentsDialog(QWidget* parent = nullptr);
-    ~PreviewEntryAttachmentsDialog() override;
+private slots:
+    void initTestCase();
 
-    void setAttachment(attachments::Attachment attachment);
-
-signals:
-    void openAttachment(const QString& name);
-    void saveAttachment(const QString& name);
+    void testFitInView();
+    void testZoomCombobox();
+    void testEditZoomCombobox();
+    void testEditWithPercentZoomCombobox();
+    void testInvalidValueZoomCombobox();
+    void testZoomInByMouse();
+    void testZoomOutByMouse();
+    void testZoomLowerBound();
+    void testZoomUpperBound();
 
 private:
-    QScopedPointer<Ui::PreviewEntryAttachmentsDialog> m_ui;
+    QScopedPointer<ImageAttachmentsWidget> m_widget{};
+    QPointer<QComboBox> m_zoomCombobox{};
+    QPointer<ImageAttachmentsView> m_imageAttachmentsView{};
 };
