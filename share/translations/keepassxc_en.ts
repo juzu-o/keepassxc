@@ -1747,6 +1747,10 @@ Are you sure you want to continue with this file?.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Press ESC again to close this database</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Windows Hello setup was canceled or failed. Quick unlock has not been enabled.</source>
         <translation type="unfinished"></translation>
     </message>
