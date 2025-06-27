@@ -612,7 +612,6 @@ void EntryView::restoreViewState(const QList<Entry*>& entries)
 {
     // Restore sort state if previously saved
     if (m_lastSortColumn >= 0) {
-        m_sortModel->sort(m_lastSortColumn, m_lastSortOrder);
         sortByColumn(m_lastSortColumn, m_lastSortOrder);
     }
 
