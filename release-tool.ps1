@@ -91,6 +91,11 @@ param(
     [string] $ExtraPath
 )
 
+if (-not (Test-Path Variable:IsWindows)) {
+    # Fallback for classic Windows PowerShell
+    $IsWindows = $env:OS -eq "Windows_NT"
+}
+
 # Helper function definitions
 function Test-RequiredPrograms {
     # If any of these fail they will throw an exception terminating the script
