@@ -281,7 +281,7 @@ if ($ExtraPath) {
 $SourceDir = (Resolve-Path $SourceDir).Path
 
 # Check format of -Version
-if ($Version -notmatch "^\d+\.\d+\.\d+(-Beta\d*)?$") {
+if ($Version -notmatch "^\d+\.\d+\.\d+(-[A-Za-z0-9]+(\.\d+)*)?$") {
     throw "Invalid format for -Version input"
 }
 
