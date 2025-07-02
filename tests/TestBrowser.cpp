@@ -411,6 +411,7 @@ void TestBrowser::testSearchEntriesWithWildcardURLs()
         "https://subdomain.*.github.com/*/second",
         "https://*.sub.github.com/*",
         "https://********", // Invalid wildcard URL
+        "https://*.thub.com/", // Partial suffix URL
         "https://subdomain.yes.github.com/*",
         "https://example.com:8448/*",
         "https://example.com/*/*",
