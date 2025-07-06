@@ -9523,6 +9523,10 @@ This option is deprecated, use --set-key-file instead.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Press Enter to search</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Save Search</source>
         <translation type="unfinished"></translation>
     </message>
