@@ -2467,18 +2467,8 @@ bool DatabaseWidget::saveBackup()
         return false;
     }
 
-    // Record modified state so we can restore after save
-    bool modified = m_db->isModified();
-
     QString error;
-    bool ok = m_db->saveAs(newFilePath, Database::DirectWrite, {}, &error);
-
-    // Restore database to original state
-    m_db->setFilePath(oldFilePath);
-    if (modified) {
-        // Source database is marked as clean when copy is saved, even if source has unsaved changes
-        m_db->markAsModified();
-    }
+    bool ok = m_db->backupTo(newFilePath, &error);
 
     if (!ok) {
         // Failed to save backup, post the error
