@@ -65,7 +65,15 @@ void TextAttachmentsWidget::updateWidget()
     }
 
     m_editWidget->openAttachment(m_attachment, m_mode);
-    m_previewWidget->openAttachment(m_attachment, attachments::OpenMode::ReadOnly);
+}
+
+void TextAttachmentsWidget::updatePreviewWidget()
+{
+    m_previewVisible = m_previewWidget->width() > 0;
+    if (m_previewVisible) {
+        m_attachment = m_editWidget->getAttachment();
+        m_previewWidget->openAttachment(m_attachment, attachments::OpenMode::ReadOnly);
+    }
 }
 
 void TextAttachmentsWidget::initWidget()
@@ -78,20 +86,31 @@ void TextAttachmentsWidget::initWidget()
     m_previewUpdateTimer->setInterval(500);
 
     // Only update the preview after a set timeout and if it is visible
-    connect(m_previewUpdateTimer, &QTimer::timeout, this, [this] {
-        if (m_previewWidget->width() > 0) {
-            m_attachment = m_editWidget->getAttachment();
-            m_previewWidget->openAttachment(m_attachment, attachments::OpenMode::ReadOnly);
-        }
-    });
+    connect(m_previewUpdateTimer, &QTimer::timeout, this, &TextAttachmentsWidget::updatePreviewWidget);
+    connect(m_editWidget,
+            &TextAttachmentsEditWidget::scrollChanged,
+            m_previewWidget,
+            &TextAttachmentsPreviewWidget::matchScroll);
 
     connect(
         m_editWidget, &TextAttachmentsEditWidget::textChanged, m_previewUpdateTimer, QOverload<>::of(&QTimer::start));
 
     connect(m_editWidget, &TextAttachmentsEditWidget::previewButtonClicked, [this] {
-        const auto sizes = m_splitter->sizes();
-        const auto previewSize = sizes.value(1, 0) > 0 ? 0 : 1;
-        m_splitter->setSizes({1, previewSize});
+        // Split the display in half if showing the preview widget
+        const auto previewSize = m_previewWidget->width() > 0 ? 0 : m_splitter->width() / 2;
+        const auto editSize = m_splitter->width() - previewSize;
+        m_splitter->setSizes({editSize, previewSize});
+        updatePreviewWidget();
+    });
+
+    // Check if the preview panel is manually collapsed or shown
+    connect(m_splitter, &QSplitter::splitterMoved, this, [this](int, int) {
+        // Trigger a preview update if it has become visible
+        auto visible = m_previewWidget->width() > 0;
+        if (visible && !m_previewVisible) {
+            updatePreviewWidget();
+        }
+        m_previewVisible = visible;
     });
 
     m_splitter->addWidget(m_editWidget);
