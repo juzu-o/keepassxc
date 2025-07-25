@@ -63,6 +63,7 @@ signals:
     void saveSearch(const QString& text);
 
 public slots:
+    void onReturnPressed();
     void databaseChanged(DatabaseWidget* dbWidget = nullptr);
     void focusSearch();
     void clearSearch();
@@ -83,6 +84,7 @@ private:
     QTimer* m_clearSearchTimer;
     QAction* m_actionCaseSensitive;
     QAction* m_actionLimitGroup;
+    QAction* m_actionWaitForEnter;
     QMenu* m_searchMenu;
 };
 
