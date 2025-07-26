@@ -9888,6 +9888,10 @@ Asetus on vanhentunut, käytä sen sijaan &quot;--set-key-file&quot; -määritys
         <source>Limit search to selected group</source>
         <translation>Rajoita haku valittuun ryhmään</translation>
     </message>
+    <message>
+        <source>Press Enter to search</source>
+        <translation>Paina Enter hakeaksesi</translation>
+    </message>
 </context>
 <context>
     <name>SettingsClientModel</name>
