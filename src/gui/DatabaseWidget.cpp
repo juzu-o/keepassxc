@@ -1388,8 +1388,20 @@ void DatabaseWidget::entryActivationSignalReceived(Entry* entry, EntryModel::Mod
     // case EntryModel::Attachments:
     //    break;
     case EntryModel::Url:
-        if (!entry->url().isEmpty() && config()->get(Config::OpenURLOnDoubleClick).toBool()) {
-            openUrlForEntry(entry);
+        if (!entry->url().isEmpty()) {
+            int action = config()->get(Config::URLDoubleClickAction).toInt();
+            switch (action) {
+            case 1: // Open entry URL in browser
+                openUrlForEntry(entry);
+                break;
+            case 2: // Copy entry URL to clipboard
+                setClipboardTextAndMinimize(entry->resolveMultiplePlaceholders(entry->url()));
+                break;
+            case 0: // Edit entry (fallthrough)
+            default:
+                switchToEntryEdit(entry);
+                break;
+            }
             break;
         }
         // Note, order matters here. We want to fall into the default case.
