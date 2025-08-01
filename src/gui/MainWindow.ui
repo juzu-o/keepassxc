@@ -759,6 +759,34 @@
     <string notr="true">{TOTP}</string>
    </property>
   </action>
+  <action name="actionEntryAutoTypeURL">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string notr="true">{URL}</string>
+   </property>
+   <property name="iconText">
+    <string notr="true">{URL}</string>
+   </property>
+   <property name="toolTip">
+    <string notr="true">{URL}</string>
+   </property>
+  </action>
+  <action name="actionEntryAutoTypeURLEnter">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string notr="true">{URL}{ENTER}</string>
+   </property>
+   <property name="iconText">
+    <string notr="true">{URL}{ENTER}</string>
+   </property>
+   <property name="toolTip">
+    <string notr="true">{URL}{ENTER}</string>
+   </property>
+  </action>
   <action name="actionEntryDownloadIcon">
    <property name="text">
     <string>Download &amp;Favicon</string>
