@@ -305,7 +305,7 @@ void AutoTypeSelectDialog::buildActionMenu()
     auto copyUsernameAction = new QAction(icons()->icon("username-copy"), tr("Copy Username"), this);
     auto copyPasswordAction = new QAction(icons()->icon("password-copy"), tr("Copy Password"), this);
     auto copyTotpAction = new QAction(icons()->icon("totp"), tr("Copy TOTP"), this);
-    auto copyUrlAction = new QAction(icons()->icon("password-copy"), tr("Copy URL"), this);
+    auto copyUrlAction = new QAction(icons()->icon("url-copy"), tr("Copy URL"), this);
     m_actionMenu->addAction(typeUsernameAction);
     m_actionMenu->addAction(typePasswordAction);
     m_actionMenu->addAction(typeTotpAction);
