@@ -422,6 +422,8 @@ MainWindow::MainWindow()
     m_ui->actionEntryAutoTypePassword->setIcon(icons()->icon("auto-type"));
     m_ui->actionEntryAutoTypePasswordEnter->setIcon(icons()->icon("auto-type"));
     m_ui->actionEntryAutoTypeTOTP->setIcon(icons()->icon("auto-type"));
+    m_ui->actionEntryAutoTypeURL->setIcon(icons()->icon("auto-type"));
+    m_ui->actionEntryAutoTypeURLEnter->setIcon(icons()->icon("auto-type"));
     m_ui->actionEntryMoveUp->setIcon(icons()->icon("move-up"));
     m_ui->actionEntryMoveDown->setIcon(icons()->icon("move-down"));
     m_ui->actionEntryCopyUsername->setIcon(icons()->icon("username-copy"));
