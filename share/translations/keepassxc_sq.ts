@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="sq">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="sq">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -243,23 +245,23 @@
     </message>
     <message>
         <source>Small</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Normal</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Medium</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Large</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Custom</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -561,15 +563,35 @@
     </message>
     <message>
         <source>Open browser on double clicking URL field in entry view</source>
-        <translation>Me dyklikim të fushës së URL-së, te pamja e zërit, hap shfletuesin</translation>
+        <translation type="vanished">Me dyklikim të fushës së URL-së, te pamja e zërit, hap shfletuesin</translation>
     </message>
     <message>
         <source>Font size:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Font size selection</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Double-click action for URL:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Double-click action for URL field</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Edit entry</source>
+        <translation type="unfinished">Përpunoni zë</translation>
+    </message>
+    <message>
+        <source>Open entry URL in browser</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy entry URL to clipboard</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -662,6 +684,17 @@
     </message>
 </context>
 <context>
+    <name>AttachmentWidget</name>
+    <message>
+        <source>Attachment Viewer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Unknown attachment type</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>AutoType</name>
     <message>
         <source>The requested Auto-Type sequence cannot be used due to an error:</source>
@@ -710,6 +743,10 @@
     <message>
         <source>Invalid placeholder: %1</source>
         <translation>Vendmbajtëse e pavlefshme: %1</translation>
+    </message>
+    <message>
+        <source>Entry has invalid TOTP settings</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -786,7 +823,7 @@ Ctrl+1 - Type username&lt;br/&gt;
 Ctrl+2 - Type password&lt;br/&gt;
 Ctrl+3 - Type TOTP&lt;br/&gt;
 Ctrl+4 - Use Virtual Keyboard (Windows Only)&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Mund të përdorni kërkim të thelluar, për të gjetur çfarëdo zëri në bazat tuaja të hapura të të dhënave. Janë të dobishme shkurtoret vijuese:&lt;br/&gt;
+        <translation type="vanished">&lt;p&gt;Mund të përdorni kërkim të thelluar, për të gjetur çfarëdo zëri në bazat tuaja të hapura të të dhënave. Janë të dobishme shkurtoret vijuese:&lt;br/&gt;
 Ctrl+F - Hap/Mbyll kërkim në bazë të dhënash&lt;br/&gt;
 Ctrl+1 - Shtypni emër përdoruesi&lt;br/&gt;
 Ctrl+2 - Shtypni fjalëkalim&lt;br/&gt;
@@ -823,19 +860,49 @@ Ctrl+4 - Përdorni Tastierë Virtuale (Vetëm në Windows)&lt;/p&gt;</translatio
     </message>
     <message>
         <source>Copy Username</source>
-        <translation>Kopjo Emër Përdoruesi</translation>
+        <translation type="vanished">Kopjo Emër Përdoruesi</translation>
     </message>
     <message>
         <source>Copy Password</source>
-        <translation>Kopjo Fjalëkalimin</translation>
+        <translation type="vanished">Kopjo Fjalëkalimin</translation>
     </message>
     <message>
         <source>Copy TOTP</source>
-        <translation>Kopjo TOTP</translation>
+        <translation type="vanished">Kopjo TOTP</translation>
     </message>
     <message>
         <source>Use Virtual Keyboard</source>
         <translation>Përdor Tastierë Virtuale</translation>
+    </message>
+    <message>
+        <source>&lt;p&gt;You can use advanced search queries to find any entry in your open databases. The following shortcuts are useful:&lt;br/&gt;
+Ctrl+F - Toggle database search&lt;br/&gt;
+Ctrl+1 - Type username&lt;br/&gt;
+Ctrl+2 - Type password&lt;br/&gt;
+Ctrl+3 - Type TOTP&lt;br/&gt;
+Ctrl+4 - Type URL&lt;br/&gt;
+Ctrl+5 - Use Virtual Keyboard (Windows Only)&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Type {URL}</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy {USERNAME}</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy {PASSWORD}</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy {TOTP}</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy {URL}</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -922,11 +989,14 @@ Ju lutemi, përzgjidhni bazën e saktë të të dhënave për ruajtje kredencial
     </message>
     <message numerus="yes">
         <source>Timeout in &lt;b&gt;%n&lt;/b&gt; seconds...</source>
-        <translation><numerusform>Mbarim kohe në &lt;b&gt;%n&lt;/b&gt; sekondë…</numerusform><numerusform>Mbarim kohe në &lt;b&gt;%n&lt;/b&gt; sekonda…</numerusform></translation>
+        <translation>
+            <numerusform>Mbarim kohe në &lt;b&gt;%n&lt;/b&gt; sekondë…</numerusform>
+            <numerusform>Mbarim kohe në &lt;b&gt;%n&lt;/b&gt; sekonda…</numerusform>
+        </translation>
     </message>
     <message>
         <source>Relying Party: %1</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Username: %1</source>
@@ -1056,6 +1126,52 @@ Doni të mbishkruhet kyçkalimi te %1 - %2?</translation>
     <message>
         <source>Register</source>
         <translation>Regjistroje</translation>
+    </message>
+    <message>
+        <source>Converting attributes to custom data…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Abort</source>
+        <translation type="unfinished">Ndërprite</translation>
+    </message>
+    <message>
+        <source>KeePassXC: Converted KeePassHTTP attributes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Successfully converted attributes from %1 entry(s).
+Moved %2 keys to custom data.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message numerus="yes">
+        <source>Successfully moved %n keys to custom data.</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>KeePassXC: No entry with KeePassHTTP attributes found!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>The active database does not contain an entry with KeePassHTTP attributes.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Don&apos;t show this warning again</source>
+        <translation type="unfinished">Mos e shfaq më këtë sinjalizim</translation>
+    </message>
+    <message>
+        <source>KeePassXC: Legacy browser integration settings detected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Your KeePassXC-Browser settings need to be moved into the database settings.
+This is necessary to maintain your current browser connections.
+Would you like to migrate your existing settings now?</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1187,11 +1303,11 @@ Doni të mbishkruhet kyçkalimi te %1 - %2?</translation>
     </message>
     <message>
         <source>Updates KeePassXC or keepassxc-proxy binary path automatically to native messaging scripts on startup.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Update native messaging manifest files at startup</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Use a custom proxy location if you installed a proxy manually.</source>
@@ -1261,15 +1377,7 @@ Doni të mbishkruhet kyçkalimi te %1 - %2?</translation>
     </message>
     <message>
         <source>Select native messaging host folder location</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Allow keepassxc-proxy to list all entries with their title, URL and UUID in connected databases.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Allow limited access to all entries in connected databases (ignores site access restrictions)</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&lt;b&gt;Warning:&lt;/b&gt; Only adjust these settings if necessary.</source>
@@ -1301,7 +1409,7 @@ Doni të mbishkruhet kyçkalimi te %1 - %2?</translation>
     </message>
     <message>
         <source>Browsers installed using Snap or Flatpak are not supported with exception to Firefox installed using Snap.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1383,11 +1491,11 @@ Doni të mbishkruhet kyçkalimi te %1 - %2?</translation>
     </message>
     <message>
         <source>Text is qualified by</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Text qualification</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Fields are separated by</source>
@@ -1435,7 +1543,10 @@ Doni të mbishkruhet kyçkalimi te %1 - %2?</translation>
     </message>
     <message numerus="yes">
         <source>[%n more message(s) skipped]</source>
-        <translation><numerusform>[%n mesazh tjetër i anashkaluar]</numerusform><numerusform>[%n mesazhe të tjerë të anashkaluar]</numerusform></translation>
+        <translation>
+            <numerusform>[%n mesazh tjetër i anashkaluar]</numerusform>
+            <numerusform>[%n mesazhe të tjerë të anashkaluar]</numerusform>
+        </translation>
     </message>
     <message>
         <source>Failed to parse CSV file: %1</source>
@@ -1465,12 +1576,18 @@ Jeni i sigurt se doni të importohet?</translation>
     <message numerus="yes">
         <source>%n row(s)</source>
         <comment>CSV row count</comment>
-        <translation><numerusform>%n rresht</numerusform><numerusform>%n rreshta</numerusform></translation>
+        <translation>
+            <numerusform>%n rresht</numerusform>
+            <numerusform>%n rreshta</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>%n column(s)</source>
         <comment>CSV column count</comment>
-        <translation><numerusform>%n shtyllë</numerusform><numerusform>%n shtylla</numerusform></translation>
+        <translation>
+            <numerusform>%n shtyllë</numerusform>
+            <numerusform>%n shtylla</numerusform>
+        </translation>
     </message>
 </context>
 <context>
@@ -1524,11 +1641,11 @@ Kopjeruaj bazë të dhënash që gjendet te %2</translation>
     </message>
     <message>
         <source>Database file read error.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>No file path was provided.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1665,11 +1782,11 @@ Që të pengoni shfaqjen e këtij gabimi, duhet të kaloni te  “Rregullime baz
     </message>
     <message>
         <source>authenticate to access the database</source>
-        <translation>që të hyni në bazën e të dhënave, bëni mirëfilltësimin</translation>
+        <translation type="vanished">që të hyni në bazën e të dhënave, bëni mirëfilltësimin</translation>
     </message>
     <message>
         <source>Failed to authenticate with Quick Unlock: %1</source>
-        <translation>S’u arri të bëhej mirëfilltësimi me Shkyçje të Shpejtë: %1</translation>
+        <translation type="vanished">S’u arri të bëhej mirëfilltësimi me Shkyçje të Shpejtë: %1</translation>
     </message>
     <message>
         <source>Select Key File:</source>
@@ -1725,7 +1842,23 @@ Jeni i sigurt se doni të vazhdohet me këtë kartelë?</translation>
     </message>
     <message>
         <source>Hardware keys found, but no slots are configured.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Press ESC again to close this database</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Windows Hello setup was canceled or failed. Quick unlock has not been enabled.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Failed to authenticate with Windows Hello: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Failed to authenticate with Touch ID</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1771,7 +1904,7 @@ Jeni i sigurt se doni të vazhdohet me këtë kartelë?</translation>
     </message>
     <message>
         <source>Remote Sync</source>
-        <translation>Njëkohësim i Largët</translation>
+        <translation type="vanished">Njëkohësim i Largët</translation>
     </message>
     <message>
         <source>Database Settings: %1</source>
@@ -1850,7 +1983,10 @@ Kjo mund të pengojë lidhjen me shtojcën e shfletuesit.</translation>
     </message>
     <message numerus="yes">
         <source>Successfully removed %n encryption key(s) from KeePassXC settings.</source>
-        <translation><numerusform>U hoq me sukses %n kyç fshehtëzimi që nga rregullimet e KeePassXC-së.</numerusform><numerusform>U hoqën me sukses %n kyçe fshehtëzimi që nga rregullimet e KeePassXC-së.</numerusform></translation>
+        <translation>
+            <numerusform>U hoq me sukses %n kyç fshehtëzimi që nga rregullimet e KeePassXC-së.</numerusform>
+            <numerusform>U hoqën me sukses %n kyçe fshehtëzimi që nga rregullimet e KeePassXC-së.</numerusform>
+        </translation>
     </message>
     <message>
         <source>Do you really want forget all site-specific settings on every entry?
@@ -1868,7 +2004,10 @@ Do të shfuqizohen leje për përdorim të zërave.</translation>
     </message>
     <message numerus="yes">
         <source>Successfully removed permissions from %n entry(s).</source>
-        <translation><numerusform>U hoq me sukses leje nga %n zë.</numerusform><numerusform>U hoqën me sukses leje nga %n zëra.</numerusform></translation>
+        <translation>
+            <numerusform>U hoq me sukses leje nga %n zë.</numerusform>
+            <numerusform>U hoqën me sukses leje nga %n zëra.</numerusform>
+        </translation>
     </message>
     <message>
         <source>The active database does not contain an entry with permissions.</source>
@@ -1903,6 +2042,19 @@ Kjo është e nevojshme vetëm nëse baza juaj e të dhënave është një kopje
     <message>
         <source>No entry with permissions found!</source>
         <translation>S’u gjet zë me leje!</translation>
+    </message>
+    <message>
+        <source>Convert KeePassHTTP data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Move KeePassHTTP attributes to custom data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Do you really want to convert all legacy browser integration data to the latest standard?
+This is necessary to maintain compatibility with the browser plugin.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2087,12 +2239,18 @@ Nëse mbani këtë numër, baza juaj e të dhënave s’do të mbrohet nga sulme
     <message numerus="yes">
         <source> MiB</source>
         <comment>Abbreviation for Mebibytes (KDF settings)</comment>
-        <translation><numerusform> MiB</numerusform><numerusform> MiB</numerusform></translation>
+        <translation>
+            <numerusform> MiB</numerusform>
+            <numerusform> MiB</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source> thread(s)</source>
         <comment>Threads for parallel execution (KDF settings)</comment>
-        <translation><numerusform> rrjedhë</numerusform><numerusform> rrjedha</numerusform></translation>
+        <translation>
+            <numerusform> rrjedhë</numerusform>
+            <numerusform> rrjedha</numerusform>
+        </translation>
     </message>
     <message>
         <source>Encryption Settings:</source>
@@ -2196,7 +2354,7 @@ Ky veprim s’është i prapakthyeshëm.</translation>
     </message>
     <message>
         <source> (old)</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>When saving this setting or editing an entry
@@ -2309,7 +2467,7 @@ hiqen nga baza e të dhënave.</translation>
     </message>
     <message>
         <source>Breadcrumb</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Type</source>
@@ -2373,7 +2531,10 @@ hiqen nga baza e të dhënave.</translation>
     </message>
     <message numerus="yes">
         <source>Purged %n icon(s) from the database.</source>
-        <translation><numerusform>U spastrua %n ikonë nga baza e të dhënave.</numerusform><numerusform>U spastruan %n ikona nga baza e të dhënave.</numerusform></translation>
+        <translation>
+            <numerusform>U spastrua %n ikonë nga baza e të dhënave.</numerusform>
+            <numerusform>U spastruan %n ikona nga baza e të dhënave.</numerusform>
+        </translation>
     </message>
 </context>
 <context>
@@ -2399,123 +2560,83 @@ hiqen nga baza e të dhënave.</translation>
     <name>DatabaseSettingsWidgetRemote</name>
     <message>
         <source>Sync Commands</source>
-        <translation>Urdhra njëkohësimi</translation>
+        <translation type="vanished">Urdhra njëkohësimi</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation>Hiqe</translation>
+        <translation type="vanished">Hiqe</translation>
     </message>
     <message>
         <source>Command Settings</source>
-        <translation>Rregullime Urdhri</translation>
+        <translation type="vanished">Rregullime Urdhri</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Emër</translation>
+        <translation type="vanished">Emër</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Ruaje</translation>
+        <translation type="vanished">Ruaje</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation>Shkarkoje</translation>
+        <translation type="vanished">Shkarkoje</translation>
     </message>
     <message>
         <source>Command:</source>
-        <translation>Urdhër:</translation>
+        <translation type="vanished">Urdhër:</translation>
     </message>
     <message>
         <source>Download command field</source>
-        <translation>Fushë urdhri shkarkimi</translation>
+        <translation type="vanished">Fushë urdhri shkarkimi</translation>
     </message>
     <message>
         <source>e.g.: &quot;sftp user@hostname&quot; or &quot;scp user@hostname:DatabaseOnRemote.kdbx {TEMP_DATABASE}&quot;</source>
-        <translation>p.sh.: &quot;sftp user@hostname&quot; ose &quot;scp user@hostname:DatabaseOnRemote.kdbx {TEMP_DATABASE}&quot;</translation>
-    </message>
-    <message>
-        <source>Input:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Download input field</source>
-        <translation type="unfinished"/>
+        <translation type="vanished">p.sh.: &quot;sftp user@hostname&quot; ose &quot;scp user@hostname:DatabaseOnRemote.kdbx {TEMP_DATABASE}&quot;</translation>
     </message>
     <message>
         <source>Upload</source>
-        <translation>Ngarkim</translation>
+        <translation type="vanished">Ngarkim</translation>
     </message>
     <message>
         <source>Upload command field</source>
-        <translation>Fushë urdhri ngarkimi</translation>
+        <translation type="vanished">Fushë urdhri ngarkimi</translation>
     </message>
     <message>
         <source>e.g.: &quot;sftp user@hostname&quot; or &quot;scp {TEMP_DATABASE} user@hostname:DatabaseOnRemote.kdbx&quot;</source>
-        <translation>e.g.: &quot;sftp user@hostname&quot; ose &quot;scp {TEMP_DATABASE} user@hostname:DatabaseOnRemote.kdbx&quot;</translation>
-    </message>
-    <message>
-        <source>Upload input field</source>
-        <translation type="unfinished"/>
+        <translation type="vanished">e.g.: &quot;sftp user@hostname&quot; ose &quot;scp {TEMP_DATABASE} user@hostname:DatabaseOnRemote.kdbx&quot;</translation>
     </message>
     <message>
         <source>Name cannot be empty.</source>
-        <translation>Emri s’mund të jetë i zbrazët.</translation>
-    </message>
-    <message>
-        <source>Test</source>
-        <translation type="unfinished"/>
+        <translation type="vanished">Emri s’mund të jetë i zbrazët.</translation>
     </message>
     <message>
         <source>Download command cannot be empty.</source>
-        <translation>Urdhri i shkarkimit s’mund të jetë i zbrazët.</translation>
+        <translation type="vanished">Urdhri i shkarkimit s’mund të jetë i zbrazët.</translation>
     </message>
     <message>
         <source>Download failed with error: %1</source>
-        <translation>Shkarkimi dështoi me gabimin: %1</translation>
+        <translation type="vanished">Shkarkimi dështoi me gabimin: %1</translation>
     </message>
     <message>
         <source>Download finished, but file %1 could not be found.</source>
-        <translation>Shkarkimi përfundoi, por s’u gjeta kartela %1.</translation>
+        <translation type="vanished">Shkarkimi përfundoi, por s’u gjeta kartela %1.</translation>
     </message>
     <message>
         <source>Download successful.</source>
-        <translation>Shkarkim i suksesshëm</translation>
-    </message>
-    <message>
-        <source>Save Remote Settings</source>
-        <translation type="unfinished"/>
+        <translation type="vanished">Shkarkim i suksesshëm</translation>
     </message>
     <message>
         <source>You have unsaved changes. Do you want to save them?</source>
-        <translation>Keni ndryshime të paruajtura. Doni të ruhen?</translation>
-    </message>
-    <message>
-        <source>e.g.:
-get DatabaseOnRemote.kdbx {TEMP_DATABASE}
-exit
----
-{TEMP_DATABASE} is used as placeholder to store the database in a temporary location
-The command has to exit. In case of `sftp` as last command `exit` has to be sent
-            </source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>e.g.:
-put {TEMP_DATABASE} DatabaseOnRemote.kdbx
-exit
----
-{TEMP_DATABASE} is used as placeholder to store the database in a temporary location
-The command has to exit. In case of `sftp` as last command `exit` has to be sent
-            </source>
-        <translation type="unfinished"/>
+        <translation type="vanished">Keni ndryshime të paruajtura. Doni të ruhen?</translation>
     </message>
     <message>
         <source>Timeout:</source>
-        <translation>Mbarime kohe:</translation>
+        <translation type="vanished">Mbarime kohe:</translation>
     </message>
     <message>
         <source> seconds</source>
-        <translation> sekonda</translation>
+        <translation type="vanished"> sekonda</translation>
     </message>
 </context>
 <context>
@@ -2594,7 +2715,7 @@ Kjo është përfundimisht një e metë, ju lutemi, njoftojuani zhvilluesve.</tr
     <message>
         <source>%1 [Temporary]</source>
         <comment>Database tab name modifier</comment>
-        <translation>%1 [E përkohshme]</translation>
+        <translation type="vanished">%1 [E përkohshme]</translation>
     </message>
 </context>
 <context>
@@ -2653,7 +2774,10 @@ Kjo është përfundimisht një e metë, ju lutemi, njoftojuani zhvilluesve.</tr
     </message>
     <message numerus="yes">
         <source>Entries expiring within %1 day(s)</source>
-        <translation><numerusform>Zëra që skadojnë brenda %1 dite</numerusform><numerusform>Zëra që skadojnë brenda %1 ditësh</numerusform></translation>
+        <translation>
+            <numerusform>Zëra që skadojnë brenda %1 dite</numerusform>
+            <numerusform>Zëra që skadojnë brenda %1 ditësh</numerusform>
+        </translation>
     </message>
     <message>
         <source>No current database.</source>
@@ -2772,31 +2896,31 @@ Të çaktivizohet ruajtje të parrezik dhe të riprovohet?</translation>
     </message>
     <message>
         <source>Remote Sync did not contain any download or upload commands.</source>
-        <translation>Njëkohësimi i Largët s’përmbante ndonjë urdhër shkarkimi ose ngarkimi.</translation>
+        <translation type="vanished">Njëkohësimi i Largët s’përmbante ndonjë urdhër shkarkimi ose ngarkimi.</translation>
     </message>
     <message>
         <source>Remote sync &apos;%1&apos; completed successfully!</source>
-        <translation>Njëkohësimi i largët “%1” u plotësua me sukses!</translation>
+        <translation type="vanished">Njëkohësimi i largët “%1” u plotësua me sukses!</translation>
     </message>
     <message>
         <source>Remote sync &apos;%1&apos; failed: %2</source>
-        <translation>Njëkohësimi i largët “%1” dështoi: %2</translation>
+        <translation type="vanished">Njëkohësimi i largët “%1” dështoi: %2</translation>
     </message>
     <message>
         <source>Error while saving database %1: %2</source>
-        <translation>Gabim gjatë ruajtjes së bazës së të dhënave: %1: %2</translation>
+        <translation type="vanished">Gabim gjatë ruajtjes së bazës së të dhënave: %1: %2</translation>
     </message>
     <message>
         <source>Downloading...</source>
-        <translation>Po shkarkohet…</translation>
+        <translation type="vanished">Po shkarkohet…</translation>
     </message>
     <message>
         <source>Uploading...</source>
-        <translation>Po ngarkohet…</translation>
+        <translation type="vanished">Po ngarkohet…</translation>
     </message>
     <message>
         <source>Syncing...</source>
-        <translation>Po njëkohësohet…</translation>
+        <translation type="vanished">Po njëkohësohet…</translation>
     </message>
     <message>
         <source>Remove passkey from entry</source>
@@ -2808,47 +2932,58 @@ Të çaktivizohet ruajtje të parrezik dhe të riprovohet?</translation>
     </message>
     <message>
         <source>The database file &quot;%1&quot; was modified externally</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Do you want to load the changes?</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Reload database</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Reloading database…</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Reload canceled</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Reload successful</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Reload pending user action…</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>The database file &quot;%1&quot; was modified externally.&lt;br&gt;How would you like to proceed?&lt;br&gt;&lt;br&gt;Merge all changes&lt;br&gt;Ignore the changes on disk until save&lt;br&gt;Discard unsaved changes</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>The database file &quot;%1&quot; was modified externally.&lt;br&gt;How would you like to proceed?&lt;br&gt;&lt;br&gt;Merge all changes then save&lt;br&gt;Overwrite the changes on disk&lt;br&gt;Discard unsaved changes</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Database file overwritten.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Database file on disk cannot be unlocked with current credentials.&lt;br&gt;Enter new credentials and/or present hardware key to continue.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Failed to save backup database: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>EditEntryAttachmentsDialog</name>
+    <message>
+        <source>Edit: %1</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2989,19 +3124,31 @@ Do të donit të ndreqet?</translation>
     </message>
     <message numerus="yes">
         <source>%n hour(s)</source>
-        <translation><numerusform>%n orë</numerusform><numerusform>%n orë</numerusform></translation>
+        <translation>
+            <numerusform>%n orë</numerusform>
+            <numerusform>%n orë</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>%n week(s)</source>
-        <translation><numerusform>%n javë</numerusform><numerusform>%n javë</numerusform></translation>
+        <translation>
+            <numerusform>%n javë</numerusform>
+            <numerusform>%n javë</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>%n month(s)</source>
-        <translation><numerusform>%n muaj</numerusform><numerusform>%n muaj</numerusform></translation>
+        <translation>
+            <numerusform>%n muaj</numerusform>
+            <numerusform>%n muaj</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>%n year(s)</source>
-        <translation><numerusform>%n vit</numerusform><numerusform>%n vjet</numerusform></translation>
+        <translation>
+            <numerusform>%n vit</numerusform>
+            <numerusform>%n vjet</numerusform>
+        </translation>
     </message>
     <message>
         <source>Failed to decrypt SSH key, ensure password is correct.</source>
@@ -3410,7 +3557,7 @@ Do të donit të ndreqet?</translation>
     </message>
     <message>
         <source>Generate</source>
-        <translation>Prodhoje</translation>
+        <translation type="vanished">Prodhoje</translation>
     </message>
     <message>
         <source>Select attachment file</source>
@@ -3438,7 +3585,7 @@ Do të donit të ndreqet?</translation>
     </message>
     <message>
         <source>Clear agent</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -3496,7 +3643,7 @@ Do të donit të ndreqet?</translation>
     </message>
     <message>
         <source>Hide entries from browser extension toggle for this and sub groups</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Skip Auto-Submit for entries:</source>
@@ -3504,7 +3651,7 @@ Do të donit të ndreqet?</translation>
     </message>
     <message>
         <source>Skip Auto-Submit toggle for this and sub groups</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Use entries only with HTTP Basic Auth:</source>
@@ -3512,7 +3659,7 @@ Do të donit të ndreqet?</translation>
     </message>
     <message>
         <source>Only HTTP Auth toggle for this and sub groups</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Do not use entries with HTTP Basic Auth:</source>
@@ -3520,7 +3667,7 @@ Do të donit të ndreqet?</translation>
     </message>
     <message>
         <source>Do not use HTTP Auth toggle for this and sub groups</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Omit WWW subdomain from matching:</source>
@@ -3528,15 +3675,15 @@ Do të donit të ndreqet?</translation>
     </message>
     <message>
         <source>Omit WWW subdomain from matching toggle for this and sub groups</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Restrict matching to given browser key:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Restrict matching to given browser key toggle for this and sub groups</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -3685,7 +3832,7 @@ Zgjatimet e mbuluara janë: %1.</translation>
     </message>
     <message>
         <source>Auto-Type toggle for this and sub groups</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Notes:</source>
@@ -3709,7 +3856,7 @@ Zgjatimet e mbuluara janë: %1.</translation>
     </message>
     <message>
         <source>Search toggle for this and sub groups</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -3788,7 +3935,10 @@ Zgjatimet e mbuluara janë: %1.</translation>
     </message>
     <message numerus="yes">
         <source>Successfully loaded %1 of %n icon(s)</source>
-        <translation><numerusform>U ngarkua me sukses %1 nga %n ikonë</numerusform><numerusform>U ngarkua me sukses %1 nga %n ikona</numerusform></translation>
+        <translation>
+            <numerusform>U ngarkua me sukses %1 nga %n ikonë</numerusform>
+            <numerusform>U ngarkua me sukses %1 nga %n ikona</numerusform>
+        </translation>
     </message>
     <message>
         <source>No icons were loaded</source>
@@ -3796,11 +3946,17 @@ Zgjatimet e mbuluara janë: %1.</translation>
     </message>
     <message numerus="yes">
         <source>%n icon(s) already exist in the database</source>
-        <translation><numerusform>Te baza e të dhënave ekziston tashmë %n ikonë</numerusform><numerusform>Te baza e të dhënave ekzistojnë tashmë %n ikona</numerusform></translation>
+        <translation>
+            <numerusform>Te baza e të dhënave ekziston tashmë %n ikonë</numerusform>
+            <numerusform>Te baza e të dhënave ekzistojnë tashmë %n ikona</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>The following icon(s) failed:</source>
-        <translation><numerusform>Ikona vijuese dështoi:</numerusform><numerusform>Ikonat vijuese dështuan:</numerusform></translation>
+        <translation>
+            <numerusform>Ikona vijuese dështoi:</numerusform>
+            <numerusform>Ikonat vijuese dështuan:</numerusform>
+        </translation>
     </message>
     <message>
         <source>You can enable the DuckDuckGo website icon service under Application Settings -&gt; Security</source>
@@ -3912,15 +4068,7 @@ Kjo mund të bëjë të punojnë keq shtojcat e prekura.</translation>
     <name>EntryAttachmentsDialog</name>
     <message>
         <source>Form</source>
-        <translation>Formular</translation>
-    </message>
-    <message>
-        <source>File name</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>File contents...</source>
-        <translation type="unfinished"/>
+        <translation type="vanished">Formular</translation>
     </message>
 </context>
 <context>
@@ -3950,7 +4098,7 @@ Kjo mund të bëjë të punojnë keq shtojcat e prekura.</translation>
     </message>
     <message>
         <source>Add</source>
-        <translation>Shtoje</translation>
+        <translation type="vanished">Shtoje</translation>
     </message>
     <message>
         <source>Remove selected attachment</source>
@@ -3974,7 +4122,7 @@ Kjo mund të bëjë të punojnë keq shtojcat e prekura.</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Ruaje</translation>
+        <translation type="vanished">Ruaje</translation>
     </message>
     <message>
         <source>Select files</source>
@@ -3986,7 +4134,10 @@ Kjo mund të bëjë të punojnë keq shtojcat e prekura.</translation>
     </message>
     <message numerus="yes">
         <source>Are you sure you want to remove %n attachment(s)?</source>
-        <translation><numerusform>Jeni i sigurt se doni të hiqet %n bashkëngjitje?</numerusform><numerusform>Jeni i sigurt se doni të hiqen %n bashkëngjitje?</numerusform></translation>
+        <translation>
+            <numerusform>Jeni i sigurt se doni të hiqet %n bashkëngjitje?</numerusform>
+            <numerusform>Jeni i sigurt se doni të hiqen %n bashkëngjitje?</numerusform>
+        </translation>
     </message>
     <message>
         <source>Save attachments</source>
@@ -4027,9 +4178,12 @@ Kjo mund të bëjë të punojnë keq shtojcat e prekura.</translation>
     <message numerus="yes">
         <source>Unable to open file(s):
 %1</source>
-        <translation><numerusform>S’arrihet të hapet kartelë:
-%1</numerusform><numerusform>S’arrihet të hapen kartela:
-%1</numerusform></translation>
+        <translation>
+            <numerusform>S’arrihet të hapet kartelë:
+%1</numerusform>
+            <numerusform>S’arrihet të hapen kartela:
+%1</numerusform>
+        </translation>
     </message>
     <message>
         <source>Confirm Overwrite Attachment</source>
@@ -4054,7 +4208,7 @@ Jeni i sigurt se doni të shtohet kjo kartelë?</translation>
         <translation>Bashkëngjitja u ndryshua</translation>
     </message>
     <message>
-        <source>The attachment '%1' was modified.
+        <source>The attachment &apos;%1&apos; was modified.
 Do you want to save the changes to your database?</source>
         <translation>Bashkëngjitja “%1” u ndryshua.
 Doni të ruhen ndryshimet te baza juaj e të dhënave?</translation>
@@ -4076,16 +4230,32 @@ Would you like to overwrite the existing attachment?</source>
 Doni të mbishkruhet bashkëngjitja ekzistuese?</translation>
     </message>
     <message>
-        <source>New</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>Preview</source>
         <translation>Paraparje</translation>
     </message>
     <message>
-        <source>Failed to preview an attachment: Attachment not found</source>
-        <translation type="unfinished"/>
+        <source>Add file…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation type="unfinished">Përpunojeni</translation>
+    </message>
+    <message>
+        <source>Save…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>New Text Document</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Load from Disk…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>New Attachment</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -4287,7 +4457,7 @@ Doni të mbishkruhet bashkëngjitja ekzistuese?</translation>
     </message>
     <message>
         <source>Group Path</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -4424,7 +4594,10 @@ Doni të mbishkruhet bashkëngjitja ekzistuese?</translation>
     </message>
     <message numerus="yes">
         <source>+ %1 entry(s)...</source>
-        <translation><numerusform>+ %1 zë…</numerusform><numerusform>+ %1 zëra…</numerusform></translation>
+        <translation>
+            <numerusform>+ %1 zë…</numerusform>
+            <numerusform>+ %1 zëra…</numerusform>
+        </translation>
     </message>
 </context>
 <context>
@@ -4536,7 +4709,10 @@ Kjo do t’i lërë të cenueshme fjalëkalimet tuaja dhe informacione me spec!
     <message numerus="yes">
         <source>%n Entry(s) was used by %1</source>
         <comment>%1 is the name of an application</comment>
-        <translation><numerusform>Nga %1 qe përdorur %n zë</numerusform><numerusform>Nga %1 qenë përdorur %n zëra</numerusform></translation>
+        <translation>
+            <numerusform>Nga %1 qe përdorur %n zë</numerusform>
+            <numerusform>Nga %1 qenë përdorur %n zëra</numerusform>
+        </translation>
     </message>
 </context>
 <context>
@@ -4648,6 +4824,17 @@ Mund të aktivizoni shërbimin e ikonave të sajteve nga DuckDuckGo, te pjesa e 
     </message>
 </context>
 <context>
+    <name>ImageAttachmentsWidget</name>
+    <message>
+        <source>Zoom:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Fit</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ImportWizard</name>
     <message>
         <source>Import Wizard</source>
@@ -4686,11 +4873,11 @@ Mund të aktivizoni shërbimin e ikonave të sajteve nga DuckDuckGo, te pjesa e 
     </message>
     <message>
         <source>Could not load key file.</source>
-        <translation>S’u ngarkua dot kartelë kyç.</translation>
+        <translation type="vanished">S’u ngarkua dot kartelë kyç.</translation>
     </message>
     <message>
         <source>Could not open remote database. Password or key file may be incorrect.</source>
-        <translation>S’u hap dot bazë e largët të dhënash. Mund të jenë të pasaktë fjalëkalimi ose kartela kyç.</translation>
+        <translation type="vanished">S’u hap dot bazë e largët të dhënash. Mund të jenë të pasaktë fjalëkalimi ose kartela kyç.</translation>
     </message>
 </context>
 <context>
@@ -4797,41 +4984,27 @@ Mund të aktivizoni shërbimin e ikonave të sajteve nga DuckDuckGo, te pjesa e 
     </message>
     <message>
         <source>Proton Pass (.json)</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Proton Pass JSON Export</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Temporary Database</source>
-        <translation>Bazë e përkohshme të Dhënash</translation>
+        <translation type="vanished">Bazë e përkohshme të Dhënash</translation>
     </message>
     <message>
         <source>Command:</source>
-        <translation>Urdhër:</translation>
+        <translation type="vanished">Urdhër:</translation>
     </message>
     <message>
         <source>e.g.: &quot;sftp user@hostname&quot; or &quot;scp user@hostname:DatabaseOnRemote.kdbx {TEMP_DATABASE}&quot;</source>
-        <translation>p.sh.: &quot;sftp user@hostname&quot; ose &quot;scp user@hostname:DatabaseOnRemote.kdbx {TEMP_DATABASE}&quot;</translation>
-    </message>
-    <message>
-        <source>Input:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>e.g.:
-get DatabaseOnRemote.kdbx {TEMP_DATABASE}
-exit
----
-{TEMP_DATABASE} is used as placeholder to store the database in a temporary location
-The command has to exit. In case of `sftp` as last commend `exit` has to be sent
-         </source>
-        <translation type="unfinished"/>
+        <translation type="vanished">p.sh.: &quot;sftp user@hostname&quot; ose &quot;scp user@hostname:DatabaseOnRemote.kdbx {TEMP_DATABASE}&quot;</translation>
     </message>
     <message>
         <source>Remote Database (.kdbx)</source>
-        <translation>Bazë të Dhënash e Largët (.kdbx)</translation>
+        <translation type="vanished">Bazë të Dhënash e Largët (.kdbx)</translation>
     </message>
 </context>
 <context>
@@ -4968,67 +5141,67 @@ Nëse kjo ndodh sërish, ahere baza juaj e të dhënave mund të jetë e dëmtua
     </message>
     <message>
         <source>Invalid inner header binary size</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Unsupported KeePass variant map version.</source>
         <extracomment>Translation: variant map = data structure for storing meta data</extracomment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Invalid variant map entry name length</source>
         <extracomment>Translation: variant map = data structure for storing meta data</extracomment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Invalid variant map entry name data</source>
         <extracomment>Translation: variant map = data structure for storing meta data</extracomment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Invalid variant map entry value length</source>
         <extracomment>Translation: variant map = data structure for storing meta data</extracomment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Invalid variant map entry value data</source>
         <extracomment>Translation comment: variant map = data structure for storing meta data</extracomment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Invalid variant map Bool entry value length</source>
         <extracomment>Translation: variant map = data structure for storing meta data</extracomment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Invalid variant map Int32 entry value length</source>
         <extracomment>Translation: variant map = data structure for storing meta data</extracomment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Invalid variant map UInt32 entry value length</source>
         <extracomment>Translation: variant map = data structure for storing meta data</extracomment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Invalid variant map Int64 entry value length</source>
         <extracomment>Translation: variant map = data structure for storing meta data</extracomment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Invalid variant map UInt64 entry value length</source>
         <extracomment>Translation: variant map = data structure for storing meta data</extracomment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Invalid variant map entry type</source>
         <extracomment>Translation: variant map = data structure for storing meta data</extracomment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Invalid variant map field type size</source>
         <extracomment>Translation: variant map = data structure for storing meta data</extracomment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -5049,7 +5222,7 @@ Nëse kjo ndodh sërish, ahere baza juaj e të dhënave mund të jetë e dëmtua
     <message>
         <source>Failed to serialize KDF parameters variant map</source>
         <extracomment>Translation comment: variant map = data structure for storing meta data</extracomment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -5068,7 +5241,7 @@ Nëse kjo ndodh sërish, ahere baza juaj e të dhënave mund të jetë e dëmtua
     </message>
     <message>
         <source>Invalid compression flags length</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Unsupported compression algorithm</source>
@@ -5076,11 +5249,11 @@ Nëse kjo ndodh sërish, ahere baza juaj e të dhënave mund të jetë e dëmtua
     </message>
     <message>
         <source>Invalid master seed size</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Invalid transform seed size</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Invalid transform rounds size</source>
@@ -5092,11 +5265,11 @@ Nëse kjo ndodh sërish, ahere baza juaj e të dhënave mund të jetë e dëmtua
     </message>
     <message>
         <source>Invalid random stream id size</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Invalid inner random stream cipher</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Failed to read database file.</source>
@@ -5105,7 +5278,7 @@ Nëse kjo ndodh sërish, ahere baza juaj e të dhënave mund të jetë e dëmtua
     <message>
         <source>The selected file is an old KeePass 1 database (.kdb).
 
-You can import it by clicking on Database &gt; 'Import KeePass 1 database…'.
+You can import it by clicking on Database &gt; &apos;Import KeePass 1 database…&apos;.
 This is a one-way migration. You won&apos;t be able to open the imported database with the old KeePassX 0.4 version.</source>
         <translation>Kartela e përzgjedhur është një bazë e vjetër të dhënash KeePass 1 (.kdb).
 
@@ -5149,11 +5322,11 @@ Rreshti %2, shtylla %3</translation>
     </message>
     <message>
         <source>Multiple group elements</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Null group uuid</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Invalid group icon number</source>
@@ -5173,7 +5346,7 @@ Rreshti %2, shtylla %3</translation>
     </message>
     <message>
         <source>Null DeleteObject uuid</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Missing DeletedObject uuid or time</source>
@@ -5181,7 +5354,7 @@ Rreshti %2, shtylla %3</translation>
     </message>
     <message>
         <source>Null entry uuid</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Invalid entry icon number</source>
@@ -5205,11 +5378,11 @@ Rreshti %2, shtylla %3</translation>
     </message>
     <message>
         <source>Entry string key or value missing</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Entry binary key or value missing</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Auto-type association window or sequence missing</source>
@@ -5305,7 +5478,7 @@ Rreshti %2, shtylla %3</translation>
     </message>
     <message>
         <source>Invalid transform seed size</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Invalid number of transform rounds</source>
@@ -5313,7 +5486,7 @@ Rreshti %2, shtylla %3</translation>
     </message>
     <message>
         <source>Unable to construct group tree</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Root</source>
@@ -5325,7 +5498,7 @@ Rreshti %2, shtylla %3</translation>
     </message>
     <message>
         <source>unable to seek to content position</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Invalid credentials were provided, please try again.
@@ -5347,7 +5520,7 @@ Nëse kjo ndodh sërish, ahere baza juaj e të dhënave mund të jetë e dëmtua
     </message>
     <message>
         <source>Read group field data doesn&apos;t match size</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Incorrect group id field size</source>
@@ -5395,7 +5568,7 @@ Nëse kjo ndodh sërish, ahere baza juaj e të dhënave mund të jetë e dëmtua
     </message>
     <message>
         <source>Read entry field data doesn&apos;t match size</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Invalid entry UUID field size</source>
@@ -5430,11 +5603,11 @@ Nëse kjo ndodh sërish, ahere baza juaj e të dhënave mund të jetë e dëmtua
     <name>KeeShare</name>
     <message>
         <source>Invalid sharing reference</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Inactive share %1</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Imported from %1</source>
@@ -5458,7 +5631,7 @@ Nëse kjo ndodh sërish, ahere baza juaj e të dhënave mund të jetë e dëmtua
     </message>
     <message>
         <source>Inactive share</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Imported from</source>
@@ -5527,7 +5700,7 @@ Nëse kjo ndodh sërish, ahere baza juaj e të dhënave mund të jetë e dëmtua
         <translation>Përzgjodhët një kartelë kyçi në një format të vjetër. të cilin KeePassXC-ja&lt;br&gt;mund të reshtë së mbuluari në të ardhmen.&lt;br&gt;&lt;br&gt;Ju lutemi, në vend të kësaj, shihni mundësinë e prodhimit të një kartele të re.</translation>
     </message>
     <message>
-        <source>Error loading the key file '%1'
+        <source>Error loading the key file &apos;%1&apos;
 Message: %2</source>
         <translation>Gabim në ngarkimin e kartelës së kyçit “%1”
 Mesazh: %2</translation>
@@ -5981,7 +6154,10 @@ Prisni ca të meta dhe probleme të vogla, ky version është menduar për qëll
     </message>
     <message numerus="yes">
         <source>Restore Entry(s)</source>
-        <translation><numerusform>Riktheje Zërin</numerusform><numerusform>Riktheji Zërat</numerusform></translation>
+        <translation>
+            <numerusform>Riktheje Zërin</numerusform>
+            <numerusform>Riktheji Zërat</numerusform>
+        </translation>
     </message>
     <message>
         <source>Settings</source>
@@ -6009,7 +6185,10 @@ Prisni ca të meta dhe probleme të vogla, ky version është menduar për qëll
     </message>
     <message numerus="yes">
         <source>%1 Entry(s)</source>
-        <translation><numerusform>%1 Zë</numerusform><numerusform>%1 Zëra</numerusform></translation>
+        <translation>
+            <numerusform>%1 Zë</numerusform>
+            <numerusform>%1 Zëra</numerusform>
+        </translation>
     </message>
     <message>
         <source>Please present or touch your YubiKey to continue…</source>
@@ -6049,111 +6228,111 @@ Prisni ca të meta dhe probleme të vogla, ky version është menduar për qëll
     </message>
     <message>
         <source>Remote S&amp;ync…</source>
-        <translation>&amp;Njëkohësim i Largët…</translation>
+        <translation type="vanished">&amp;Njëkohësim i Largët…</translation>
     </message>
     <message>
         <source>Quit Application</source>
-        <translation>Mbylle Aplikacionin</translation>
+        <translation type="vanished">Mbylle Aplikacionin</translation>
     </message>
     <message>
         <source>Open About Dialog</source>
-        <translation>Hap Dialogun “Mbi”</translation>
+        <translation type="vanished">Hap Dialogun “Mbi”</translation>
     </message>
     <message>
         <source>Open Database</source>
-        <translation>Hap Bazë të Dhënash</translation>
+        <translation type="vanished">Hap Bazë të Dhënash</translation>
     </message>
     <message>
         <source>Create Database</source>
-        <translation>Krijo Bazë të Dhënash</translation>
+        <translation type="vanished">Krijo Bazë të Dhënash</translation>
     </message>
     <message>
         <source>Merge From Database</source>
-        <translation>Përzieni Prej Baze të Dhënash</translation>
+        <translation type="vanished">Përzieni Prej Baze të Dhënash</translation>
     </message>
     <message>
         <source>Create Entry</source>
-        <translation>Krijoni Zë</translation>
+        <translation type="vanished">Krijoni Zë</translation>
     </message>
     <message>
         <source>Edit Entry</source>
-        <translation>Përpunoni Zërin</translation>
+        <translation type="vanished">Përpunoni Zërin</translation>
     </message>
     <message>
         <source>Delete Entry</source>
-        <translation>Fshini Zë</translation>
+        <translation type="vanished">Fshini Zë</translation>
     </message>
     <message>
         <source>Create Group</source>
-        <translation>Krijoni Grup</translation>
+        <translation type="vanished">Krijoni Grup</translation>
     </message>
     <message>
         <source>Edit Group</source>
-        <translation>Përpunoni Grup</translation>
+        <translation type="vanished">Përpunoni Grup</translation>
     </message>
     <message>
         <source>Delete Group</source>
-        <translation>Fshije Grupin</translation>
+        <translation type="vanished">Fshije Grupin</translation>
     </message>
     <message>
         <source>Download All Favicons</source>
-        <translation>Shkarkoji Krejt Favikonat</translation>
+        <translation type="vanished">Shkarkoji Krejt Favikonat</translation>
     </message>
     <message>
         <source>Sort Groups A-Z</source>
-        <translation>Renditi Grupet sipas A-Z</translation>
+        <translation type="vanished">Renditi Grupet sipas A-Z</translation>
     </message>
     <message>
         <source>Sort Groups Z-A</source>
-        <translation>Renditi Grupet sipas Z-A</translation>
+        <translation type="vanished">Renditi Grupet sipas Z-A</translation>
     </message>
     <message>
         <source>Save Database As</source>
-        <translation>Ruaje Bazën e të Dhënave Si</translation>
+        <translation type="vanished">Ruaje Bazën e të Dhënave Si</translation>
     </message>
     <message>
         <source>Show Database Security</source>
-        <translation>Shfaq Siguri Baze të Dhënash</translation>
+        <translation type="vanished">Shfaq Siguri Baze të Dhënash</translation>
     </message>
     <message>
         <source>Show Database Reports</source>
-        <translation>Shfaq Raporte Baze të Dhënash</translation>
+        <translation type="vanished">Shfaq Raporte Baze të Dhënash</translation>
     </message>
     <message>
         <source>Show Database Settings</source>
-        <translation>Shfaq Rregullime Baze të Dhënash</translation>
+        <translation type="vanished">Shfaq Rregullime Baze të Dhënash</translation>
     </message>
     <message>
         <source>Show Passkeys</source>
-        <translation>Shfaq Kyçkalime</translation>
+        <translation type="vanished">Shfaq Kyçkalime</translation>
     </message>
     <message>
         <source>Clone Entry</source>
-        <translation>Klonoje Zërin</translation>
+        <translation type="vanished">Klonoje Zërin</translation>
     </message>
     <message>
         <source>Move Entry Up</source>
-        <translation>Ngjite Zërin Sipër</translation>
+        <translation type="vanished">Ngjite Zërin Sipër</translation>
     </message>
     <message>
         <source>Move Entry Down</source>
-        <translation>Zbrite Zërin Poshtë</translation>
+        <translation type="vanished">Zbrite Zërin Poshtë</translation>
     </message>
     <message>
         <source>Copy Username</source>
-        <translation>Kopjo Emër Përdoruesi</translation>
+        <translation type="vanished">Kopjo Emër Përdoruesi</translation>
     </message>
     <message>
         <source>Copy Password</source>
-        <translation>Kopjo Fjalëkalimin</translation>
+        <translation type="vanished">Kopjo Fjalëkalimin</translation>
     </message>
     <message>
         <source>Show Application Settings</source>
-        <translation>Shfaq Rregullime Aplikacioni</translation>
+        <translation type="vanished">Shfaq Rregullime Aplikacioni</translation>
     </message>
     <message>
         <source>Show Password Generator</source>
-        <translation>Shfaq Prodhues Fjalëkalimesh</translation>
+        <translation type="vanished">Shfaq Prodhues Fjalëkalimesh</translation>
     </message>
     <message>
         <source>Remove Passkey From Entry</source>
@@ -6161,63 +6340,63 @@ Prisni ca të meta dhe probleme të vogla, ky version është menduar për qëll
     </message>
     <message>
         <source>Perform Auto-Type: {USERNAME}</source>
-        <translation>Kryej Vetë-shtypje: {USERNAME}</translation>
+        <translation type="vanished">Kryej Vetë-shtypje: {USERNAME}</translation>
     </message>
     <message>
         <source>Perform Auto-Type: {USERNAME}{ENTER}</source>
-        <translation>Kryej Vetë-shtypje: {USERNAME}{ENTER}</translation>
+        <translation type="vanished">Kryej Vetë-shtypje: {USERNAME}{ENTER}</translation>
     </message>
     <message>
         <source>Perform Auto-Type: {PASSWORD}</source>
-        <translation>Kryej Vetë-shtypje: {PASSWORD}</translation>
+        <translation type="vanished">Kryej Vetë-shtypje: {PASSWORD}</translation>
     </message>
     <message>
         <source>Perform Auto-Type: {PASSWORD}{ENTER}</source>
-        <translation>Kryej Vetë-shtypje: {PASSWORD}{ENTER}</translation>
+        <translation type="vanished">Kryej Vetë-shtypje: {PASSWORD}{ENTER}</translation>
     </message>
     <message>
         <source>Perform Auto-Type: {TOTP}</source>
-        <translation>Kryej Vetë-shtypje: {TOTP}</translation>
+        <translation type="vanished">Kryej Vetë-shtypje: {TOTP}</translation>
     </message>
     <message>
         <source>Copy Title</source>
-        <translation>Kopjo Titullin</translation>
+        <translation type="vanished">Kopjo Titullin</translation>
     </message>
     <message>
         <source>Copy URL</source>
-        <translation>Kopjo URL-në</translation>
+        <translation type="vanished">Kopjo URL-në</translation>
     </message>
     <message>
         <source>Copy Notes</source>
-        <translation>Kopjo Shënime</translation>
+        <translation type="vanished">Kopjo Shënime</translation>
     </message>
     <message>
         <source>Export to CSV</source>
-        <translation>Eksportoje si CSV</translation>
+        <translation type="vanished">Eksportoje si CSV</translation>
     </message>
     <message>
         <source>Export to HTML</source>
-        <translation>Eksportoje si HTML</translation>
+        <translation type="vanished">Eksportoje si HTML</translation>
     </message>
     <message>
         <source>Import KeePass1 Database</source>
-        <translation>Importo Bazë të Dhënash Keepass 1</translation>
+        <translation type="vanished">Importo Bazë të Dhënash Keepass 1</translation>
     </message>
     <message>
         <source>Import 1Password Vault</source>
-        <translation>Importo Kasafortë 1Password</translation>
+        <translation type="vanished">Importo Kasafortë 1Password</translation>
     </message>
     <message>
         <source>Import CSV File</source>
-        <translation>Importo Kartelë CSV</translation>
+        <translation type="vanished">Importo Kartelë CSV</translation>
     </message>
     <message>
         <source>Show TOTP QR Code</source>
-        <translation>Shfaq Kod QR TOTP</translation>
+        <translation type="vanished">Shfaq Kod QR TOTP</translation>
     </message>
     <message>
         <source>Set up TOTP</source>
-        <translation>Ujdisni TOTP</translation>
+        <translation type="vanished">Ujdisni TOTP</translation>
     </message>
     <message>
         <source>Empty Recycle Bin</source>
@@ -6225,51 +6404,51 @@ Prisni ca të meta dhe probleme të vogla, ky version është menduar për qëll
     </message>
     <message>
         <source>Open Donation Website</source>
-        <translation>Hap Sajt Dhurimesh</translation>
+        <translation type="vanished">Hap Sajt Dhurimesh</translation>
     </message>
     <message>
         <source>Open Bug Report</source>
-        <translation>Hap Njoftim të Metash</translation>
+        <translation type="vanished">Hap Njoftim të Metash</translation>
     </message>
     <message>
         <source>Open Online Documentation</source>
-        <translation>Hap Dokumentin Në Internet</translation>
+        <translation type="vanished">Hap Dokumentin Në Internet</translation>
     </message>
     <message>
         <source>Open Keyboard Shortcuts Guide</source>
-        <translation>Hap Udhërrëfyes Shkurtoresh Tastiere</translation>
+        <translation type="vanished">Hap Udhërrëfyes Shkurtoresh Tastiere</translation>
     </message>
     <message>
         <source>Save Database Backup</source>
-        <translation>Ruani Kopjeruajtje Baze të Dhënash</translation>
+        <translation type="vanished">Ruani Kopjeruajtje Baze të Dhënash</translation>
     </message>
     <message>
         <source>SSH Agent: Add Key</source>
-        <translation>Agjent SSH: Shtoni Kyç</translation>
+        <translation type="vanished">Agjent SSH: Shtoni Kyç</translation>
     </message>
     <message>
         <source>SSH Agent: Remove Key</source>
-        <translation>Agjent SSH: Hiqni Kyç</translation>
+        <translation type="vanished">Agjent SSH: Hiqni Kyç</translation>
     </message>
     <message>
         <source>Toggle Compact Mode</source>
-        <translation>Aktivizo/Çaktivizo Mënyrën Kompakte</translation>
+        <translation type="vanished">Aktivizo/Çaktivizo Mënyrën Kompakte</translation>
     </message>
     <message>
         <source>Set Theme: Automatic</source>
-        <translation>Caktoni Temë: Automatikisht</translation>
+        <translation type="vanished">Caktoni Temë: Automatikisht</translation>
     </message>
     <message>
         <source>Set Theme: Light</source>
-        <translation>Caktoni Temë: E çelët</translation>
+        <translation type="vanished">Caktoni Temë: E çelët</translation>
     </message>
     <message>
         <source>Set Theme: Dark</source>
-        <translation>Caktoni Temë: E errët</translation>
+        <translation type="vanished">Caktoni Temë: E errët</translation>
     </message>
     <message>
         <source>Set Theme: Classic</source>
-        <translation>Caktoni Temë: Klasike</translation>
+        <translation type="vanished">Caktoni Temë: Klasike</translation>
     </message>
     <message>
         <source>Toggle Show Menubar</source>
@@ -6277,31 +6456,31 @@ Prisni ca të meta dhe probleme të vogla, ky version është menduar për qëll
     </message>
     <message>
         <source>Toggle Show Toolbar</source>
-        <translation>Shfaq/Fshih Panel</translation>
+        <translation type="vanished">Shfaq/Fshih Panel</translation>
     </message>
     <message>
         <source>Toggle Show Preview Panel</source>
-        <translation>Shfaq/Fshih Panel Paraparjesh</translation>
+        <translation type="vanished">Shfaq/Fshih Panel Paraparjesh</translation>
     </message>
     <message>
         <source>Toggle Always on Top</source>
-        <translation>Shfaq/Fshih “Përherë Sipër”</translation>
+        <translation type="vanished">Shfaq/Fshih “Përherë Sipër”</translation>
     </message>
     <message>
         <source>Toggle Hide Usernames</source>
-        <translation>Shfaq/Fshih “Fshihi Emrat e Përdoruesve”</translation>
+        <translation type="vanished">Shfaq/Fshih “Fshihi Emrat e Përdoruesve”</translation>
     </message>
     <message>
         <source>Toggle Hide Passwords</source>
-        <translation>Shfaq/Fshih “Fshihi Fjalëkalimet”</translation>
+        <translation type="vanished">Shfaq/Fshih “Fshihi Fjalëkalimet”</translation>
     </message>
     <message>
         <source>Export to XML</source>
-        <translation>Eksportoje si XML</translation>
+        <translation type="vanished">Eksportoje si XML</translation>
     </message>
     <message>
         <source>Toggle Allow Screen Capture</source>
-        <translation>Aktivizo/Çaktivizo “Lejo Regjistrim Ekrani”</translation>
+        <translation type="vanished">Aktivizo/Çaktivizo “Lejo Regjistrim Ekrani”</translation>
     </message>
     <message>
         <source>Show Group Panel</source>
@@ -6313,23 +6492,108 @@ Prisni ca të meta dhe probleme të vogla, ky version është menduar për qëll
     </message>
     <message>
         <source>Setup Remote Sync…</source>
-        <translation>Ujdisni Njëkohësim të Largët…</translation>
+        <translation type="vanished">Ujdisni Njëkohësim të Largët…</translation>
     </message>
     <message>
         <source>Password Generator</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>E&amp;xpire Entry…</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Clear SSH Agent</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Clear all identities in ssh-agent</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Create a new database</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Merge from another KDBX database</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Add a new entry</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>View or edit entry</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Add a new group</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Statistics, health check, etc.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Database settings</source>
+        <translation type="unfinished">Rregullime baze të dhënash</translation>
+    </message>
+    <message>
+        <source>Passkeys</source>
+        <translation type="unfinished">Kyçkalime</translation>
+    </message>
+    <message>
+        <source>Move entry one step up</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Move entry one step down</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy username to clipboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy password to clipboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy title to clipboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy URL to clipboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy notes to clipboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Import a KeePass 1 database</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Import a 1Password Vault</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Import a CSV file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Go to online documentation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>XML File…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>WARNING: Your Qt version may cause KeePassXC to crash with an On-Screen Keyboard.
+We recommend you use the AppImage available on our downloads page.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -6420,6 +6684,26 @@ Prisni ca të meta dhe probleme të vogla, ky version është menduar për qëll
         <source>Adding custom data %1 [%2]</source>
         <translation>U  shtuan të dhëna vetjake %1 [%2]</translation>
     </message>
+    <message>
+        <source>older entry merged from database &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Adding backup for older target %1 [%2]</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Adding backup for older source %1 [%2]</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Reapplying older target entry on top of newer source %1 [%2]</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Reapplying older source entry on top of newer target %1 [%2]</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>NewDatabaseWizard</name>
@@ -6482,25 +6766,6 @@ Prisni ca të meta dhe probleme të vogla, ky version është menduar për qëll
     </message>
 </context>
 <context>
-    <name>NewEntryAttachmentsDialog</name>
-    <message>
-        <source>Attachment name cannot be empty</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Attachment with the same name already exists</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Save attachment</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>New entry attachment</source>
-        <translation type="unfinished"/>
-    </message>
-</context>
-<context>
     <name>NixUtils</name>
     <message>
         <source>Password Manager</source>
@@ -6539,7 +6804,7 @@ Prisni ca të meta dhe probleme të vogla, ky version është menduar për qëll
     </message>
     <message>
         <source>Unable to process clearText in place</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Expected %1 bytes of clear-text, found %2</source>
@@ -6581,7 +6846,7 @@ Prisni ca të meta dhe probleme të vogla, ky version është menduar për qëll
     </message>
     <message>
         <source>PEM boundary mismatch</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Base64 decoding failed</source>
@@ -6593,7 +6858,7 @@ Prisni ca të meta dhe probleme të vogla, ky version është menduar për qëll
     </message>
     <message>
         <source>Key file magic header id invalid</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Found zero keys</source>
@@ -6613,7 +6878,7 @@ Prisni ca të meta dhe probleme të vogla, ky version është menduar për qëll
     </message>
     <message>
         <source>No private key payload to decrypt</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Unknown cipher: %1</source>
@@ -6696,19 +6961,19 @@ Prisni ca të meta dhe probleme të vogla, ky version është menduar për qëll
     <name>OpenSSHKeyGenDialog</name>
     <message>
         <source>SSH Key Generator</source>
-        <translation>Prodhues Kyçi SSH</translation>
+        <translation type="vanished">Prodhues Kyçi SSH</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Lloj</translation>
+        <translation type="vanished">Lloj</translation>
     </message>
     <message>
         <source>Bits</source>
-        <translation>Bite</translation>
+        <translation type="vanished">Bite</translation>
     </message>
     <message>
         <source>Comment</source>
-        <translation>Koment</translation>
+        <translation type="vanished">Koment</translation>
     </message>
 </context>
 <context>
@@ -6809,7 +7074,7 @@ Doni të mbishkruhet?
     </message>
     <message>
         <source>Relying Party: %1</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Import the following passkey:</source>
@@ -7143,11 +7408,11 @@ Mungojnë të dhënat vijues:
     </message>
     <message>
         <source>Confirm Delete Wordlist</source>
-        <translation>Ripohoni Fshirje Liste Fjalësh</translation>
+        <translation type="vanished">Ripohoni Fshirje Liste Fjalësh</translation>
     </message>
     <message>
         <source>Do you really want to delete the wordlist &quot;%1&quot;?</source>
-        <translation>Doni vërtet të fshihet lista e fjalëve “%1”?</translation>
+        <translation type="vanished">Doni vërtet të fshihet lista e fjalëve “%1”?</translation>
     </message>
     <message>
         <source>Failed to delete wordlist</source>
@@ -7189,7 +7454,7 @@ Doni të mbishkruhet?</translation>
     </message>
     <message>
         <source>passwordLength</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Characters: %1</source>
@@ -7202,6 +7467,18 @@ Doni të mbishkruhet?</translation>
     <message>
         <source>Excluded characters: &quot;0&quot;, &quot;1&quot;, &quot;l&quot;, &quot;I&quot;, &quot;O&quot;, &quot;|&quot;, &quot;﹒&quot;, &quot;B&quot;, &quot;8&quot;, &quot;G&quot;, &quot;6&quot;</source>
         <translation>Shenja të përjashtuara: “0”, “1”, “l”, “I”, “O”, “|”, “﹒”, “B”, “8”, “G”, “6”</translation>
+    </message>
+    <message>
+        <source>Warning: the chosen wordlist is smaller than the minimum recommended size!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Confirm Remove Wordlist</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Do you really want to remove the wordlist &quot;%1&quot;?</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -7252,7 +7529,11 @@ Doni të mbishkruhet?</translation>
     </message>
     <message>
         <source>Toggle password visibility using Control + H. Open the password generator using Control + G.</source>
-        <translation>Ndryshoni dukshmërinë e fjalëkalimit duke përdorur Ctrl + H. Hapni prodhuesin e fjalëkalimeve duke përdorur Ctrl + G.</translation>
+        <translation type="vanished">Ndryshoni dukshmërinë e fjalëkalimit duke përdorur Ctrl + H. Hapni prodhuesin e fjalëkalimeve duke përdorur Ctrl + G.</translation>
+    </message>
+    <message>
+        <source>Toggle password visibilty using Control + H. Open the password generator using Control + G.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -7273,16 +7554,16 @@ Doni të mbishkruhet?</translation>
 <context>
     <name>PreviewEntryAttachmentsDialog</name>
     <message>
-        <source>Preview entry attachment</source>
-        <translation type="unfinished"/>
+        <source>Form</source>
+        <translation type="unfinished">Formular</translation>
     </message>
     <message>
-        <source>No preview available</source>
-        <translation type="unfinished"/>
+        <source>Save…</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Image format not supported</source>
-        <translation type="unfinished"/>
+        <source>Preview: %1</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -7404,7 +7685,7 @@ Doni të mbishkruhet?</translation>
     </message>
     <message>
         <source>Could not save the native messaging script file for %1.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Username for the entry.</source>
@@ -7448,7 +7729,7 @@ Doni të mbishkruhet?</translation>
     </message>
     <message>
         <source>Cannot generate a password and prompt at the same time.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Could not create entry with path %1.</source>
@@ -7524,7 +7805,10 @@ Doni të mbishkruhet?</translation>
     </message>
     <message numerus="yes">
         <source>Password for &apos;%1&apos; has been leaked %2 time(s)!</source>
-        <translation><numerusform>Fjalëkalimi për “%1” ka rrjedhur %2 herë!</numerusform><numerusform>Fjalëkalimi për “%1” ka rrjedhur %2 herë!</numerusform></translation>
+        <translation>
+            <numerusform>Fjalëkalimi për “%1” ka rrjedhur %2 herë!</numerusform>
+            <numerusform>Fjalëkalimi për “%1” ka rrjedhur %2 herë!</numerusform>
+        </translation>
     </message>
     <message>
         <source>Password for &apos;%1&apos; has been leaked!</source>
@@ -7612,7 +7896,7 @@ Doni të mbishkruhet?</translation>
     </message>
     <message>
         <source>Copy the given attribute to the clipboard. Defaults to &quot;password&quot; if not specified.</source>
-        <comment>Don't translate &quot;password&quot;, it refers to the attribute.</comment>
+        <comment>Don&apos;t translate &quot;password&quot;, it refers to the attribute.</comment>
         <translation>Kopjoje në të papastër atributin e dhënë. Si parazgjedhje merr vlerën “password”, nëse nuk specifikohet.</translation>
     </message>
     <message>
@@ -7674,7 +7958,10 @@ Doni të mbishkruhet?</translation>
     </message>
     <message numerus="yes">
         <source>Clearing the clipboard in %1 second(s)...</source>
-        <translation><numerusform>Po spastrohet e papastra pas %1 sekonde…</numerusform><numerusform>Po spastrohet e papastra pas %1 sekondash…</numerusform></translation>
+        <translation>
+            <numerusform>Po spastrohet e papastra pas %1 sekonde…</numerusform>
+            <numerusform>Po spastrohet e papastra pas %1 sekondash…</numerusform>
+        </translation>
     </message>
     <message>
         <source>Clipboard cleared!</source>
@@ -7690,7 +7977,7 @@ Doni të mbishkruhet?</translation>
     </message>
     <message>
         <source>Silence password prompt and other secondary outputs.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Key file of the database.</source>
@@ -7710,7 +7997,7 @@ Doni të mbishkruhet?</translation>
     </message>
     <message>
         <source>slot[:serial]</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Missing positional argument(s).</source>
@@ -8017,7 +8304,7 @@ Doni të mbishkruhet?</translation>
     </message>
     <message>
         <source>Multi-word extra bits %1</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Type: Bruteforce</source>
@@ -8029,7 +8316,7 @@ Doni të mbishkruhet?</translation>
     </message>
     <message>
         <source>Type: Dict+Leet</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Type: User Words</source>
@@ -8037,7 +8324,7 @@ Doni të mbishkruhet?</translation>
     </message>
     <message>
         <source>Type: User+Leet</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Type: Repeated</source>
@@ -8057,39 +8344,39 @@ Doni të mbishkruhet?</translation>
     </message>
     <message>
         <source>Type: Bruteforce(Rep)</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Type: Dictionary(Rep)</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Type: Dict+Leet(Rep)</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Type: User Words(Rep)</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Type: User+Leet(Rep)</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Type: Repeated(Rep)</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Type: Sequence(Rep)</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Type: Spatial(Rep)</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Type: Date(Rep)</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Type: Unknown (%1)</source>
@@ -8239,7 +8526,7 @@ Urdhra të gatshëm:
     </message>
     <message>
         <source>Flattens the output to single lines.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>List database entries.</source>
@@ -8275,7 +8562,7 @@ Urdhra të gatshëm:
     </message>
     <message>
         <source>slot</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Merge two databases.</source>
@@ -8455,7 +8742,7 @@ Ju lutemi, shihni mundësinë e prodhimit të një kartele të re kyçi.</transl
     </message>
     <message>
         <source>Please present or touch your YubiKey to continue.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Enter password to encrypt database (optional): </source>
@@ -8529,7 +8816,10 @@ Ju lutemi, shihni mundësinë e prodhimit të një kartele të re kyçi.</transl
     </message>
     <message numerus="yes">
         <source>Password is used %1 time(s)</source>
-        <translation><numerusform>Fjalëkalimi është përdorur %1 herë</numerusform><numerusform>Fjalëkalimi është përdorur %1 herë</numerusform></translation>
+        <translation>
+            <numerusform>Fjalëkalimi është përdorur %1 herë</numerusform>
+            <numerusform>Fjalëkalimi është përdorur %1 herë</numerusform>
+        </translation>
     </message>
     <message>
         <source>Password has expired</source>
@@ -8549,7 +8839,10 @@ Ju lutemi, shihni mundësinë e prodhimit të një kartele të re kyçi.</transl
     </message>
     <message numerus="yes">
         <source>Password expires in %1 day(s)</source>
-        <translation><numerusform>Fjalëkalim skadon pas %1 dite</numerusform><numerusform>Fjalëkalim skadon pas %1 ditësh</numerusform></translation>
+        <translation>
+            <numerusform>Fjalëkalim skadon pas %1 dite</numerusform>
+            <numerusform>Fjalëkalim skadon pas %1 ditësh</numerusform>
+        </translation>
     </message>
     <message>
         <source>Password will expire soon</source>
@@ -8621,27 +8914,45 @@ Kernel: %3 %4</translation>
     </message>
     <message numerus="yes">
         <source>over %1 year(s)</source>
-        <translation><numerusform>mbi %1 vit</numerusform><numerusform>mbi %1 vjet</numerusform></translation>
+        <translation>
+            <numerusform>mbi %1 vit</numerusform>
+            <numerusform>mbi %1 vjet</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>about %1 month(s)</source>
-        <translation><numerusform>mbi %1 muaj</numerusform><numerusform>mbi %1 muaj</numerusform></translation>
+        <translation>
+            <numerusform>mbi %1 muaj</numerusform>
+            <numerusform>mbi %1 muaj</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>%1 week(s)</source>
-        <translation><numerusform>%1 javë</numerusform><numerusform>%1 javë</numerusform></translation>
+        <translation>
+            <numerusform>%1 javë</numerusform>
+            <numerusform>%1 javë</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>%1 day(s)</source>
-        <translation><numerusform>%1 ditë</numerusform><numerusform>%1 ditë</numerusform></translation>
+        <translation>
+            <numerusform>%1 ditë</numerusform>
+            <numerusform>%1 ditë</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>%1 hour(s)</source>
-        <translation><numerusform>%1 orë</numerusform><numerusform>%1 orë</numerusform></translation>
+        <translation>
+            <numerusform>%1 orë</numerusform>
+            <numerusform>%1 orë</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>%1 minute(s)</source>
-        <translation><numerusform>%1 minutë</numerusform><numerusform>%1 minuta</numerusform></translation>
+        <translation>
+            <numerusform>%1 minutë</numerusform>
+            <numerusform>%1 minuta</numerusform>
+        </translation>
     </message>
     <message>
         <source>Botan library must be at least %1, found %2.%3.%4</source>
@@ -8733,7 +9044,10 @@ Kernel: %3 %4</translation>
     </message>
     <message numerus="yes">
         <source>Clearing the clipboard in %1 second(s)…</source>
-        <translation><numerusform>Po spastrohet e papastra pas %1 sekonde…</numerusform><numerusform>Po spastrohet e papastra pas %1 sekondash…</numerusform></translation>
+        <translation>
+            <numerusform>Po spastrohet e papastra pas %1 sekonde…</numerusform>
+            <numerusform>Po spastrohet e papastra pas %1 sekondash…</numerusform>
+        </translation>
     </message>
     <message>
         <source>Group</source>
@@ -8774,12 +9088,18 @@ Kernel: %3 %4</translation>
     <message numerus="yes">
         <source>%1 ms</source>
         <comment>milliseconds</comment>
-        <translation><numerusform>%1 ms</numerusform><numerusform>%1 ms</numerusform></translation>
+        <translation>
+            <numerusform>%1 ms</numerusform>
+            <numerusform>%1 ms</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>%1 s</source>
         <comment>seconds</comment>
-        <translation><numerusform>%1 s</numerusform><numerusform>%1 s</numerusform></translation>
+        <translation>
+            <numerusform>%1 s</numerusform>
+            <numerusform>%1 s</numerusform>
+        </translation>
     </message>
     <message>
         <source>Do you really want to delete the entry &quot;%1&quot; for good?</source>
@@ -8787,11 +9107,17 @@ Kernel: %3 %4</translation>
     </message>
     <message numerus="yes">
         <source>Do you really want to delete %n entry(s) for good?</source>
-        <translation><numerusform>Doni vërtet të fshihet përgjithmonë %n zë?</numerusform><numerusform>Doni vërtet të fshihet përgjithmonë %n zëra?</numerusform></translation>
+        <translation>
+            <numerusform>Doni vërtet të fshihet përgjithmonë %n zë?</numerusform>
+            <numerusform>Doni vërtet të fshihet përgjithmonë %n zëra?</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>Delete entry(s)?</source>
-        <translation><numerusform>Të fshihet zëri?</numerusform><numerusform>Të fshihet zërat?</numerusform></translation>
+        <translation>
+            <numerusform>Të fshihet zëri?</numerusform>
+            <numerusform>Të fshihet zërat?</numerusform>
+        </translation>
     </message>
     <message>
         <source>Do you really want to move entry &quot;%1&quot; to the recycle bin?</source>
@@ -8799,11 +9125,17 @@ Kernel: %3 %4</translation>
     </message>
     <message numerus="yes">
         <source>Do you really want to move %n entry(s) to the recycle bin?</source>
-        <translation><numerusform>Doni vërtet të shpihet %n zë te koshi i riciklimeve?</numerusform><numerusform>Doni vërtet të shpihet %n zëra te koshi i riciklimeve?</numerusform></translation>
+        <translation>
+            <numerusform>Doni vërtet të shpihet %n zë te koshi i riciklimeve?</numerusform>
+            <numerusform>Doni vërtet të shpihet %n zëra te koshi i riciklimeve?</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>Move entry(s) to recycle bin?</source>
-        <translation><numerusform>Të shpihet zëri te koshi i hedhurinave?</numerusform><numerusform>Të shpihet zërat te koshi i hedhurinave?</numerusform></translation>
+        <translation>
+            <numerusform>Të shpihet zëri te koshi i hedhurinave?</numerusform>
+            <numerusform>Të shpihet zërat te koshi i hedhurinave?</numerusform>
+        </translation>
     </message>
     <message>
         <source>Replace references to entry?</source>
@@ -8811,7 +9143,10 @@ Kernel: %3 %4</translation>
     </message>
     <message numerus="yes">
         <source>Entry &quot;%1&quot; has %2 reference(s). Do you want to overwrite references with values, skip this entry, or delete anyway?</source>
-        <translation><numerusform>Zëri “%1” ka %2 referencë(a). Doni të mbishkruhen referencat me vlera, të anashkalohet ky zë, apo të fshihet sido qoftë?</numerusform><numerusform>Zëri “%1” ka %2 referenca. Doni të mbishkruhen referencat me vlera, të anashkalohet ky zë, apo të fshihet sido qoftë?</numerusform></translation>
+        <translation>
+            <numerusform>Zëri “%1” ka %2 referencë(a). Doni të mbishkruhen referencat me vlera, të anashkalohet ky zë, apo të fshihet sido qoftë?</numerusform>
+            <numerusform>Zëri “%1” ka %2 referenca. Doni të mbishkruhen referencat me vlera, të anashkalohet ky zë, apo të fshihet sido qoftë?</numerusform>
+        </translation>
     </message>
     <message>
         <source>User name</source>
@@ -8947,7 +9282,7 @@ Kjo mundësi është nxjerrë nga përdorimi, në vend të saj përdorni --set-k
     </message>
     <message>
         <source>Attestation not supported</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Credential is excluded</source>
@@ -8975,59 +9310,55 @@ Kjo mundësi është nxjerrë nga përdorimi, në vend të saj përdorni --set-k
     </message>
     <message>
         <source>AES initialization failed</source>
-        <translation>Dështoi gatitja AES</translation>
+        <translation type="vanished">Dështoi gatitja AES</translation>
     </message>
     <message>
         <source>AES encrypt failed</source>
-        <translation>Fshehtëzimi AES dështoi</translation>
+        <translation type="vanished">Fshehtëzimi AES dështoi</translation>
     </message>
     <message>
         <source>Failed to store in Linux Keyring</source>
-        <translation>S’u arrit të depozitohej në Varg Kyçesh Linux</translation>
+        <translation type="vanished">S’u arrit të depozitohej në Varg Kyçesh Linux</translation>
     </message>
     <message>
         <source>Polkit returned an error: %1</source>
-        <translation>Polkit u përgjigj me një gabim: %1</translation>
+        <translation type="vanished">Polkit u përgjigj me një gabim: %1</translation>
     </message>
     <message>
         <source>Could not locate key in keyring</source>
-        <translation>S’u lokalizua dot kyç te varg kyçesh</translation>
+        <translation type="vanished">S’u lokalizua dot kyç te varg kyçesh</translation>
     </message>
     <message>
         <source>Could not read key in keyring</source>
-        <translation>S’u lexua dot kyç te varg kyçesh</translation>
+        <translation type="vanished">S’u lexua dot kyç te varg kyçesh</translation>
     </message>
     <message>
         <source>AES decrypt failed</source>
-        <translation>Shfshehtëzimi AES dështoi</translation>
+        <translation type="vanished">Shfshehtëzimi AES dështoi</translation>
     </message>
     <message>
         <source>No Polkit authentication agent was available</source>
-        <translation>S’ka agjent mirëfilltësimesh Polkit</translation>
+        <translation type="vanished">S’ka agjent mirëfilltësimesh Polkit</translation>
     </message>
     <message>
         <source>Polkit authorization failed</source>
-        <translation>Autorizimi Polkit dështoi</translation>
-    </message>
-    <message>
-        <source>No Quick Unlock provider is available</source>
-        <translation type="unfinished"/>
+        <translation type="vanished">Autorizimi Polkit dështoi</translation>
     </message>
     <message>
         <source>Failed to init KeePassXC crypto.</source>
-        <translation>S’u arrit të gatitet kriptografi KeePassXC-je.</translation>
+        <translation type="vanished">S’u arrit të gatitet kriptografi KeePassXC-je.</translation>
     </message>
     <message>
         <source>Failed to encrypt key data.</source>
-        <translation>S’u arrit të fshehtëzohen të dhëna kyçi.</translation>
+        <translation type="vanished">S’u arrit të fshehtëzohen të dhëna kyçi.</translation>
     </message>
     <message>
         <source>Failed to get Windows Hello credential.</source>
-        <translation>S’u arrit të merret kredencial Windows Hello.</translation>
+        <translation type="vanished">S’u arrit të merret kredencial Windows Hello.</translation>
     </message>
     <message>
         <source>Failed to decrypt key data.</source>
-        <translation>S’u arrit të shfshehtëzohen të dhëna kyçi.</translation>
+        <translation type="vanished">S’u arrit të shfshehtëzohen të dhëna kyçi.</translation>
     </message>
     <message>
         <source>Origin is empty or not allowed</source>
@@ -9129,15 +9460,15 @@ Kjo mundësi është nxjerrë nga përdorimi, në vend të saj përdorni --set-k
     </message>
     <message>
         <source>Enter Shortcut</source>
-        <translation>Jepni Shkurtore</translation>
+        <translation type="vanished">Jepni Shkurtore</translation>
     </message>
     <message>
         <source>Action</source>
-        <translation>Veprim</translation>
+        <translation type="vanished">Veprim</translation>
     </message>
     <message>
         <source>Shortcuts</source>
-        <translation>Shkurtore</translation>
+        <translation type="vanished">Shkurtore</translation>
     </message>
     <message>
         <source>Unknown passkeys error</source>
@@ -9157,35 +9488,35 @@ Kjo mundësi është nxjerrë nga përdorimi, në vend të saj përdorni --set-k
     </message>
     <message>
         <source>Reset Shortcuts</source>
-        <translation>Riktheji Shkurtoret te Parazgjedhjet</translation>
+        <translation type="vanished">Riktheji Shkurtoret te Parazgjedhjet</translation>
     </message>
     <message>
         <source>Double click an action to change its shortcut</source>
-        <translation>Që t’i ndryshoni shkurtoren, dyklikoni mbi një veprim</translation>
+        <translation type="vanished">Që t’i ndryshoni shkurtoren, dyklikoni mbi një veprim</translation>
     </message>
     <message>
         <source>Filter...</source>
-        <translation>Filtrojini…</translation>
+        <translation type="vanished">Filtrojini…</translation>
     </message>
     <message>
         <source>Shortcut Conflict</source>
-        <translation>Përplasje Shkurtoresh</translation>
+        <translation type="vanished">Përplasje Shkurtoresh</translation>
     </message>
     <message>
         <source>Shortcut %1 conflicts with &apos;%2&apos;. Overwrite shortcut?</source>
-        <translation>Shkurtorja %1 përplaset me “%2”. Të mbishkruhet shkurtorja?</translation>
+        <translation type="vanished">Shkurtorja %1 përplaset me “%2”. Të mbishkruhet shkurtorja?</translation>
     </message>
     <message>
         <source>Cannot generate valid passphrases because the wordlist is too short</source>
-        <translation>S’prodhohen dot  frazëkalime të vlefshëm, ngaqë lista e fjalëve është shumë e shkurtër</translation>
+        <translation type="vanished">S’prodhohen dot  frazëkalime të vlefshëm, ngaqë lista e fjalëve është shumë e shkurtër</translation>
     </message>
     <message>
         <source>Encrypted files are not supported.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Proton Pass Import</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete plugin data?</source>
@@ -9193,7 +9524,10 @@ Kjo mundësi është nxjerrë nga përdorimi, në vend të saj përdorni --set-k
     </message>
     <message numerus="yes">
         <source>Delete plugin data from Entry(s)?</source>
-        <translation><numerusform>Të fshihen të dhëna shtojce nga Zëri?</numerusform><numerusform>Të fshihen të dhëna shtojce nga Zërat?</numerusform></translation>
+        <translation>
+            <numerusform>Të fshihen të dhëna shtojce nga Zëri?</numerusform>
+            <numerusform>Të fshihen të dhëna shtojce nga Zërat?</numerusform>
+        </translation>
     </message>
     <message>
         <source>Passkey</source>
@@ -9201,27 +9535,45 @@ Kjo mundësi është nxjerrë nga përdorimi, në vend të saj përdorni --set-k
     </message>
     <message>
         <source>Format to use when exporting. Available choices are &apos;xml&apos;, &apos;csv&apos; or &apos;html&apos;. Defaults to &apos;xml&apos;.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>start minimized to the system tray</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>malformed string, possible unescaped delimiter</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>missing closing delimiter</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>%1, row: %2, column: %3</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Tags</source>
         <translation>Etiketa</translation>
+    </message>
+    <message>
+        <source>Warning: the chosen wordlist is smaller than the minimum recommended size!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Unable to open file for writing: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Invalid Step</source>
+        <comment>TOTP</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Invalid Digits</source>
+        <comment>TOTP</comment>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -9262,31 +9614,31 @@ Kjo mundësi është nxjerrë nga përdorimi, në vend të saj përdorni --set-k
     <name>RemoteHandler</name>
     <message>
         <source>Command `%1` did not finish in time. Process was killed.</source>
-        <translation>Urdhri `%1` s’përfundoi në kohë. Procesi u asgjësua.</translation>
+        <translation type="vanished">Urdhri `%1` s’përfundoi në kohë. Procesi u asgjësua.</translation>
     </message>
     <message>
         <source>Failed to upload merged database. Command `%1` did not finish in time. Process was killed.</source>
-        <translation>S’u arrit të ngarkohej bazë të dhënash. Urdhri `%1` s’përfundoi në kohë. Procesi u asgjësua.</translation>
+        <translation type="vanished">S’u arrit të ngarkohej bazë të dhënash. Urdhri `%1` s’përfundoi në kohë. Procesi u asgjësua.</translation>
     </message>
     <message>
         <source>Invalid download parameters provided.</source>
-        <translation>U dhanë parametra të pavlefshëm shkarkimi.</translation>
+        <translation type="vanished">U dhanë parametra të pavlefshëm shkarkimi.</translation>
     </message>
     <message>
         <source>Command `%1` failed to download database.</source>
-        <translation>Urdhri `%1` s’arriti të shkarkojë bazën e të dhënave.</translation>
+        <translation type="vanished">Urdhri `%1` s’arriti të shkarkojë bazën e të dhënave.</translation>
     </message>
     <message>
         <source>Invalid database pointer or upload parameters provided.</source>
-        <translation>U dha shteg naze të dhënash, ose parametra ngarkimi të pavlefshëm.</translation>
+        <translation type="vanished">U dha shteg naze të dhënash, ose parametra ngarkimi të pavlefshëm.</translation>
     </message>
     <message>
         <source>Command `%1` exited with status code: %2</source>
-        <translation>Urdhri `%1` mbaroi me kod gjendjeje: %2</translation>
+        <translation type="vanished">Urdhri `%1` mbaroi me kod gjendjeje: %2</translation>
     </message>
     <message>
         <source>Failed to upload merged database. Command `%1` exited with status code: %2</source>
-        <translation>S’u arritën të ngarkohet baza e të dhënave e përzierë. Urdhri `%1` mbaroi me kod gjendjeje: %2</translation>
+        <translation type="vanished">S’u arritën të ngarkohet baza e të dhënave e përzierë. Urdhri `%1` mbaroi me kod gjendjeje: %2</translation>
     </message>
 </context>
 <context>
@@ -9349,7 +9701,10 @@ Kjo mundësi është nxjerrë nga përdorimi, në vend të saj përdorni --set-k
     </message>
     <message numerus="yes">
         <source>Delete Entry(s)…</source>
-        <translation><numerusform>Fshini Zë…</numerusform><numerusform>Fshini Zëra…</numerusform></translation>
+        <translation>
+            <numerusform>Fshini Zë…</numerusform>
+            <numerusform>Fshini Zëra…</numerusform>
+        </translation>
     </message>
     <message>
         <source>Exclude from reports</source>
@@ -9357,7 +9712,10 @@ Kjo mundësi është nxjerrë nga përdorimi, në vend të saj përdorni --set-k
     </message>
     <message numerus="yes">
         <source>Expire Entry(s)…</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
     </message>
     <message>
         <source>Only show entries that have a URL</source>
@@ -9377,7 +9735,10 @@ Kjo mundësi është nxjerrë nga përdorimi, në vend të saj përdorni --set-k
     </message>
     <message numerus="yes">
         <source>Delete plugin data from Entry(s)…</source>
-        <translation><numerusform>Fshini të dhëna shtojce nga Zëri…</numerusform><numerusform>Fshini të dhëna shtojce nga Zëra…</numerusform></translation>
+        <translation>
+            <numerusform>Fshini të dhëna shtojce nga Zëri…</numerusform>
+            <numerusform>Fshini të dhëna shtojce nga Zëra…</numerusform>
+        </translation>
     </message>
 </context>
 <context>
@@ -9444,7 +9805,10 @@ Kjo mundësi është nxjerrë nga përdorimi, në vend të saj përdorni --set-k
     </message>
     <message numerus="yes">
         <source>Delete Entry(s)…</source>
-        <translation><numerusform>Fshini Zë…</numerusform><numerusform>Fshini Zëra…</numerusform></translation>
+        <translation>
+            <numerusform>Fshini Zë…</numerusform>
+            <numerusform>Fshini Zëra…</numerusform>
+        </translation>
     </message>
     <message>
         <source>Exclude from reports</source>
@@ -9452,7 +9816,10 @@ Kjo mundësi është nxjerrë nga përdorimi, në vend të saj përdorni --set-k
     </message>
     <message numerus="yes">
         <source>Expire Entry(s)…</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
     </message>
     <message>
         <source>Show entries that have been excluded from reports</source>
@@ -9547,7 +9914,10 @@ Kjo mundësi është nxjerrë nga përdorimi, në vend të saj përdorni --set-k
     </message>
     <message numerus="yes">
         <source>Delete Entry(s)…</source>
-        <translation><numerusform>Fshini Zë…</numerusform><numerusform>Fshini Zëra…</numerusform></translation>
+        <translation>
+            <numerusform>Fshini Zë…</numerusform>
+            <numerusform>Fshini Zëra…</numerusform>
+        </translation>
     </message>
     <message>
         <source>Exclude from reports</source>
@@ -9555,7 +9925,10 @@ Kjo mundësi është nxjerrë nga përdorimi, në vend të saj përdorni --set-k
     </message>
     <message numerus="yes">
         <source>Expire Entry(s)…</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
     </message>
 </context>
 <context>
@@ -9594,11 +9967,14 @@ Kjo mundësi është nxjerrë nga përdorimi, në vend të saj përdorni --set-k
     </message>
     <message numerus="yes">
         <source>Delete Entry(s)…</source>
-        <translation><numerusform>Fshini Zë…</numerusform><numerusform>Fshini Zëra…</numerusform></translation>
+        <translation>
+            <numerusform>Fshini Zë…</numerusform>
+            <numerusform>Fshini Zëra…</numerusform>
+        </translation>
     </message>
     <message>
         <source>Relying Party</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Show expired entries</source>
@@ -9800,11 +10176,11 @@ Kjo mundësi është nxjerrë nga përdorimi, në vend të saj përdorni --set-k
     </message>
     <message>
         <source>Failed to remove all SSH identities from agent.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>All SSH identities removed from agent.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -9888,6 +10264,10 @@ Kjo mundësi është nxjerrë nga përdorimi, në vend të saj përdorni --set-k
     <message>
         <source>Limit search to selected group</source>
         <translation>Kufizoje kërkimin te grupi i përzgjedhur</translation>
+    </message>
+    <message>
+        <source>Press Enter to search</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -10109,6 +10489,10 @@ Kjo mundësi është nxjerrë nga përdorimi, në vend të saj përdorni --set-k
         <source>Weak Passwords</source>
         <translation>Fjalëkalim i Dobët</translation>
     </message>
+    <message>
+        <source>TOTP Entries</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>TagView</name>
@@ -10130,6 +10514,24 @@ Kjo mundësi është nxjerrë nga përdorimi, në vend të saj përdorni --set-k
     </message>
 </context>
 <context>
+    <name>TextAttachmentsEditWidget</name>
+    <message>
+        <source>Preview</source>
+        <translation type="unfinished">Paraparje</translation>
+    </message>
+</context>
+<context>
+    <name>TextAttachmentsPreviewWidget</name>
+    <message>
+        <source>Form</source>
+        <translation type="unfinished">Formular</translation>
+    </message>
+    <message>
+        <source>Type:</source>
+        <translation type="unfinished">Lloj:</translation>
+    </message>
+</context>
+<context>
     <name>TotpDialog</name>
     <message>
         <source>Timed Password</source>
@@ -10141,7 +10543,10 @@ Kjo mundësi është nxjerrë nga përdorimi, në vend të saj përdorni --set-k
     </message>
     <message numerus="yes">
         <source>Expires in &lt;b&gt;%n&lt;/b&gt; second(s)</source>
-        <translation><numerusform>Skadon pas &lt;b&gt;%n&lt;/b&gt; sekonde</numerusform><numerusform>Skadon pas &lt;b&gt;%n&lt;/b&gt; sekondash</numerusform></translation>
+        <translation>
+            <numerusform>Skadon pas &lt;b&gt;%n&lt;/b&gt; sekonde</numerusform>
+            <numerusform>Skadon pas &lt;b&gt;%n&lt;/b&gt; sekondash</numerusform>
+        </translation>
     </message>
 </context>
 <context>
@@ -10241,6 +10646,10 @@ Shembull: JBSWY3DPEHPK3PXP</translation>
         <source>Are you sure you want to delete TOTP settings for this entry?</source>
         <translation>Jeni i sigurt se doni të fshihen rregullime TOTP për këtë zë?</translation>
     </message>
+    <message>
+        <source>Error: secret key is invalid</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>URLEdit</name>
@@ -10327,6 +10736,25 @@ Shembull: JBSWY3DPEHPK3PXP</translation>
     </message>
 </context>
 <context>
+    <name>WindowsHello</name>
+    <message>
+        <source>Failed to init KeePassXC crypto.</source>
+        <translation type="unfinished">S’u arrit të gatitet kriptografi KeePassXC-je.</translation>
+    </message>
+    <message>
+        <source>Failed to encrypt key data.</source>
+        <translation type="unfinished">S’u arrit të fshehtëzohen të dhëna kyçi.</translation>
+    </message>
+    <message>
+        <source>Failed to get Windows Hello credential.</source>
+        <translation type="unfinished">S’u arrit të merret kredencial Windows Hello.</translation>
+    </message>
+    <message>
+        <source>Failed to decrypt key data.</source>
+        <translation type="unfinished">S’u arrit të shfshehtëzohen të dhëna kyçi.</translation>
+    </message>
+</context>
+<context>
     <name>YubiKey</name>
     <message>
         <source>General: </source>
@@ -10389,7 +10817,7 @@ Shembull: JBSWY3DPEHPK3PXP</translation>
     </message>
     <message>
         <source>Hardware keys found, but no slots are configured</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="et">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="et">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -561,7 +563,7 @@
     </message>
     <message>
         <source>Open browser on double clicking URL field in entry view</source>
-        <translation>Kirjevaates avab topeltklõps URL-il selle brauseris</translation>
+        <translation type="vanished">Kirjevaates avab topeltklõps URL-il selle brauseris</translation>
     </message>
     <message>
         <source>Font size:</source>
@@ -570,6 +572,26 @@
     <message>
         <source>Font size selection</source>
         <translation>Fondisuuruse valik</translation>
+    </message>
+    <message>
+        <source>Double-click action for URL:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Double-click action for URL field</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Edit entry</source>
+        <translation type="unfinished">Kirje muutmine</translation>
+    </message>
+    <message>
+        <source>Open entry URL in browser</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy entry URL to clipboard</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -662,6 +684,17 @@
     </message>
 </context>
 <context>
+    <name>AttachmentWidget</name>
+    <message>
+        <source>Attachment Viewer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Unknown attachment type</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>AutoType</name>
     <message>
         <source>The requested Auto-Type sequence cannot be used due to an error:</source>
@@ -710,6 +743,10 @@
     <message>
         <source>Invalid placeholder: %1</source>
         <translation>Vigane kohahoidja: %1</translation>
+    </message>
+    <message>
+        <source>Entry has invalid TOTP settings</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -786,7 +823,7 @@ Ctrl+1 - Type username&lt;br/&gt;
 Ctrl+2 - Type password&lt;br/&gt;
 Ctrl+3 - Type TOTP&lt;br/&gt;
 Ctrl+4 - Use Virtual Keyboard (Windows Only)&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Avatud andmebaasidest vajaliku kirje leidmiseks saab kasutada keerukaid päringuid. Kasu võib olla ka järgmistest kiirklahvidest:&lt;br/&gt;
+        <translation type="vanished">&lt;p&gt;Avatud andmebaasidest vajaliku kirje leidmiseks saab kasutada keerukaid päringuid. Kasu võib olla ka järgmistest kiirklahvidest:&lt;br/&gt;
 Ctrl+F – lülitab otsimist kõigist avatud andmebaasidest&lt;br/&gt;
 Ctrl+1 – sisestab kasutajanime&lt;br/&gt;
 Ctrl+2 – sisestab parooli&lt;br/&gt;
@@ -823,19 +860,49 @@ Ctrl+4 – lülitab sisse ekraaniklaviatuuri (ainult Windowsis)&lt;/p&gt;</trans
     </message>
     <message>
         <source>Copy Username</source>
-        <translation>Kopeeri kasutajanimi</translation>
+        <translation type="vanished">Kopeeri kasutajanimi</translation>
     </message>
     <message>
         <source>Copy Password</source>
-        <translation>Kopeeri parool</translation>
+        <translation type="vanished">Kopeeri parool</translation>
     </message>
     <message>
         <source>Copy TOTP</source>
-        <translation>Kopeeri TOTP</translation>
+        <translation type="vanished">Kopeeri TOTP</translation>
     </message>
     <message>
         <source>Use Virtual Keyboard</source>
         <translation>Ekraaniklaviatuur</translation>
+    </message>
+    <message>
+        <source>&lt;p&gt;You can use advanced search queries to find any entry in your open databases. The following shortcuts are useful:&lt;br/&gt;
+Ctrl+F - Toggle database search&lt;br/&gt;
+Ctrl+1 - Type username&lt;br/&gt;
+Ctrl+2 - Type password&lt;br/&gt;
+Ctrl+3 - Type TOTP&lt;br/&gt;
+Ctrl+4 - Type URL&lt;br/&gt;
+Ctrl+5 - Use Virtual Keyboard (Windows Only)&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Type {URL}</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy {USERNAME}</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy {PASSWORD}</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy {TOTP}</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy {URL}</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -922,7 +989,10 @@ Vali, millisesse neist tunnused salvestada tuleks.</translation>
     </message>
     <message numerus="yes">
         <source>Timeout in &lt;b&gt;%n&lt;/b&gt; seconds...</source>
-        <translation><numerusform>Oodatakse veel &lt;b&gt;%n&lt;/b&gt; sekund...</numerusform><numerusform>Oodatakse veel &lt;b&gt;%n&lt;/b&gt; sekundit...</numerusform></translation>
+        <translation>
+            <numerusform>Oodatakse veel &lt;b&gt;%n&lt;/b&gt; sekund...</numerusform>
+            <numerusform>Oodatakse veel &lt;b&gt;%n&lt;/b&gt; sekundit...</numerusform>
+        </translation>
     </message>
     <message>
         <source>Relying Party: %1</source>
@@ -1056,6 +1126,52 @@ Kas soovid selle uue pääsuvõtmega (%2) üle kirjutada?</translation>
     <message>
         <source>Register</source>
         <translation>Registreeri</translation>
+    </message>
+    <message>
+        <source>Converting attributes to custom data…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Abort</source>
+        <translation type="unfinished">Katkesta</translation>
+    </message>
+    <message>
+        <source>KeePassXC: Converted KeePassHTTP attributes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Successfully converted attributes from %1 entry(s).
+Moved %2 keys to custom data.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message numerus="yes">
+        <source>Successfully moved %n keys to custom data.</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>KeePassXC: No entry with KeePassHTTP attributes found!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>The active database does not contain an entry with KeePassHTTP attributes.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Don&apos;t show this warning again</source>
+        <translation type="unfinished">Seda hoiatust rohkem ei näidata</translation>
+    </message>
+    <message>
+        <source>KeePassXC: Legacy browser integration settings detected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Your KeePassXC-Browser settings need to be moved into the database settings.
+This is necessary to maintain your current browser connections.
+Would you like to migrate your existing settings now?</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1265,11 +1381,11 @@ Kas soovid selle uue pääsuvõtmega (%2) üle kirjutada?</translation>
     </message>
     <message>
         <source>Allow keepassxc-proxy to list all entries with their title, URL and UUID in connected databases.</source>
-        <translation>Märkimisel lubatakse keepassxc-proxy’l loetleda kirjeid koos pealkirja, URL-i ja ühendatud andmebaasides oleva UUID-ga.</translation>
+        <translation type="vanished">Märkimisel lubatakse keepassxc-proxy’l loetleda kirjeid koos pealkirja, URL-i ja ühendatud andmebaasides oleva UUID-ga.</translation>
     </message>
     <message>
         <source>Allow limited access to all entries in connected databases (ignores site access restrictions)</source>
-        <translation>Lubatakse piiratud juurdepääs kõigile kirjetele ühendatud andmebaasides (eirates saitide juurdepääsupiiranguid)</translation>
+        <translation type="vanished">Lubatakse piiratud juurdepääs kõigile kirjetele ühendatud andmebaasides (eirates saitide juurdepääsupiiranguid)</translation>
     </message>
     <message>
         <source>&lt;b&gt;Warning:&lt;/b&gt; Only adjust these settings if necessary.</source>
@@ -1435,7 +1551,10 @@ Kas soovid selle uue pääsuvõtmega (%2) üle kirjutada?</translation>
     </message>
     <message numerus="yes">
         <source>[%n more message(s) skipped]</source>
-        <translation><numerusform>[ja veel %n teade, mis jäeti vahele]</numerusform><numerusform>[ja veel %n teadet, mis jäeti vahele]</numerusform></translation>
+        <translation>
+            <numerusform>[ja veel %n teade, mis jäeti vahele]</numerusform>
+            <numerusform>[ja veel %n teadet, mis jäeti vahele]</numerusform>
+        </translation>
     </message>
     <message>
         <source>Failed to parse CSV file: %1</source>
@@ -1465,12 +1584,18 @@ Kas oled kindel, et soovid importida?</translation>
     <message numerus="yes">
         <source>%n row(s)</source>
         <comment>CSV row count</comment>
-        <translation><numerusform>%n rida</numerusform><numerusform>%n rida</numerusform></translation>
+        <translation>
+            <numerusform>%n rida</numerusform>
+            <numerusform>%n rida</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>%n column(s)</source>
         <comment>CSV column count</comment>
-        <translation><numerusform>%n veerg</numerusform><numerusform>%n veergu</numerusform></translation>
+        <translation>
+            <numerusform>%n veerg</numerusform>
+            <numerusform>%n veergu</numerusform>
+        </translation>
     </message>
 </context>
 <context>
@@ -1664,11 +1789,11 @@ Selle veateate ilmumise vältimiseks peaksid avama andmebaasi seadetes turvalisu
     </message>
     <message>
         <source>authenticate to access the database</source>
-        <translation>andmebaasi avamiseks on tarvis autentida</translation>
+        <translation type="vanished">andmebaasi avamiseks on tarvis autentida</translation>
     </message>
     <message>
         <source>Failed to authenticate with Quick Unlock: %1</source>
-        <translation>Kiiresti luku avamise teenusega autentimine ebaõnnestus: %1</translation>
+        <translation type="vanished">Kiiresti luku avamise teenusega autentimine ebaõnnestus: %1</translation>
     </message>
     <message>
         <source>Select Key File:</source>
@@ -1726,6 +1851,22 @@ Kas oled kindel, et soovid selle failiga jätkata?</translation>
         <source>Hardware keys found, but no slots are configured.</source>
         <translation>Leiti riistvaraline võti, kuid ühtki pesa pole seadistatud.</translation>
     </message>
+    <message>
+        <source>Press ESC again to close this database</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Windows Hello setup was canceled or failed. Quick unlock has not been enabled.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Failed to authenticate with Windows Hello: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Failed to authenticate with Touch ID</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>DatabaseSettingWidgetMetaData</name>
@@ -1770,7 +1911,7 @@ Kas oled kindel, et soovid selle failiga jätkata?</translation>
     </message>
     <message>
         <source>Remote Sync</source>
-        <translation>Sünkimine</translation>
+        <translation type="vanished">Sünkimine</translation>
     </message>
     <message>
         <source>Database Settings: %1</source>
@@ -1849,7 +1990,10 @@ See võib tõkestada ühendumise brauseripluginaga.</translation>
     </message>
     <message numerus="yes">
         <source>Successfully removed %n encryption key(s) from KeePassXC settings.</source>
-        <translation><numerusform>%n krüptimisvõti edukalt KeePassXC seadetest eemaldatud.</numerusform><numerusform>%n krüptimisvõtit edukalt KeePassXC seadetest eemaldatud.</numerusform></translation>
+        <translation>
+            <numerusform>%n krüptimisvõti edukalt KeePassXC seadetest eemaldatud.</numerusform>
+            <numerusform>%n krüptimisvõtit edukalt KeePassXC seadetest eemaldatud.</numerusform>
+        </translation>
     </message>
     <message>
         <source>Do you really want forget all site-specific settings on every entry?
@@ -1867,7 +2011,10 @@ See tühistab ka juurdepääsuload kirjetele.</translation>
     </message>
     <message numerus="yes">
         <source>Successfully removed permissions from %n entry(s).</source>
-        <translation><numerusform>%n kirje juurdepääsuload edukalt eemaldatud.</numerusform><numerusform>%n kirje juurdepääsuload edukalt eemaldatud.</numerusform></translation>
+        <translation>
+            <numerusform>%n kirje juurdepääsuload edukalt eemaldatud.</numerusform>
+            <numerusform>%n kirje juurdepääsuload edukalt eemaldatud.</numerusform>
+        </translation>
     </message>
     <message>
         <source>The active database does not contain an entry with permissions.</source>
@@ -1902,6 +2049,19 @@ See on vajalik vaid juhul, kui sinu andmebaas on teise andmebaasi koopia ning br
     <message>
         <source>No entry with permissions found!</source>
         <translation>Juurdepääsulubadega kirjeid ei leitud</translation>
+    </message>
+    <message>
+        <source>Convert KeePassHTTP data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Move KeePassHTTP attributes to custom data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Do you really want to convert all legacy browser integration data to the latest standard?
+This is necessary to maintain compatibility with the browser plugin.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2086,12 +2246,18 @@ Kui jätad selle suuremaks muutmata, on andmebaas jõhkra jõuga rünnete ees ka
     <message numerus="yes">
         <source> MiB</source>
         <comment>Abbreviation for Mebibytes (KDF settings)</comment>
-        <translation><numerusform> MiB</numerusform><numerusform> MiB</numerusform></translation>
+        <translation>
+            <numerusform> MiB</numerusform>
+            <numerusform> MiB</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source> thread(s)</source>
         <comment>Threads for parallel execution (KDF settings)</comment>
-        <translation><numerusform> lõim</numerusform><numerusform> lõime</numerusform></translation>
+        <translation>
+            <numerusform> lõim</numerusform>
+            <numerusform> lõime</numerusform>
+        </translation>
     </message>
     <message>
         <source>Encryption Settings:</source>
@@ -2372,7 +2538,10 @@ eemaldatakse kirje andmebaasist.</translation>
     </message>
     <message numerus="yes">
         <source>Purged %n icon(s) from the database.</source>
-        <translation><numerusform>Andmebaasist kustutati %n ikoon.</numerusform><numerusform>Andmebaasist kustutati %n ikooni.</numerusform></translation>
+        <translation>
+            <numerusform>Andmebaasist kustutati %n ikoon.</numerusform>
+            <numerusform>Andmebaasist kustutati %n ikooni.</numerusform>
+        </translation>
     </message>
 </context>
 <context>
@@ -2398,95 +2567,95 @@ eemaldatakse kirje andmebaasist.</translation>
     <name>DatabaseSettingsWidgetRemote</name>
     <message>
         <source>Sync Commands</source>
-        <translation>Sünkimiskäsud</translation>
+        <translation type="vanished">Sünkimiskäsud</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation>Eemalda</translation>
+        <translation type="vanished">Eemalda</translation>
     </message>
     <message>
         <source>Command Settings</source>
-        <translation>Käsuseaded</translation>
+        <translation type="vanished">Käsuseaded</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Nimi</translation>
+        <translation type="vanished">Nimi</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Salvesta</translation>
+        <translation type="vanished">Salvesta</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation>Allalaadimine</translation>
+        <translation type="vanished">Allalaadimine</translation>
     </message>
     <message>
         <source>Command:</source>
-        <translation>Käsk:</translation>
+        <translation type="vanished">Käsk:</translation>
     </message>
     <message>
         <source>Download command field</source>
-        <translation>Allalaadimiskäsu väli</translation>
+        <translation type="vanished">Allalaadimiskäsu väli</translation>
     </message>
     <message>
         <source>e.g.: &quot;sftp user@hostname&quot; or &quot;scp user@hostname:DatabaseOnRemote.kdbx {TEMP_DATABASE}&quot;</source>
-        <translation>nt „sftp kasutaja@masinanimi” või „scp kasutaja@masinanimi:Andmebaas_kaugarvutis.kdbx {TEMP_DATABASE}”</translation>
+        <translation type="vanished">nt „sftp kasutaja@masinanimi” või „scp kasutaja@masinanimi:Andmebaas_kaugarvutis.kdbx {TEMP_DATABASE}”</translation>
     </message>
     <message>
         <source>Input:</source>
-        <translation>Sisend:</translation>
+        <translation type="vanished">Sisend:</translation>
     </message>
     <message>
         <source>Download input field</source>
-        <translation>Allalaadimise sisendiväli</translation>
+        <translation type="vanished">Allalaadimise sisendiväli</translation>
     </message>
     <message>
         <source>Upload</source>
-        <translation>Üleslaadimine</translation>
+        <translation type="vanished">Üleslaadimine</translation>
     </message>
     <message>
         <source>Upload command field</source>
-        <translation>Üleslaadimiskäsu väli</translation>
+        <translation type="vanished">Üleslaadimiskäsu väli</translation>
     </message>
     <message>
         <source>e.g.: &quot;sftp user@hostname&quot; or &quot;scp {TEMP_DATABASE} user@hostname:DatabaseOnRemote.kdbx&quot;</source>
-        <translation>nt „sftp kasutaja@masinanimi” või „scp {TEMP_DATABASE} kasutaja@masinanimi:Andmebaas_kaugarvutis.kdbx”</translation>
+        <translation type="vanished">nt „sftp kasutaja@masinanimi” või „scp {TEMP_DATABASE} kasutaja@masinanimi:Andmebaas_kaugarvutis.kdbx”</translation>
     </message>
     <message>
         <source>Upload input field</source>
-        <translation>Üleslaadimise sisendiväli</translation>
+        <translation type="vanished">Üleslaadimise sisendiväli</translation>
     </message>
     <message>
         <source>Name cannot be empty.</source>
-        <translation>Nimi ei saa olla tühi.</translation>
+        <translation type="vanished">Nimi ei saa olla tühi.</translation>
     </message>
     <message>
         <source>Test</source>
-        <translation>Testi</translation>
+        <translation type="vanished">Testi</translation>
     </message>
     <message>
         <source>Download command cannot be empty.</source>
-        <translation>Allalaadimiskäsk ei saa olla tühi.</translation>
+        <translation type="vanished">Allalaadimiskäsk ei saa olla tühi.</translation>
     </message>
     <message>
         <source>Download failed with error: %1</source>
-        <translation>Allalaadimine ebaõnnestus, veateade: %1</translation>
+        <translation type="vanished">Allalaadimine ebaõnnestus, veateade: %1</translation>
     </message>
     <message>
         <source>Download finished, but file %1 could not be found.</source>
-        <translation>Allalaadimine lõpetati, aga faili „%1” ei leitud.</translation>
+        <translation type="vanished">Allalaadimine lõpetati, aga faili „%1” ei leitud.</translation>
     </message>
     <message>
         <source>Download successful.</source>
-        <translation>Allalaadimine valmis.</translation>
+        <translation type="vanished">Allalaadimine valmis.</translation>
     </message>
     <message>
         <source>Save Remote Settings</source>
-        <translation>Salvesta sünkimisseadistus</translation>
+        <translation type="vanished">Salvesta sünkimisseadistus</translation>
     </message>
     <message>
         <source>You have unsaved changes. Do you want to save them?</source>
-        <translation>Sul on salvestamata muudatusi. Kas tahad need salvestada?</translation>
+        <translation type="vanished">Sul on salvestamata muudatusi. Kas tahad need salvestada?</translation>
     </message>
     <message>
         <source>e.g.:
@@ -2496,7 +2665,7 @@ exit
 {TEMP_DATABASE} is used as placeholder to store the database in a temporary location
 The command has to exit. In case of `sftp` as last command `exit` has to be sent
             </source>
-        <translation>nt:
+        <translation type="vanished">nt:
 get Andmebaas_kaugarvutis.kdbx {TEMP_DATABASE}
 exit
 ---
@@ -2512,7 +2681,7 @@ exit
 {TEMP_DATABASE} is used as placeholder to store the database in a temporary location
 The command has to exit. In case of `sftp` as last command `exit` has to be sent
             </source>
-        <translation>nt:
+        <translation type="vanished">nt:
 put {TEMP_DATABASE} Andmebaas_kaugarvutis.kdbx
 exit
 ---
@@ -2522,11 +2691,11 @@ Käsk peab oma töö lõpetama, nt „sftp” puhul peab viimane saadetav käsk 
     </message>
     <message>
         <source>Timeout:</source>
-        <translation>Ajalimiit:</translation>
+        <translation type="vanished">Ajalimiit:</translation>
     </message>
     <message>
         <source> seconds</source>
-        <translation> sekundit</translation>
+        <translation type="vanished"> sekundit</translation>
     </message>
 </context>
 <context>
@@ -2605,7 +2774,7 @@ See on kahtlemata programmiviga – palun anna sellest arendajatele teada!</tran
     <message>
         <source>%1 [Temporary]</source>
         <comment>Database tab name modifier</comment>
-        <translation>%1 [ajutine]</translation>
+        <translation type="vanished">%1 [ajutine]</translation>
     </message>
 </context>
 <context>
@@ -2664,7 +2833,10 @@ See on kahtlemata programmiviga – palun anna sellest arendajatele teada!</tran
     </message>
     <message numerus="yes">
         <source>Entries expiring within %1 day(s)</source>
-        <translation><numerusform>%1 päeva jooksul aeguvad kirjed</numerusform><numerusform>%1 päeva jooksul aeguvad kirjed</numerusform></translation>
+        <translation>
+            <numerusform>%1 päeva jooksul aeguvad kirjed</numerusform>
+            <numerusform>%1 päeva jooksul aeguvad kirjed</numerusform>
+        </translation>
     </message>
     <message>
         <source>No current database.</source>
@@ -2783,31 +2955,31 @@ Kas keelata turvaline salvestamine ja proovida seejärel uuesti?</translation>
     </message>
     <message>
         <source>Remote Sync did not contain any download or upload commands.</source>
-        <translation>Sünkimisseadistus ei sisalda alla- ega üleslaadimiskäske.</translation>
+        <translation type="vanished">Sünkimisseadistus ei sisalda alla- ega üleslaadimiskäske.</translation>
     </message>
     <message>
         <source>Remote sync &apos;%1&apos; completed successfully!</source>
-        <translation>Sünkimine „%1” kenasti lõpetatud!</translation>
+        <translation type="vanished">Sünkimine „%1” kenasti lõpetatud!</translation>
     </message>
     <message>
         <source>Remote sync &apos;%1&apos; failed: %2</source>
-        <translation>Sünkimine „%1” ebaõnnestus: %2</translation>
+        <translation type="vanished">Sünkimine „%1” ebaõnnestus: %2</translation>
     </message>
     <message>
         <source>Error while saving database %1: %2</source>
-        <translation>Andmebaasi „%1” salvestamisel tekkis tõrge: %2</translation>
+        <translation type="vanished">Andmebaasi „%1” salvestamisel tekkis tõrge: %2</translation>
     </message>
     <message>
         <source>Downloading...</source>
-        <translation>Allalaadimine...</translation>
+        <translation type="vanished">Allalaadimine...</translation>
     </message>
     <message>
         <source>Uploading...</source>
-        <translation>Üleslaadimine...</translation>
+        <translation type="vanished">Üleslaadimine...</translation>
     </message>
     <message>
         <source>Syncing...</source>
-        <translation>Sünkimine...</translation>
+        <translation type="vanished">Sünkimine...</translation>
     </message>
     <message>
         <source>Remove passkey from entry</source>
@@ -2860,6 +3032,17 @@ Kas keelata turvaline salvestamine ja proovida seejärel uuesti?</translation>
     <message>
         <source>Database file on disk cannot be unlocked with current credentials.&lt;br&gt;Enter new credentials and/or present hardware key to continue.</source>
         <translation>Praegu kehtivate tunnustega ei õnnestunud andmebaasifaili lukku avada.&lt;br&gt;Jätkamiseks sisesta uued tunnused ja/või ühenda riistvaraline võti.</translation>
+    </message>
+    <message>
+        <source>Failed to save backup database: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>EditEntryAttachmentsDialog</name>
+    <message>
+        <source>Edit: %1</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -3000,19 +3183,31 @@ Kas soovid vea parandada?</translation>
     </message>
     <message numerus="yes">
         <source>%n hour(s)</source>
-        <translation><numerusform>%n tunni pärast</numerusform><numerusform>%n tunni pärast</numerusform></translation>
+        <translation>
+            <numerusform>%n tunni pärast</numerusform>
+            <numerusform>%n tunni pärast</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>%n week(s)</source>
-        <translation><numerusform>%n nädala pärast</numerusform><numerusform>%n nädala pärast</numerusform></translation>
+        <translation>
+            <numerusform>%n nädala pärast</numerusform>
+            <numerusform>%n nädala pärast</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>%n month(s)</source>
-        <translation><numerusform>%n kuu pärast</numerusform><numerusform>%n kuu pärast</numerusform></translation>
+        <translation>
+            <numerusform>%n kuu pärast</numerusform>
+            <numerusform>%n kuu pärast</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>%n year(s)</source>
-        <translation><numerusform>%n aasta pärast</numerusform><numerusform>%n aasta pärast</numerusform></translation>
+        <translation>
+            <numerusform>%n aasta pärast</numerusform>
+            <numerusform>%n aasta pärast</numerusform>
+        </translation>
     </message>
     <message>
         <source>Failed to decrypt SSH key, ensure password is correct.</source>
@@ -3423,7 +3618,7 @@ isegi kui see ei vasta kvaliteedinõuetele. Märgi see ruut, kui parooli keeruku
     </message>
     <message>
         <source>Generate</source>
-        <translation>Genereeri</translation>
+        <translation type="vanished">Genereeri</translation>
     </message>
     <message>
         <source>Select attachment file</source>
@@ -3801,7 +3996,10 @@ Toetatud faililaiendid: %1</translation>
     </message>
     <message numerus="yes">
         <source>Successfully loaded %1 of %n icon(s)</source>
-        <translation><numerusform>%1 ikoon %n-st kenasti laaditud</numerusform><numerusform>%1 ikooni %n-st kenasti laaditud</numerusform></translation>
+        <translation>
+            <numerusform>%1 ikoon %n-st kenasti laaditud</numerusform>
+            <numerusform>%1 ikooni %n-st kenasti laaditud</numerusform>
+        </translation>
     </message>
     <message>
         <source>No icons were loaded</source>
@@ -3809,11 +4007,17 @@ Toetatud faililaiendid: %1</translation>
     </message>
     <message numerus="yes">
         <source>%n icon(s) already exist in the database</source>
-        <translation><numerusform>%n ikoon on juba andmebaasis olemas</numerusform><numerusform>%n ikooni on juba andmebaasis olemas</numerusform></translation>
+        <translation>
+            <numerusform>%n ikoon on juba andmebaasis olemas</numerusform>
+            <numerusform>%n ikooni on juba andmebaasis olemas</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>The following icon(s) failed:</source>
-        <translation><numerusform>Järgmise ikooni laadimine ebaõnnestus:</numerusform><numerusform>Järgmiste ikoonide laadimine ebaõnnestus:</numerusform></translation>
+        <translation>
+            <numerusform>Järgmise ikooni laadimine ebaõnnestus:</numerusform>
+            <numerusform>Järgmiste ikoonide laadimine ebaõnnestus:</numerusform>
+        </translation>
     </message>
     <message>
         <source>You can enable the DuckDuckGo website icon service under Application Settings -&gt; Security</source>
@@ -3925,15 +4129,15 @@ See võib põhjustada asjaomaste pluginate töös tõrkeid.</translation>
     <name>EntryAttachmentsDialog</name>
     <message>
         <source>Form</source>
-        <translation>Vorm</translation>
+        <translation type="vanished">Vorm</translation>
     </message>
     <message>
         <source>File name</source>
-        <translation>Faili nimi</translation>
+        <translation type="vanished">Faili nimi</translation>
     </message>
     <message>
         <source>File contents...</source>
-        <translation>Faili sisu…</translation>
+        <translation type="vanished">Faili sisu…</translation>
     </message>
 </context>
 <context>
@@ -3963,7 +4167,7 @@ See võib põhjustada asjaomaste pluginate töös tõrkeid.</translation>
     </message>
     <message>
         <source>Add</source>
-        <translation>Lisa</translation>
+        <translation type="vanished">Lisa</translation>
     </message>
     <message>
         <source>Remove selected attachment</source>
@@ -3987,7 +4191,7 @@ See võib põhjustada asjaomaste pluginate töös tõrkeid.</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Salvesta</translation>
+        <translation type="vanished">Salvesta</translation>
     </message>
     <message>
         <source>Select files</source>
@@ -3999,7 +4203,10 @@ See võib põhjustada asjaomaste pluginate töös tõrkeid.</translation>
     </message>
     <message numerus="yes">
         <source>Are you sure you want to remove %n attachment(s)?</source>
-        <translation><numerusform>Kas oled kindel, et soovid eemaldada %n kaasatud faili?</numerusform><numerusform>Kas oled kindel, et soovid eemaldada %n kaasatud faili?</numerusform></translation>
+        <translation>
+            <numerusform>Kas oled kindel, et soovid eemaldada %n kaasatud faili?</numerusform>
+            <numerusform>Kas oled kindel, et soovid eemaldada %n kaasatud faili?</numerusform>
+        </translation>
     </message>
     <message>
         <source>Save attachments</source>
@@ -4040,9 +4247,12 @@ See võib põhjustada asjaomaste pluginate töös tõrkeid.</translation>
     <message numerus="yes">
         <source>Unable to open file(s):
 %1</source>
-        <translation><numerusform>Faili avamine pole võimalik:
-%1</numerusform><numerusform>Failide avamine pole võimalik:
-%1</numerusform></translation>
+        <translation>
+            <numerusform>Faili avamine pole võimalik:
+%1</numerusform>
+            <numerusform>Failide avamine pole võimalik:
+%1</numerusform>
+        </translation>
     </message>
     <message>
         <source>Confirm Overwrite Attachment</source>
@@ -4067,7 +4277,7 @@ Kas oled kindel, et tahad selle faili lisada?</translation>
         <translation>Kaasatud faili on muudetud</translation>
     </message>
     <message>
-        <source>The attachment '%1' was modified.
+        <source>The attachment &apos;%1&apos; was modified.
 Do you want to save the changes to your database?</source>
         <translation>Kaasatud faili „%1” on muudetud.
 Kas soovid muudatused oma andmebaasi salvestada?</translation>
@@ -4090,7 +4300,7 @@ Kas soovid selle faili uuega üle kirjutada?</translation>
     </message>
     <message>
         <source>New</source>
-        <translation>Uus</translation>
+        <translation type="vanished">Uus</translation>
     </message>
     <message>
         <source>Preview</source>
@@ -4098,7 +4308,31 @@ Kas soovid selle faili uuega üle kirjutada?</translation>
     </message>
     <message>
         <source>Failed to preview an attachment: Attachment not found</source>
-        <translation>Kaasatud faili eelvaate loomine ebaõnnestus: kaasatud faili ei leitud</translation>
+        <translation type="vanished">Kaasatud faili eelvaate loomine ebaõnnestus: kaasatud faili ei leitud</translation>
+    </message>
+    <message>
+        <source>Add file…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation type="unfinished">Muuda</translation>
+    </message>
+    <message>
+        <source>Save…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>New Text Document</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Load from Disk…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>New Attachment</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -4437,7 +4671,10 @@ Kas soovid selle faili uuega üle kirjutada?</translation>
     </message>
     <message numerus="yes">
         <source>+ %1 entry(s)...</source>
-        <translation><numerusform>+ %1 kirje...</numerusform><numerusform>+ %1 kirjet...</numerusform></translation>
+        <translation>
+            <numerusform>+ %1 kirje...</numerusform>
+            <numerusform>+ %1 kirjet...</numerusform>
+        </translation>
     </message>
 </context>
 <context>
@@ -4549,7 +4786,10 @@ See jätab su paroolid jm tundliku teabe kaitseta!
     <message numerus="yes">
         <source>%n Entry(s) was used by %1</source>
         <comment>%1 is the name of an application</comment>
-        <translation><numerusform>%1 kasutas %n kirjet</numerusform><numerusform>%1 kasutas %n kirjet</numerusform></translation>
+        <translation>
+            <numerusform>%1 kasutas %n kirjet</numerusform>
+            <numerusform>%1 kasutas %n kirjet</numerusform>
+        </translation>
     </message>
 </context>
 <context>
@@ -4660,6 +4900,17 @@ You can enable the DuckDuckGo website icon service in the security section of th
     </message>
 </context>
 <context>
+    <name>ImageAttachmentsWidget</name>
+    <message>
+        <source>Zoom:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Fit</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ImportWizard</name>
     <message>
         <source>Import Wizard</source>
@@ -4698,11 +4949,11 @@ You can enable the DuckDuckGo website icon service in the security section of th
     </message>
     <message>
         <source>Could not load key file.</source>
-        <translation>Võtmefaili ei õnnestunud laadida.</translation>
+        <translation type="vanished">Võtmefaili ei õnnestunud laadida.</translation>
     </message>
     <message>
         <source>Could not open remote database. Password or key file may be incorrect.</source>
-        <translation>Võrguandmebaasi ei õnnestunud avada. Küllap oli parool või võtmefail vale.</translation>
+        <translation type="vanished">Võrguandmebaasi ei õnnestunud avada. Küllap oli parool või võtmefail vale.</translation>
     </message>
 </context>
 <context>
@@ -4817,19 +5068,19 @@ You can enable the DuckDuckGo website icon service in the security section of th
     </message>
     <message>
         <source>Temporary Database</source>
-        <translation>Ajutisse andmebaasi</translation>
+        <translation type="vanished">Ajutisse andmebaasi</translation>
     </message>
     <message>
         <source>Command:</source>
-        <translation>Käsk:</translation>
+        <translation type="vanished">Käsk:</translation>
     </message>
     <message>
         <source>e.g.: &quot;sftp user@hostname&quot; or &quot;scp user@hostname:DatabaseOnRemote.kdbx {TEMP_DATABASE}&quot;</source>
-        <translation>nt „sftp kasutaja@masinanimi” või „scp kasutaja@masinanimi:Andmebaas_kaugarvutis.kdbx {TEMP_DATABASE}”</translation>
+        <translation type="vanished">nt „sftp kasutaja@masinanimi” või „scp kasutaja@masinanimi:Andmebaas_kaugarvutis.kdbx {TEMP_DATABASE}”</translation>
     </message>
     <message>
         <source>Input:</source>
-        <translation>Sisend:</translation>
+        <translation type="vanished">Sisend:</translation>
     </message>
     <message>
         <source>e.g.:
@@ -4839,7 +5090,7 @@ exit
 {TEMP_DATABASE} is used as placeholder to store the database in a temporary location
 The command has to exit. In case of `sftp` as last commend `exit` has to be sent
          </source>
-        <translation>nt:
+        <translation type="vanished">nt:
 get Andmebaas_kaugarvutis.kdbx {TEMP_DATABASE}
 exit
 ---
@@ -4849,7 +5100,7 @@ Käsk peab oma töö lõpetama, nt „sftp” puhul peab viimane saadetav käsk 
     </message>
     <message>
         <source>Remote Database (.kdbx)</source>
-        <translation>Andmebaas võrgus (.kdbx)</translation>
+        <translation type="vanished">Andmebaas võrgus (.kdbx)</translation>
     </message>
 </context>
 <context>
@@ -5123,7 +5374,7 @@ Kui probleem püsib, võib andmebaasifail olla rikutud.</translation>
     <message>
         <source>The selected file is an old KeePass 1 database (.kdb).
 
-You can import it by clicking on Database &gt; 'Import KeePass 1 database…'.
+You can import it by clicking on Database &gt; &apos;Import KeePass 1 database…&apos;.
 This is a one-way migration. You won&apos;t be able to open the imported database with the old KeePassX 0.4 version.</source>
         <translation>valitud fail on vana KeePass 1 andmebaas (.kdb).
 
@@ -5545,7 +5796,7 @@ Kui probleem püsib, võib andmebaasifail olla rikutud.</translation>
         <translation>Valisid võtmefaili, mis on vanas vormingus, mille tugi võidakse&lt;br&gt;KeePassXC-st tulevikus eemaldada.&lt;br&gt;&lt;br&gt;Palun genereeri selle asemele uus võtmefail.</translation>
     </message>
     <message>
-        <source>Error loading the key file '%1'
+        <source>Error loading the key file &apos;%1&apos;
 Message: %2</source>
         <translation>Viga võtmefaili „%1” laadimisel.
 Teade: %2</translation>
@@ -5999,7 +6250,10 @@ Eeldatavasti leidub selles programmivigu ja muid väiksemaid hädasid – see ve
     </message>
     <message numerus="yes">
         <source>Restore Entry(s)</source>
-        <translation><numerusform>Taasta kirje</numerusform><numerusform>Taasta kirjed</numerusform></translation>
+        <translation>
+            <numerusform>Taasta kirje</numerusform>
+            <numerusform>Taasta kirjed</numerusform>
+        </translation>
     </message>
     <message>
         <source>Settings</source>
@@ -6027,7 +6281,10 @@ Eeldatavasti leidub selles programmivigu ja muid väiksemaid hädasid – see ve
     </message>
     <message numerus="yes">
         <source>%1 Entry(s)</source>
-        <translation><numerusform>%1 kirje</numerusform><numerusform>%1 kirjet</numerusform></translation>
+        <translation>
+            <numerusform>%1 kirje</numerusform>
+            <numerusform>%1 kirjet</numerusform>
+        </translation>
     </message>
     <message>
         <source>Please present or touch your YubiKey to continue…</source>
@@ -6067,111 +6324,111 @@ Eeldatavasti leidub selles programmivigu ja muid väiksemaid hädasid – see ve
     </message>
     <message>
         <source>Remote S&amp;ync…</source>
-        <translation>Sünkimine...</translation>
+        <translation type="vanished">Sünkimine...</translation>
     </message>
     <message>
         <source>Quit Application</source>
-        <translation>Välju rakendusest</translation>
+        <translation type="vanished">Välju rakendusest</translation>
     </message>
     <message>
         <source>Open About Dialog</source>
-        <translation>Ava rakenduse teabedialoog</translation>
+        <translation type="vanished">Ava rakenduse teabedialoog</translation>
     </message>
     <message>
         <source>Open Database</source>
-        <translation>Ava andmebaas</translation>
+        <translation type="vanished">Ava andmebaas</translation>
     </message>
     <message>
         <source>Create Database</source>
-        <translation>Loo andmebaas</translation>
+        <translation type="vanished">Loo andmebaas</translation>
     </message>
     <message>
         <source>Merge From Database</source>
-        <translation>Mesti andmebaas</translation>
+        <translation type="vanished">Mesti andmebaas</translation>
     </message>
     <message>
         <source>Create Entry</source>
-        <translation>Loo kirje</translation>
+        <translation type="vanished">Loo kirje</translation>
     </message>
     <message>
         <source>Edit Entry</source>
-        <translation>Muuda kirjet</translation>
+        <translation type="vanished">Muuda kirjet</translation>
     </message>
     <message>
         <source>Delete Entry</source>
-        <translation>Kustuta kirje</translation>
+        <translation type="vanished">Kustuta kirje</translation>
     </message>
     <message>
         <source>Create Group</source>
-        <translation>Loo grupp</translation>
+        <translation type="vanished">Loo grupp</translation>
     </message>
     <message>
         <source>Edit Group</source>
-        <translation>Muuda gruppi</translation>
+        <translation type="vanished">Muuda gruppi</translation>
     </message>
     <message>
         <source>Delete Group</source>
-        <translation>Kustuta grupp</translation>
+        <translation type="vanished">Kustuta grupp</translation>
     </message>
     <message>
         <source>Download All Favicons</source>
-        <translation>Laadi alla kõigi saitide ikoonid</translation>
+        <translation type="vanished">Laadi alla kõigi saitide ikoonid</translation>
     </message>
     <message>
         <source>Sort Groups A-Z</source>
-        <translation>Sordi grupid A-st Y-ni</translation>
+        <translation type="vanished">Sordi grupid A-st Y-ni</translation>
     </message>
     <message>
         <source>Sort Groups Z-A</source>
-        <translation>Sordi grupid Y-st A-ni</translation>
+        <translation type="vanished">Sordi grupid Y-st A-ni</translation>
     </message>
     <message>
         <source>Save Database As</source>
-        <translation>Salvesta andmebaas kui</translation>
+        <translation type="vanished">Salvesta andmebaas kui</translation>
     </message>
     <message>
         <source>Show Database Security</source>
-        <translation>Kuva andmebaasi turvalisus</translation>
+        <translation type="vanished">Kuva andmebaasi turvalisus</translation>
     </message>
     <message>
         <source>Show Database Reports</source>
-        <translation>Kuva andmebaasi aruanded</translation>
+        <translation type="vanished">Kuva andmebaasi aruanded</translation>
     </message>
     <message>
         <source>Show Database Settings</source>
-        <translation>Kuva andmebaasi seaded</translation>
+        <translation type="vanished">Kuva andmebaasi seaded</translation>
     </message>
     <message>
         <source>Show Passkeys</source>
-        <translation>Kuva pääsuvõtmed</translation>
+        <translation type="vanished">Kuva pääsuvõtmed</translation>
     </message>
     <message>
         <source>Clone Entry</source>
-        <translation>Klooni kirje</translation>
+        <translation type="vanished">Klooni kirje</translation>
     </message>
     <message>
         <source>Move Entry Up</source>
-        <translation>Liiguta kirje ülespoole</translation>
+        <translation type="vanished">Liiguta kirje ülespoole</translation>
     </message>
     <message>
         <source>Move Entry Down</source>
-        <translation>Liiguta kirje allapoole</translation>
+        <translation type="vanished">Liiguta kirje allapoole</translation>
     </message>
     <message>
         <source>Copy Username</source>
-        <translation>Kopeeri kasutajanimi</translation>
+        <translation type="vanished">Kopeeri kasutajanimi</translation>
     </message>
     <message>
         <source>Copy Password</source>
-        <translation>Kopeeri parool</translation>
+        <translation type="vanished">Kopeeri parool</translation>
     </message>
     <message>
         <source>Show Application Settings</source>
-        <translation>Kuva rakenduse seaded</translation>
+        <translation type="vanished">Kuva rakenduse seaded</translation>
     </message>
     <message>
         <source>Show Password Generator</source>
-        <translation>Kuva parooligeneraator</translation>
+        <translation type="vanished">Kuva parooligeneraator</translation>
     </message>
     <message>
         <source>Remove Passkey From Entry</source>
@@ -6179,63 +6436,63 @@ Eeldatavasti leidub selles programmivigu ja muid väiksemaid hädasid – see ve
     </message>
     <message>
         <source>Perform Auto-Type: {USERNAME}</source>
-        <translation>Soorita automaatsisestus: {USERNAME}</translation>
+        <translation type="vanished">Soorita automaatsisestus: {USERNAME}</translation>
     </message>
     <message>
         <source>Perform Auto-Type: {USERNAME}{ENTER}</source>
-        <translation>Soorita automaatsisestus: {USERNAME}{ENTER}</translation>
+        <translation type="vanished">Soorita automaatsisestus: {USERNAME}{ENTER}</translation>
     </message>
     <message>
         <source>Perform Auto-Type: {PASSWORD}</source>
-        <translation>Soorita automaatsisestus: {PASSWORD}</translation>
+        <translation type="vanished">Soorita automaatsisestus: {PASSWORD}</translation>
     </message>
     <message>
         <source>Perform Auto-Type: {PASSWORD}{ENTER}</source>
-        <translation>Soorita automaatsisestus: {PASSWORD}{ENTER}</translation>
+        <translation type="vanished">Soorita automaatsisestus: {PASSWORD}{ENTER}</translation>
     </message>
     <message>
         <source>Perform Auto-Type: {TOTP}</source>
-        <translation>Soorita automaatsisestus: {TOTP}</translation>
+        <translation type="vanished">Soorita automaatsisestus: {TOTP}</translation>
     </message>
     <message>
         <source>Copy Title</source>
-        <translation>Kopeeri pealkiri</translation>
+        <translation type="vanished">Kopeeri pealkiri</translation>
     </message>
     <message>
         <source>Copy URL</source>
-        <translation>Kopeeri URL</translation>
+        <translation type="vanished">Kopeeri URL</translation>
     </message>
     <message>
         <source>Copy Notes</source>
-        <translation>Kopeeri märkmed</translation>
+        <translation type="vanished">Kopeeri märkmed</translation>
     </message>
     <message>
         <source>Export to CSV</source>
-        <translation>Ekspordi CSV-failiks</translation>
+        <translation type="vanished">Ekspordi CSV-failiks</translation>
     </message>
     <message>
         <source>Export to HTML</source>
-        <translation>Ekspordi HTML-failiks</translation>
+        <translation type="vanished">Ekspordi HTML-failiks</translation>
     </message>
     <message>
         <source>Import KeePass1 Database</source>
-        <translation>Impordi KeePass 1 andmebaas</translation>
+        <translation type="vanished">Impordi KeePass 1 andmebaas</translation>
     </message>
     <message>
         <source>Import 1Password Vault</source>
-        <translation>Impordi 1Passwordi turvalaegas</translation>
+        <translation type="vanished">Impordi 1Passwordi turvalaegas</translation>
     </message>
     <message>
         <source>Import CSV File</source>
-        <translation>Impordi CSV-fail</translation>
+        <translation type="vanished">Impordi CSV-fail</translation>
     </message>
     <message>
         <source>Show TOTP QR Code</source>
-        <translation>Kuva TOTP ruutkood</translation>
+        <translation type="vanished">Kuva TOTP ruutkood</translation>
     </message>
     <message>
         <source>Set up TOTP</source>
-        <translation>Seadista TOTP</translation>
+        <translation type="vanished">Seadista TOTP</translation>
     </message>
     <message>
         <source>Empty Recycle Bin</source>
@@ -6243,51 +6500,51 @@ Eeldatavasti leidub selles programmivigu ja muid väiksemaid hädasid – see ve
     </message>
     <message>
         <source>Open Donation Website</source>
-        <translation>Ava annetusveebileht</translation>
+        <translation type="vanished">Ava annetusveebileht</translation>
     </message>
     <message>
         <source>Open Bug Report</source>
-        <translation>Teata veast</translation>
+        <translation type="vanished">Teata veast</translation>
     </message>
     <message>
         <source>Open Online Documentation</source>
-        <translation>Ava dokumentatsioon võrgus</translation>
+        <translation type="vanished">Ava dokumentatsioon võrgus</translation>
     </message>
     <message>
         <source>Open Keyboard Shortcuts Guide</source>
-        <translation>Ava kiirklahvide juhis</translation>
+        <translation type="vanished">Ava kiirklahvide juhis</translation>
     </message>
     <message>
         <source>Save Database Backup</source>
-        <translation>Salvesta andmebaasi varukoopia</translation>
+        <translation type="vanished">Salvesta andmebaasi varukoopia</translation>
     </message>
     <message>
         <source>SSH Agent: Add Key</source>
-        <translation>SSH agent: lisa võti</translation>
+        <translation type="vanished">SSH agent: lisa võti</translation>
     </message>
     <message>
         <source>SSH Agent: Remove Key</source>
-        <translation>SSH agent: eemalda võti</translation>
+        <translation type="vanished">SSH agent: eemalda võti</translation>
     </message>
     <message>
         <source>Toggle Compact Mode</source>
-        <translation>Lülita kompaktset režiimi</translation>
+        <translation type="vanished">Lülita kompaktset režiimi</translation>
     </message>
     <message>
         <source>Set Theme: Automatic</source>
-        <translation>Rakenda kujundus: automaatne</translation>
+        <translation type="vanished">Rakenda kujundus: automaatne</translation>
     </message>
     <message>
         <source>Set Theme: Light</source>
-        <translation>Rakenda kujundus: hele</translation>
+        <translation type="vanished">Rakenda kujundus: hele</translation>
     </message>
     <message>
         <source>Set Theme: Dark</source>
-        <translation>Rakenda kujundus: tume</translation>
+        <translation type="vanished">Rakenda kujundus: tume</translation>
     </message>
     <message>
         <source>Set Theme: Classic</source>
-        <translation>Rakenda kujundus: klassikaline</translation>
+        <translation type="vanished">Rakenda kujundus: klassikaline</translation>
     </message>
     <message>
         <source>Toggle Show Menubar</source>
@@ -6295,31 +6552,31 @@ Eeldatavasti leidub selles programmivigu ja muid väiksemaid hädasid – see ve
     </message>
     <message>
         <source>Toggle Show Toolbar</source>
-        <translation>Lülita tööriistariba nähtavust</translation>
+        <translation type="vanished">Lülita tööriistariba nähtavust</translation>
     </message>
     <message>
         <source>Toggle Show Preview Panel</source>
-        <translation>Lülita eelvaatluse paneeli nähtavust</translation>
+        <translation type="vanished">Lülita eelvaatluse paneeli nähtavust</translation>
     </message>
     <message>
         <source>Toggle Always on Top</source>
-        <translation>Lülita alati pealmisena hoidmist</translation>
+        <translation type="vanished">Lülita alati pealmisena hoidmist</translation>
     </message>
     <message>
         <source>Toggle Hide Usernames</source>
-        <translation>Lülita kasutajanimede varjamist</translation>
+        <translation type="vanished">Lülita kasutajanimede varjamist</translation>
     </message>
     <message>
         <source>Toggle Hide Passwords</source>
-        <translation>Lülita paroolide varjamist</translation>
+        <translation type="vanished">Lülita paroolide varjamist</translation>
     </message>
     <message>
         <source>Export to XML</source>
-        <translation>Ekspordi XML-failiks</translation>
+        <translation type="vanished">Ekspordi XML-failiks</translation>
     </message>
     <message>
         <source>Toggle Allow Screen Capture</source>
-        <translation>Lülita akna pildistamise lubamist</translation>
+        <translation type="vanished">Lülita akna pildistamise lubamist</translation>
     </message>
     <message>
         <source>Show Group Panel</source>
@@ -6331,7 +6588,7 @@ Eeldatavasti leidub selles programmivigu ja muid väiksemaid hädasid – see ve
     </message>
     <message>
         <source>Setup Remote Sync…</source>
-        <translation>Seadista sünkimine...</translation>
+        <translation type="vanished">Seadista sünkimine...</translation>
     </message>
     <message>
         <source>Password Generator</source>
@@ -6348,6 +6605,91 @@ Eeldatavasti leidub selles programmivigu ja muid väiksemaid hädasid – see ve
     <message>
         <source>Clear all identities in ssh-agent</source>
         <translation>Eemalda SSH agendilt kõik identiteedid</translation>
+    </message>
+    <message>
+        <source>Create a new database</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Merge from another KDBX database</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Add a new entry</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>View or edit entry</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Add a new group</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Statistics, health check, etc.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Database settings</source>
+        <translation type="unfinished">Andmebaasi seaded</translation>
+    </message>
+    <message>
+        <source>Passkeys</source>
+        <translation type="unfinished">Pääsuvõtmed</translation>
+    </message>
+    <message>
+        <source>Move entry one step up</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Move entry one step down</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy username to clipboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy password to clipboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy title to clipboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy URL to clipboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy notes to clipboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Import a KeePass 1 database</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Import a 1Password Vault</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Import a CSV file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Go to online documentation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>XML File…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>WARNING: Your Qt version may cause KeePassXC to crash with an On-Screen Keyboard.
+We recommend you use the AppImage available on our downloads page.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -6438,6 +6780,26 @@ Eeldatavasti leidub selles programmivigu ja muid väiksemaid hädasid – see ve
         <source>Adding custom data %1 [%2]</source>
         <translation>Kohandatud andmete „%1” [%2] lisamine</translation>
     </message>
+    <message>
+        <source>older entry merged from database &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Adding backup for older target %1 [%2]</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Adding backup for older source %1 [%2]</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Reapplying older target entry on top of newer source %1 [%2]</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Reapplying older source entry on top of newer target %1 [%2]</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>NewDatabaseWizard</name>
@@ -6503,19 +6865,19 @@ Eeldatavasti leidub selles programmivigu ja muid väiksemaid hädasid – see ve
     <name>NewEntryAttachmentsDialog</name>
     <message>
         <source>Attachment name cannot be empty</source>
-        <translation>Kaasatud faili nimi ei saa olla tühi.</translation>
+        <translation type="vanished">Kaasatud faili nimi ei saa olla tühi.</translation>
     </message>
     <message>
         <source>Attachment with the same name already exists</source>
-        <translation>Sellise nimega kaasatud fail on juba olemas.</translation>
+        <translation type="vanished">Sellise nimega kaasatud fail on juba olemas.</translation>
     </message>
     <message>
         <source>Save attachment</source>
-        <translation>Kaasatud faili salvestamine</translation>
+        <translation type="vanished">Kaasatud faili salvestamine</translation>
     </message>
     <message>
         <source>New entry attachment</source>
-        <translation>Uus kaasatud fail</translation>
+        <translation type="vanished">Uus kaasatud fail</translation>
     </message>
 </context>
 <context>
@@ -6714,19 +7076,19 @@ Eeldatavasti leidub selles programmivigu ja muid väiksemaid hädasid – see ve
     <name>OpenSSHKeyGenDialog</name>
     <message>
         <source>SSH Key Generator</source>
-        <translation>SSH-võtmegeneraator</translation>
+        <translation type="vanished">SSH-võtmegeneraator</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Tüüp:</translation>
+        <translation type="vanished">Tüüp:</translation>
     </message>
     <message>
         <source>Bits</source>
-        <translation>Bittide arv:</translation>
+        <translation type="vanished">Bittide arv:</translation>
     </message>
     <message>
         <source>Comment</source>
-        <translation>Kommentaar:</translation>
+        <translation type="vanished">Kommentaar:</translation>
     </message>
 </context>
 <context>
@@ -7160,11 +7522,11 @@ Järgmised andmed on puudu:
     </message>
     <message>
         <source>Confirm Delete Wordlist</source>
-        <translation>Sõnaloendi kustutamise kinnitus</translation>
+        <translation type="vanished">Sõnaloendi kustutamise kinnitus</translation>
     </message>
     <message>
         <source>Do you really want to delete the wordlist &quot;%1&quot;?</source>
-        <translation>Kas oled kindel, et tahad sõnaloendi „%1” kustutada?</translation>
+        <translation type="vanished">Kas oled kindel, et tahad sõnaloendi „%1” kustutada?</translation>
     </message>
     <message>
         <source>Failed to delete wordlist</source>
@@ -7220,6 +7582,18 @@ Kas soovid selle üle kirjutada?</translation>
         <source>Excluded characters: &quot;0&quot;, &quot;1&quot;, &quot;l&quot;, &quot;I&quot;, &quot;O&quot;, &quot;|&quot;, &quot;﹒&quot;, &quot;B&quot;, &quot;8&quot;, &quot;G&quot;, &quot;6&quot;</source>
         <translation>Määrab, kas välistada märgid nagu „0”, „O”, „1”, „l”, „I”, „|”, „﹒”, „B”, „8”, „G”, „6”</translation>
     </message>
+    <message>
+        <source>Warning: the chosen wordlist is smaller than the minimum recommended size!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Confirm Remove Wordlist</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Do you really want to remove the wordlist &quot;%1&quot;?</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>PasswordWidget</name>
@@ -7269,7 +7643,11 @@ Kas soovid selle üle kirjutada?</translation>
     </message>
     <message>
         <source>Toggle password visibility using Control + H. Open the password generator using Control + G.</source>
-        <translation>Parooli nähtavust lülitab Control + H, parooligeneraatori avab Control + G.</translation>
+        <translation type="vanished">Parooli nähtavust lülitab Control + H, parooligeneraatori avab Control + G.</translation>
+    </message>
+    <message>
+        <source>Toggle password visibilty using Control + H. Open the password generator using Control + G.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -7291,15 +7669,27 @@ Kas soovid selle üle kirjutada?</translation>
     <name>PreviewEntryAttachmentsDialog</name>
     <message>
         <source>Preview entry attachment</source>
-        <translation>Kaasatud faili eelvaade</translation>
+        <translation type="vanished">Kaasatud faili eelvaade</translation>
     </message>
     <message>
         <source>No preview available</source>
-        <translation>Eelvaade pole saadaval</translation>
+        <translation type="vanished">Eelvaade pole saadaval</translation>
     </message>
     <message>
         <source>Image format not supported</source>
-        <translation>Toetamata pildivorming</translation>
+        <translation type="vanished">Toetamata pildivorming</translation>
+    </message>
+    <message>
+        <source>Form</source>
+        <translation type="unfinished">Vorm</translation>
+    </message>
+    <message>
+        <source>Save…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Preview: %1</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -7541,7 +7931,10 @@ Kas soovid selle üle kirjutada?</translation>
     </message>
     <message numerus="yes">
         <source>Password for &apos;%1&apos; has been leaked %2 time(s)!</source>
-        <translation><numerusform>Kirje &quot;%1&quot; parool on lekkinud %2 kord!</numerusform><numerusform>Kirje &quot;%1&quot; parool on lekkinud %2 korda!</numerusform></translation>
+        <translation>
+            <numerusform>Kirje &quot;%1&quot; parool on lekkinud %2 kord!</numerusform>
+            <numerusform>Kirje &quot;%1&quot; parool on lekkinud %2 korda!</numerusform>
+        </translation>
     </message>
     <message>
         <source>Password for &apos;%1&apos; has been leaked!</source>
@@ -7629,7 +8022,7 @@ Kas soovid selle üle kirjutada?</translation>
     </message>
     <message>
         <source>Copy the given attribute to the clipboard. Defaults to &quot;password&quot; if not specified.</source>
-        <comment>Don't translate &quot;password&quot;, it refers to the attribute.</comment>
+        <comment>Don&apos;t translate &quot;password&quot;, it refers to the attribute.</comment>
         <translation>Määratud atribuudi kopeerimine lõikepuhvrisse. Täpsustamata jätmise korral kopeeritakse parool.</translation>
     </message>
     <message>
@@ -7691,7 +8084,10 @@ Kas soovid selle üle kirjutada?</translation>
     </message>
     <message numerus="yes">
         <source>Clearing the clipboard in %1 second(s)...</source>
-        <translation><numerusform>Lõikepuhver puhastatakse %1 sekundi pärast…</numerusform><numerusform>Lõikepuhver puhastatakse %1 sekundi pärast…</numerusform></translation>
+        <translation>
+            <numerusform>Lõikepuhver puhastatakse %1 sekundi pärast…</numerusform>
+            <numerusform>Lõikepuhver puhastatakse %1 sekundi pärast…</numerusform>
+        </translation>
     </message>
     <message>
         <source>Clipboard cleared!</source>
@@ -8546,7 +8942,10 @@ Palun genereeri selle asemele uus võtmefail.</translation>
     </message>
     <message numerus="yes">
         <source>Password is used %1 time(s)</source>
-        <translation><numerusform>Parooli on kasutatud %1 kord</numerusform><numerusform>Parooli on kasutatud %1 korda</numerusform></translation>
+        <translation>
+            <numerusform>Parooli on kasutatud %1 kord</numerusform>
+            <numerusform>Parooli on kasutatud %1 korda</numerusform>
+        </translation>
     </message>
     <message>
         <source>Password has expired</source>
@@ -8566,7 +8965,10 @@ Palun genereeri selle asemele uus võtmefail.</translation>
     </message>
     <message numerus="yes">
         <source>Password expires in %1 day(s)</source>
-        <translation><numerusform>Parool aegub %1 päeva pärast</numerusform><numerusform>Parool aegub %1 päeva pärast</numerusform></translation>
+        <translation>
+            <numerusform>Parool aegub %1 päeva pärast</numerusform>
+            <numerusform>Parool aegub %1 päeva pärast</numerusform>
+        </translation>
     </message>
     <message>
         <source>Password will expire soon</source>
@@ -8638,27 +9040,45 @@ Kernel: %3 %4</translation>
     </message>
     <message numerus="yes">
         <source>over %1 year(s)</source>
-        <translation><numerusform>Üle %n aasta</numerusform><numerusform>Üle %n aasta</numerusform></translation>
+        <translation>
+            <numerusform>Üle %n aasta</numerusform>
+            <numerusform>Üle %n aasta</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>about %1 month(s)</source>
-        <translation><numerusform>Umbes %1 kuu</numerusform><numerusform>Umbes %1 kuud</numerusform></translation>
+        <translation>
+            <numerusform>Umbes %1 kuu</numerusform>
+            <numerusform>Umbes %1 kuud</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>%1 week(s)</source>
-        <translation><numerusform>%1 nädal</numerusform><numerusform>%1 nädalat</numerusform></translation>
+        <translation>
+            <numerusform>%1 nädal</numerusform>
+            <numerusform>%1 nädalat</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>%1 day(s)</source>
-        <translation><numerusform>%1 päev</numerusform><numerusform>%1 päeva</numerusform></translation>
+        <translation>
+            <numerusform>%1 päev</numerusform>
+            <numerusform>%1 päeva</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>%1 hour(s)</source>
-        <translation><numerusform>%1 tund</numerusform><numerusform>%1 tundi</numerusform></translation>
+        <translation>
+            <numerusform>%1 tund</numerusform>
+            <numerusform>%1 tundi</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>%1 minute(s)</source>
-        <translation><numerusform>%1 minut</numerusform><numerusform>%1 minutit</numerusform></translation>
+        <translation>
+            <numerusform>%1 minut</numerusform>
+            <numerusform>%1 minutit</numerusform>
+        </translation>
     </message>
     <message>
         <source>Botan library must be at least %1, found %2.%3.%4</source>
@@ -8750,7 +9170,10 @@ Kernel: %3 %4</translation>
     </message>
     <message numerus="yes">
         <source>Clearing the clipboard in %1 second(s)…</source>
-        <translation><numerusform>Lõikepuhver puhastatakse %1 sekundi pärast…</numerusform><numerusform>Lõikepuhver puhastatakse %1 sekundi pärast…</numerusform></translation>
+        <translation>
+            <numerusform>Lõikepuhver puhastatakse %1 sekundi pärast…</numerusform>
+            <numerusform>Lõikepuhver puhastatakse %1 sekundi pärast…</numerusform>
+        </translation>
     </message>
     <message>
         <source>Group</source>
@@ -8791,12 +9214,18 @@ Kernel: %3 %4</translation>
     <message numerus="yes">
         <source>%1 ms</source>
         <comment>milliseconds</comment>
-        <translation><numerusform>%1 ms</numerusform><numerusform>%1 ms</numerusform></translation>
+        <translation>
+            <numerusform>%1 ms</numerusform>
+            <numerusform>%1 ms</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>%1 s</source>
         <comment>seconds</comment>
-        <translation><numerusform>%1 s</numerusform><numerusform>%1 s</numerusform></translation>
+        <translation>
+            <numerusform>%1 s</numerusform>
+            <numerusform>%1 s</numerusform>
+        </translation>
     </message>
     <message>
         <source>Do you really want to delete the entry &quot;%1&quot; for good?</source>
@@ -8804,11 +9233,17 @@ Kernel: %3 %4</translation>
     </message>
     <message numerus="yes">
         <source>Do you really want to delete %n entry(s) for good?</source>
-        <translation><numerusform>Kas oled kindel, et tahad selle %n kirje jäädavalt kustutada?</numerusform><numerusform>Kas oled kindel, et tahad need %n kirjet jäädavalt kustutada?</numerusform></translation>
+        <translation>
+            <numerusform>Kas oled kindel, et tahad selle %n kirje jäädavalt kustutada?</numerusform>
+            <numerusform>Kas oled kindel, et tahad need %n kirjet jäädavalt kustutada?</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>Delete entry(s)?</source>
-        <translation><numerusform>Kirje kustutamise kinnitus</numerusform><numerusform>Kirjete kustutamise kinnitus</numerusform></translation>
+        <translation>
+            <numerusform>Kirje kustutamise kinnitus</numerusform>
+            <numerusform>Kirjete kustutamise kinnitus</numerusform>
+        </translation>
     </message>
     <message>
         <source>Do you really want to move entry &quot;%1&quot; to the recycle bin?</source>
@@ -8816,11 +9251,17 @@ Kernel: %3 %4</translation>
     </message>
     <message numerus="yes">
         <source>Do you really want to move %n entry(s) to the recycle bin?</source>
-        <translation><numerusform>Kas oled kindel, et tahad selle %n kirje prügikasti visata?</numerusform><numerusform>Kas oled kindel, et tahad need %n kirjet prügikasti visata?</numerusform></translation>
+        <translation>
+            <numerusform>Kas oled kindel, et tahad selle %n kirje prügikasti visata?</numerusform>
+            <numerusform>Kas oled kindel, et tahad need %n kirjet prügikasti visata?</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>Move entry(s) to recycle bin?</source>
-        <translation><numerusform>Kirje prügikasti viskamise kinnitus</numerusform><numerusform>Kirjete prügikasti viskamise kinnitus</numerusform></translation>
+        <translation>
+            <numerusform>Kirje prügikasti viskamise kinnitus</numerusform>
+            <numerusform>Kirjete prügikasti viskamise kinnitus</numerusform>
+        </translation>
     </message>
     <message>
         <source>Replace references to entry?</source>
@@ -8828,7 +9269,10 @@ Kernel: %3 %4</translation>
     </message>
     <message numerus="yes">
         <source>Entry &quot;%1&quot; has %2 reference(s). Do you want to overwrite references with values, skip this entry, or delete anyway?</source>
-        <translation><numerusform>Kirjele „%1” leidub %2 viide. Kas kirjutada viide vastava väärtusega üle, jätta see kirje vahele või see ikkagi kustutada?</numerusform><numerusform>Kirjele „%1” leidub %2 viidet. Kas kirjutada viited vastavate väärtustega üle, jätta see kirje vahele või see ikkagi kustutada?</numerusform></translation>
+        <translation>
+            <numerusform>Kirjele „%1” leidub %2 viide. Kas kirjutada viide vastava väärtusega üle, jätta see kirje vahele või see ikkagi kustutada?</numerusform>
+            <numerusform>Kirjele „%1” leidub %2 viidet. Kas kirjutada viited vastavate väärtustega üle, jätta see kirje vahele või see ikkagi kustutada?</numerusform>
+        </translation>
     </message>
     <message>
         <source>User name</source>
@@ -8992,59 +9436,59 @@ See argument on iganenud, kasuta parem &quot;--set-key-file&quot;.</translation>
     </message>
     <message>
         <source>AES initialization failed</source>
-        <translation>AES-i initsialiseerimine ebaõnnestus</translation>
+        <translation type="vanished">AES-i initsialiseerimine ebaõnnestus</translation>
     </message>
     <message>
         <source>AES encrypt failed</source>
-        <translation>AES-i krüptimine ebaõnnestus</translation>
+        <translation type="vanished">AES-i krüptimine ebaõnnestus</translation>
     </message>
     <message>
         <source>Failed to store in Linux Keyring</source>
-        <translation>Salvestamine Linuxi võtmerõngasse ebaõnnestus</translation>
+        <translation type="vanished">Salvestamine Linuxi võtmerõngasse ebaõnnestus</translation>
     </message>
     <message>
         <source>Polkit returned an error: %1</source>
-        <translation>Polkit andis veateate: %1</translation>
+        <translation type="vanished">Polkit andis veateate: %1</translation>
     </message>
     <message>
         <source>Could not locate key in keyring</source>
-        <translation>Võtmerõngast ei leitud võtit</translation>
+        <translation type="vanished">Võtmerõngast ei leitud võtit</translation>
     </message>
     <message>
         <source>Could not read key in keyring</source>
-        <translation>Võtmerõngast polnud võimalik võtit lugeda</translation>
+        <translation type="vanished">Võtmerõngast polnud võimalik võtit lugeda</translation>
     </message>
     <message>
         <source>AES decrypt failed</source>
-        <translation>AES-i lahtikrüptimine ebaõnnestus</translation>
+        <translation type="vanished">AES-i lahtikrüptimine ebaõnnestus</translation>
     </message>
     <message>
         <source>No Polkit authentication agent was available</source>
-        <translation>Ühtegi Polkiti autentimisagenti polnud saadaval.</translation>
+        <translation type="vanished">Ühtegi Polkiti autentimisagenti polnud saadaval.</translation>
     </message>
     <message>
         <source>Polkit authorization failed</source>
-        <translation>Polkiti autentimine ebaõnnestus</translation>
+        <translation type="vanished">Polkiti autentimine ebaõnnestus</translation>
     </message>
     <message>
         <source>No Quick Unlock provider is available</source>
-        <translation>Ühtegi kiiresti luku avamise teenust pole saadaval.</translation>
+        <translation type="vanished">Ühtegi kiiresti luku avamise teenust pole saadaval.</translation>
     </message>
     <message>
         <source>Failed to init KeePassXC crypto.</source>
-        <translation>KeePassXC krüptograafia initsialiseerimine ebaõnnestus.</translation>
+        <translation type="vanished">KeePassXC krüptograafia initsialiseerimine ebaõnnestus.</translation>
     </message>
     <message>
         <source>Failed to encrypt key data.</source>
-        <translation>Võtme andmete krüptimine ebaõnnestus.</translation>
+        <translation type="vanished">Võtme andmete krüptimine ebaõnnestus.</translation>
     </message>
     <message>
         <source>Failed to get Windows Hello credential.</source>
-        <translation>Windows Hello tunnuse hankimine ebaõnnestus.</translation>
+        <translation type="vanished">Windows Hello tunnuse hankimine ebaõnnestus.</translation>
     </message>
     <message>
         <source>Failed to decrypt key data.</source>
-        <translation>Võtme andmete lahtikrüptimine ebaõnnestus.</translation>
+        <translation type="vanished">Võtme andmete lahtikrüptimine ebaõnnestus.</translation>
     </message>
     <message>
         <source>Origin is empty or not allowed</source>
@@ -9146,15 +9590,15 @@ See argument on iganenud, kasuta parem &quot;--set-key-file&quot;.</translation>
     </message>
     <message>
         <source>Enter Shortcut</source>
-        <translation>Sisesta kiirklahv:</translation>
+        <translation type="vanished">Sisesta kiirklahv:</translation>
     </message>
     <message>
         <source>Action</source>
-        <translation>Toiming</translation>
+        <translation type="vanished">Toiming</translation>
     </message>
     <message>
         <source>Shortcuts</source>
-        <translation>Kiirklahvid</translation>
+        <translation type="vanished">Kiirklahvid</translation>
     </message>
     <message>
         <source>Unknown passkeys error</source>
@@ -9174,27 +9618,27 @@ See argument on iganenud, kasuta parem &quot;--set-key-file&quot;.</translation>
     </message>
     <message>
         <source>Reset Shortcuts</source>
-        <translation>Lähtesta kiirklahvid</translation>
+        <translation type="vanished">Lähtesta kiirklahvid</translation>
     </message>
     <message>
         <source>Double click an action to change its shortcut</source>
-        <translation>Kiirklahvi muutmiseks tee vastaval real topeltklõps.</translation>
+        <translation type="vanished">Kiirklahvi muutmiseks tee vastaval real topeltklõps.</translation>
     </message>
     <message>
         <source>Filter...</source>
-        <translation>Filter…</translation>
+        <translation type="vanished">Filter…</translation>
     </message>
     <message>
         <source>Shortcut Conflict</source>
-        <translation>Kiirklahvide konflikt</translation>
+        <translation type="vanished">Kiirklahvide konflikt</translation>
     </message>
     <message>
         <source>Shortcut %1 conflicts with &apos;%2&apos;. Overwrite shortcut?</source>
-        <translation>Kiirklahviga %1 on juba seotud toiming „%2”. Kas soovid selle üle kirjutada?</translation>
+        <translation type="vanished">Kiirklahviga %1 on juba seotud toiming „%2”. Kas soovid selle üle kirjutada?</translation>
     </message>
     <message>
         <source>Cannot generate valid passphrases because the wordlist is too short</source>
-        <translation>Sobivaid paroolifraase pole võimalik genereerida, kuna sõnaloend on liiga lühike</translation>
+        <translation type="vanished">Sobivaid paroolifraase pole võimalik genereerida, kuna sõnaloend on liiga lühike</translation>
     </message>
     <message>
         <source>Encrypted files are not supported.</source>
@@ -9210,7 +9654,10 @@ See argument on iganenud, kasuta parem &quot;--set-key-file&quot;.</translation>
     </message>
     <message numerus="yes">
         <source>Delete plugin data from Entry(s)?</source>
-        <translation><numerusform>Kas kustutada kirjest plugina andmed?</numerusform><numerusform>Kas kustutada kirjetest plugina andmed?</numerusform></translation>
+        <translation>
+            <numerusform>Kas kustutada kirjest plugina andmed?</numerusform>
+            <numerusform>Kas kustutada kirjetest plugina andmed?</numerusform>
+        </translation>
     </message>
     <message>
         <source>Passkey</source>
@@ -9239,6 +9686,24 @@ See argument on iganenud, kasuta parem &quot;--set-key-file&quot;.</translation>
     <message>
         <source>Tags</source>
         <translation>Sildid</translation>
+    </message>
+    <message>
+        <source>Warning: the chosen wordlist is smaller than the minimum recommended size!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Unable to open file for writing: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Invalid Step</source>
+        <comment>TOTP</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Invalid Digits</source>
+        <comment>TOTP</comment>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -9279,31 +9744,31 @@ See argument on iganenud, kasuta parem &quot;--set-key-file&quot;.</translation>
     <name>RemoteHandler</name>
     <message>
         <source>Command `%1` did not finish in time. Process was killed.</source>
-        <translation>Käsk „%1” ei lõpetanud tööd mõistliku aja jooksul. Protsess lõpetati sunniviisiliselt.</translation>
+        <translation type="vanished">Käsk „%1” ei lõpetanud tööd mõistliku aja jooksul. Protsess lõpetati sunniviisiliselt.</translation>
     </message>
     <message>
         <source>Failed to upload merged database. Command `%1` did not finish in time. Process was killed.</source>
-        <translation>Mestitud andmebaasi üleslaadmine ebaõnnestus. Käsk „%1” ei lõpetanud tööd mõistliku aja jooksul. Protsess lõpetati sunniviisiliselt.</translation>
+        <translation type="vanished">Mestitud andmebaasi üleslaadmine ebaõnnestus. Käsk „%1” ei lõpetanud tööd mõistliku aja jooksul. Protsess lõpetati sunniviisiliselt.</translation>
     </message>
     <message>
         <source>Invalid download parameters provided.</source>
-        <translation>Anti sobimatud allalaadimisparameetrid.</translation>
+        <translation type="vanished">Anti sobimatud allalaadimisparameetrid.</translation>
     </message>
     <message>
         <source>Command `%1` failed to download database.</source>
-        <translation>Käsul „%1” ei õnnestunud andmebaasi alla laadida.</translation>
+        <translation type="vanished">Käsul „%1” ei õnnestunud andmebaasi alla laadida.</translation>
     </message>
     <message>
         <source>Invalid database pointer or upload parameters provided.</source>
-        <translation>Anti sobimatu adnmebaasiviide või sobimatud üleslaadimisparameetrid.</translation>
+        <translation type="vanished">Anti sobimatu adnmebaasiviide või sobimatud üleslaadimisparameetrid.</translation>
     </message>
     <message>
         <source>Command `%1` exited with status code: %2</source>
-        <translation>Käsk „%1” lõpetas töö olekukoodiga %2</translation>
+        <translation type="vanished">Käsk „%1” lõpetas töö olekukoodiga %2</translation>
     </message>
     <message>
         <source>Failed to upload merged database. Command `%1` exited with status code: %2</source>
-        <translation>Mestitud andmebaasi üleslaadmine ebaõnnestus. Käsk „%1” lõpetas töö olekukoodiga %2</translation>
+        <translation type="vanished">Mestitud andmebaasi üleslaadmine ebaõnnestus. Käsk „%1” lõpetas töö olekukoodiga %2</translation>
     </message>
 </context>
 <context>
@@ -9366,7 +9831,10 @@ See argument on iganenud, kasuta parem &quot;--set-key-file&quot;.</translation>
     </message>
     <message numerus="yes">
         <source>Delete Entry(s)…</source>
-        <translation><numerusform>Kustuta kirje…</numerusform><numerusform>Kustuta kirjed…</numerusform></translation>
+        <translation>
+            <numerusform>Kustuta kirje…</numerusform>
+            <numerusform>Kustuta kirjed…</numerusform>
+        </translation>
     </message>
     <message>
         <source>Exclude from reports</source>
@@ -9374,7 +9842,10 @@ See argument on iganenud, kasuta parem &quot;--set-key-file&quot;.</translation>
     </message>
     <message numerus="yes">
         <source>Expire Entry(s)…</source>
-        <translation><numerusform>Märgi kirje aegunuks…</numerusform><numerusform>Märgi kirjed aegunuks…</numerusform></translation>
+        <translation>
+            <numerusform>Märgi kirje aegunuks…</numerusform>
+            <numerusform>Märgi kirjed aegunuks…</numerusform>
+        </translation>
     </message>
     <message>
         <source>Only show entries that have a URL</source>
@@ -9394,7 +9865,10 @@ See argument on iganenud, kasuta parem &quot;--set-key-file&quot;.</translation>
     </message>
     <message numerus="yes">
         <source>Delete plugin data from Entry(s)…</source>
-        <translation><numerusform>Kustuta kirjest plugina andmed…</numerusform><numerusform>Kustuta kirjetest plugina andmed…</numerusform></translation>
+        <translation>
+            <numerusform>Kustuta kirjest plugina andmed…</numerusform>
+            <numerusform>Kustuta kirjetest plugina andmed…</numerusform>
+        </translation>
     </message>
 </context>
 <context>
@@ -9461,7 +9935,10 @@ See argument on iganenud, kasuta parem &quot;--set-key-file&quot;.</translation>
     </message>
     <message numerus="yes">
         <source>Delete Entry(s)…</source>
-        <translation><numerusform>Kustuta kirj&amp;e…</numerusform><numerusform>Kustuta kirj&amp;ed…</numerusform></translation>
+        <translation>
+            <numerusform>Kustuta kirj&amp;e…</numerusform>
+            <numerusform>Kustuta kirj&amp;ed…</numerusform>
+        </translation>
     </message>
     <message>
         <source>Exclude from reports</source>
@@ -9469,7 +9946,10 @@ See argument on iganenud, kasuta parem &quot;--set-key-file&quot;.</translation>
     </message>
     <message numerus="yes">
         <source>Expire Entry(s)…</source>
-        <translation><numerusform>Märgi kirje aegunuks…</numerusform><numerusform>Märgi kirjed aegunuks…</numerusform></translation>
+        <translation>
+            <numerusform>Märgi kirje aegunuks…</numerusform>
+            <numerusform>Märgi kirjed aegunuks…</numerusform>
+        </translation>
     </message>
     <message>
         <source>Show entries that have been excluded from reports</source>
@@ -9564,7 +10044,10 @@ See argument on iganenud, kasuta parem &quot;--set-key-file&quot;.</translation>
     </message>
     <message numerus="yes">
         <source>Delete Entry(s)…</source>
-        <translation><numerusform>Kustuta kirj&amp;e…</numerusform><numerusform>Kustuta kirj&amp;ed…</numerusform></translation>
+        <translation>
+            <numerusform>Kustuta kirj&amp;e…</numerusform>
+            <numerusform>Kustuta kirj&amp;ed…</numerusform>
+        </translation>
     </message>
     <message>
         <source>Exclude from reports</source>
@@ -9572,7 +10055,10 @@ See argument on iganenud, kasuta parem &quot;--set-key-file&quot;.</translation>
     </message>
     <message numerus="yes">
         <source>Expire Entry(s)…</source>
-        <translation><numerusform>Märgi kirje aegunuks…</numerusform><numerusform>Märgi kirjed aegunuks…</numerusform></translation>
+        <translation>
+            <numerusform>Märgi kirje aegunuks…</numerusform>
+            <numerusform>Märgi kirjed aegunuks…</numerusform>
+        </translation>
     </message>
 </context>
 <context>
@@ -9611,7 +10097,10 @@ See argument on iganenud, kasuta parem &quot;--set-key-file&quot;.</translation>
     </message>
     <message numerus="yes">
         <source>Delete Entry(s)…</source>
-        <translation><numerusform>Kustuta kirje…</numerusform><numerusform>Kustuta kirjed…</numerusform></translation>
+        <translation>
+            <numerusform>Kustuta kirje…</numerusform>
+            <numerusform>Kustuta kirjed…</numerusform>
+        </translation>
     </message>
     <message>
         <source>Relying Party</source>
@@ -9906,6 +10395,10 @@ See argument on iganenud, kasuta parem &quot;--set-key-file&quot;.</translation>
         <source>Limit search to selected group</source>
         <translation>Otsitakse ainult valitud grupist</translation>
     </message>
+    <message>
+        <source>Press Enter to search</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>SettingsClientModel</name>
@@ -10126,6 +10619,10 @@ See argument on iganenud, kasuta parem &quot;--set-key-file&quot;.</translation>
         <source>Weak Passwords</source>
         <translation>Nõrgad paroolid</translation>
     </message>
+    <message>
+        <source>TOTP Entries</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>TagView</name>
@@ -10147,6 +10644,24 @@ See argument on iganenud, kasuta parem &quot;--set-key-file&quot;.</translation>
     </message>
 </context>
 <context>
+    <name>TextAttachmentsEditWidget</name>
+    <message>
+        <source>Preview</source>
+        <translation type="unfinished">Eelvaade</translation>
+    </message>
+</context>
+<context>
+    <name>TextAttachmentsPreviewWidget</name>
+    <message>
+        <source>Form</source>
+        <translation type="unfinished">Vorm</translation>
+    </message>
+    <message>
+        <source>Type:</source>
+        <translation type="unfinished">Tüüp:</translation>
+    </message>
+</context>
+<context>
     <name>TotpDialog</name>
     <message>
         <source>Timed Password</source>
@@ -10158,7 +10673,10 @@ See argument on iganenud, kasuta parem &quot;--set-key-file&quot;.</translation>
     </message>
     <message numerus="yes">
         <source>Expires in &lt;b&gt;%n&lt;/b&gt; second(s)</source>
-        <translation><numerusform>Aegub &lt;b&gt;%n&lt;/b&gt; sekundi pärast</numerusform><numerusform>Aegub &lt;b&gt;%n&lt;/b&gt; sekundi pärast</numerusform></translation>
+        <translation>
+            <numerusform>Aegub &lt;b&gt;%n&lt;/b&gt; sekundi pärast</numerusform>
+            <numerusform>Aegub &lt;b&gt;%n&lt;/b&gt; sekundi pärast</numerusform>
+        </translation>
     </message>
 </context>
 <context>
@@ -10258,6 +10776,10 @@ Näide: JBSWY3DPEHPK3PXP</translation>
         <source>Are you sure you want to delete TOTP settings for this entry?</source>
         <translation>Kas oled kindel, et tahad selle kirje TOTP-seaded kustutada?</translation>
     </message>
+    <message>
+        <source>Error: secret key is invalid</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>URLEdit</name>
@@ -10341,6 +10863,25 @@ Näide: JBSWY3DPEHPK3PXP</translation>
     <message>
         <source>Could not register global shortcut</source>
         <translation>Globaalse kiirklahvi registreerimine polnud võimalik</translation>
+    </message>
+</context>
+<context>
+    <name>WindowsHello</name>
+    <message>
+        <source>Failed to init KeePassXC crypto.</source>
+        <translation type="unfinished">KeePassXC krüptograafia initsialiseerimine ebaõnnestus.</translation>
+    </message>
+    <message>
+        <source>Failed to encrypt key data.</source>
+        <translation type="unfinished">Võtme andmete krüptimine ebaõnnestus.</translation>
+    </message>
+    <message>
+        <source>Failed to get Windows Hello credential.</source>
+        <translation type="unfinished">Windows Hello tunnuse hankimine ebaõnnestus.</translation>
+    </message>
+    <message>
+        <source>Failed to decrypt key data.</source>
+        <translation type="unfinished">Võtme andmete lahtikrüptimine ebaõnnestus.</translation>
     </message>
 </context>
 <context>

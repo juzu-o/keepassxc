@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="ko">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="ko">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -223,43 +225,43 @@
     </message>
     <message>
         <source>Confirm Reset</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Are you sure you want to reset all settings to default?</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Import KeePassXC Settings</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Failed to import settings from %1, not a valid settings file.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Export KeePassXC Settings</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Small</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Normal</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Medium</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Large</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Custom</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -508,11 +510,11 @@
     </message>
     <message>
         <source>On database unlock, show entries that will expire within</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>On database unlock, show entries that will expire within </source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source> days</source>
@@ -521,23 +523,23 @@
     </message>
     <message>
         <source>Destination format:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;{DB_FILENAME}&lt;/span&gt; is replaced with the filename of the saved database without extension&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;{TIME:&amp;lt;format&amp;gt;}&lt;/span&gt; is replaced with the specified time format (default: dd_MM_yyyy_hh-mm-ss)&lt;/p&gt;&lt;p&gt;See the User Guide for more details&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Choose folder...</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Show confirmation before moving entries to recycle bin</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Copy data on double clicking field in entry view</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Show toolbar</source>
@@ -545,31 +547,47 @@
     </message>
     <message>
         <source>Show the menu bar by pressing the Alt key</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Show menubar</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Import settings…</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Export settings…</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Open browser on double clicking URL field in entry view</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Font size:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Font size selection</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Double-click action for URL:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Double-click action for URL field</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Edit entry</source>
+        <translation type="unfinished">항목 편집</translation>
+    </message>
+    <message>
+        <source>Open entry URL in browser</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy entry URL to clipboard</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -654,11 +672,22 @@
     </message>
     <message>
         <source>Lock Options</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Hide notes in the entry preview panel</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>AttachmentWidget</name>
+    <message>
+        <source>Attachment Viewer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Unknown attachment type</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -710,6 +739,10 @@
     <message>
         <source>Invalid placeholder: %1</source>
         <translation>잘못된 자리 비움자: %1</translation>
+    </message>
+    <message>
+        <source>Entry has invalid TOTP settings</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -786,7 +819,7 @@ Ctrl+1 - Type username&lt;br/&gt;
 Ctrl+2 - Type password&lt;br/&gt;
 Ctrl+3 - Type TOTP&lt;br/&gt;
 Ctrl+4 - Use Virtual Keyboard (Windows Only)&lt;/p&gt;</source>
-        <translation>&lt;p&gt;다음 고급 검색 질의를 사용하여 모든 열린 데이터베이스에서 항목을 검색할 수 있습니다. 다음 단축키를 사용할 수 있습니다:&lt;br/&gt;
+        <translation type="vanished">&lt;p&gt;다음 고급 검색 질의를 사용하여 모든 열린 데이터베이스에서 항목을 검색할 수 있습니다. 다음 단축키를 사용할 수 있습니다:&lt;br/&gt;
 Ctrl+F - 데이터베이스 검색 전환&lt;br/&gt;
 Ctrl+1 - 사용자 이름 입력&lt;br/&gt;
 Ctrl+2 - 암호 입력 &lt;br/&gt;
@@ -823,19 +856,49 @@ Ctrl+4 - 가상 키보드 사용(Windows 전용)&lt;/p&gt;</translation>
     </message>
     <message>
         <source>Copy Username</source>
-        <translation>사용자 이름 복사</translation>
+        <translation type="vanished">사용자 이름 복사</translation>
     </message>
     <message>
         <source>Copy Password</source>
-        <translation>암호 복사</translation>
+        <translation type="vanished">암호 복사</translation>
     </message>
     <message>
         <source>Copy TOTP</source>
-        <translation>TOTP 복사</translation>
+        <translation type="vanished">TOTP 복사</translation>
     </message>
     <message>
         <source>Use Virtual Keyboard</source>
         <translation>가상 키보드 사용</translation>
+    </message>
+    <message>
+        <source>&lt;p&gt;You can use advanced search queries to find any entry in your open databases. The following shortcuts are useful:&lt;br/&gt;
+Ctrl+F - Toggle database search&lt;br/&gt;
+Ctrl+1 - Type username&lt;br/&gt;
+Ctrl+2 - Type password&lt;br/&gt;
+Ctrl+3 - Type TOTP&lt;br/&gt;
+Ctrl+4 - Type URL&lt;br/&gt;
+Ctrl+5 - Use Virtual Keyboard (Windows Only)&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Type {URL}</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy {USERNAME}</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy {PASSWORD}</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy {TOTP}</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy {URL}</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -922,7 +985,9 @@ Please select the correct database for saving credentials.</source>
     </message>
     <message numerus="yes">
         <source>Timeout in &lt;b&gt;%n&lt;/b&gt; seconds...</source>
-        <translation><numerusform>&lt;b&gt;%n&lt;/b&gt;초 후 시간 초과됨...</numerusform></translation>
+        <translation>
+            <numerusform>&lt;b&gt;%n&lt;/b&gt;초 후 시간 초과됨...</numerusform>
+        </translation>
     </message>
     <message>
         <source>Relying Party: %1</source>
@@ -1056,6 +1121,51 @@ Do you want to overwrite the passkey in %1 - %2?</source>
     <message>
         <source>Register</source>
         <translation>등록</translation>
+    </message>
+    <message>
+        <source>Converting attributes to custom data…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Abort</source>
+        <translation type="unfinished">중지</translation>
+    </message>
+    <message>
+        <source>KeePassXC: Converted KeePassHTTP attributes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Successfully converted attributes from %1 entry(s).
+Moved %2 keys to custom data.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message numerus="yes">
+        <source>Successfully moved %n keys to custom data.</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>KeePassXC: No entry with KeePassHTTP attributes found!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>The active database does not contain an entry with KeePassHTTP attributes.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Don&apos;t show this warning again</source>
+        <translation type="unfinished">더 이상 이 경고 표시하지 않기</translation>
+    </message>
+    <message>
+        <source>KeePassXC: Legacy browser integration settings detected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Your KeePassXC-Browser settings need to be moved into the database settings.
+This is necessary to maintain your current browser connections.
+Would you like to migrate your existing settings now?</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1265,11 +1375,11 @@ Do you want to overwrite the passkey in %1 - %2?</source>
     </message>
     <message>
         <source>Allow keepassxc-proxy to list all entries with their title, URL and UUID in connected databases.</source>
-        <translation>keepassxc-proxy가 연결된 데이터베이스 내 모든 항목의 제목, URL, UUID를 표시하도록 허용합니다.</translation>
+        <translation type="vanished">keepassxc-proxy가 연결된 데이터베이스 내 모든 항목의 제목, URL, UUID를 표시하도록 허용합니다.</translation>
     </message>
     <message>
         <source>Allow limited access to all entries in connected databases (ignores site access restrictions)</source>
-        <translation>연결된 데이터베이스 내 모든 항목에 제한된 접근을 허용합니다(사이트 접근 제한 무시)</translation>
+        <translation type="vanished">연결된 데이터베이스 내 모든 항목에 제한된 접근을 허용합니다(사이트 접근 제한 무시)</translation>
     </message>
     <message>
         <source>&lt;b&gt;Warning:&lt;/b&gt; Only adjust these settings if necessary.</source>
@@ -1301,7 +1411,7 @@ Do you want to overwrite the passkey in %1 - %2?</source>
     </message>
     <message>
         <source>Browsers installed using Snap or Flatpak are not supported with exception to Firefox installed using Snap.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1435,7 +1545,9 @@ Do you want to overwrite the passkey in %1 - %2?</source>
     </message>
     <message numerus="yes">
         <source>[%n more message(s) skipped]</source>
-        <translation><numerusform>[추가 메시지 %n개 건너뜀]</numerusform></translation>
+        <translation>
+            <numerusform>[추가 메시지 %n개 건너뜀]</numerusform>
+        </translation>
     </message>
     <message>
         <source>Failed to parse CSV file: %1</source>
@@ -1465,12 +1577,16 @@ Are you sure you want to import?</source>
     <message numerus="yes">
         <source>%n row(s)</source>
         <comment>CSV row count</comment>
-        <translation><numerusform>%n줄</numerusform></translation>
+        <translation>
+            <numerusform>%n줄</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>%n column(s)</source>
         <comment>CSV column count</comment>
-        <translation><numerusform>%n칸</numerusform></translation>
+        <translation>
+            <numerusform>%n칸</numerusform>
+        </translation>
     </message>
 </context>
 <context>
@@ -1524,11 +1640,11 @@ Backup database located at %2</source>
     </message>
     <message>
         <source>Database file read error.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>No file path was provided.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1664,11 +1780,11 @@ To prevent this error from appearing, you must go to &quot;Database Settings / S
     </message>
     <message>
         <source>authenticate to access the database</source>
-        <translation>데이터베이스에 접근하려면 인증하십시오</translation>
+        <translation type="vanished">데이터베이스에 접근하려면 인증하십시오</translation>
     </message>
     <message>
         <source>Failed to authenticate with Quick Unlock: %1</source>
-        <translation>빠른 잠금 해제로 인증할 수 없음: %1</translation>
+        <translation type="vanished">빠른 잠금 해제로 인증할 수 없음: %1</translation>
     </message>
     <message>
         <source>Select Key File:</source>
@@ -1724,7 +1840,23 @@ Are you sure you want to continue with this file?.</source>
     </message>
     <message>
         <source>Hardware keys found, but no slots are configured.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Press ESC again to close this database</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Windows Hello setup was canceled or failed. Quick unlock has not been enabled.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Failed to authenticate with Windows Hello: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Failed to authenticate with Touch ID</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1770,11 +1902,11 @@ Are you sure you want to continue with this file?.</source>
     </message>
     <message>
         <source>Remote Sync</source>
-        <translation>원격 동기화</translation>
+        <translation type="vanished">원격 동기화</translation>
     </message>
     <message>
         <source>Database Settings: %1</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1849,7 +1981,9 @@ This may prevent connection to the browser plugin.</source>
     </message>
     <message numerus="yes">
         <source>Successfully removed %n encryption key(s) from KeePassXC settings.</source>
-        <translation><numerusform>KeePassXC 설정에서 암호화 키 %n개를 삭제했습니다.</numerusform></translation>
+        <translation>
+            <numerusform>KeePassXC 설정에서 암호화 키 %n개를 삭제했습니다.</numerusform>
+        </translation>
     </message>
     <message>
         <source>Do you really want forget all site-specific settings on every entry?
@@ -1867,7 +2001,9 @@ Permissions to access entries will be revoked.</source>
     </message>
     <message numerus="yes">
         <source>Successfully removed permissions from %n entry(s).</source>
-        <translation><numerusform>항목 %n개에서 권한을 삭제했습니다.</numerusform></translation>
+        <translation>
+            <numerusform>항목 %n개에서 권한을 삭제했습니다.</numerusform>
+        </translation>
     </message>
     <message>
         <source>The active database does not contain an entry with permissions.</source>
@@ -1902,6 +2038,19 @@ This is only necessary if your database is a copy of another and the browser ext
     <message>
         <source>No entry with permissions found!</source>
         <translation>권한이 있는 항목을 찾을 수 없습니다!</translation>
+    </message>
+    <message>
+        <source>Convert KeePassHTTP data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Move KeePassHTTP attributes to custom data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Do you really want to convert all legacy browser integration data to the latest standard?
+This is necessary to maintain compatibility with the browser plugin.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2086,12 +2235,16 @@ If you keep this number, your database will not be protected from brute force at
     <message numerus="yes">
         <source> MiB</source>
         <comment>Abbreviation for Mebibytes (KDF settings)</comment>
-        <translation><numerusform>MiB</numerusform></translation>
+        <translation>
+            <numerusform>MiB</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source> thread(s)</source>
         <comment>Threads for parallel execution (KDF settings)</comment>
-        <translation><numerusform>개 스레드</numerusform></translation>
+        <translation>
+            <numerusform>개 스레드</numerusform>
+        </translation>
     </message>
     <message>
         <source>Encryption Settings:</source>
@@ -2257,35 +2410,35 @@ removed from the database.</source>
     </message>
     <message>
         <source>Public Database Metadata</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Warning: the following settings are not encrypted.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Display name:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Publically visible display name used on the unlock dialog</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Database public display name</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Display color:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Publically visible color used on the unlock dialog</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Database public display color chooser</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Clear</source>
@@ -2293,11 +2446,11 @@ removed from the database.</source>
     </message>
     <message>
         <source>Display icon:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Select Database Icon</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2372,7 +2525,9 @@ removed from the database.</source>
     </message>
     <message numerus="yes">
         <source>Purged %n icon(s) from the database.</source>
-        <translation><numerusform>데이터베이스에서 아이콘 %n개를 비웠습니다.</numerusform></translation>
+        <translation>
+            <numerusform>데이터베이스에서 아이콘 %n개를 비웠습니다.</numerusform>
+        </translation>
     </message>
 </context>
 <context>
@@ -2398,95 +2553,95 @@ removed from the database.</source>
     <name>DatabaseSettingsWidgetRemote</name>
     <message>
         <source>Sync Commands</source>
-        <translation>동기화 명령</translation>
+        <translation type="vanished">동기화 명령</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation>삭제</translation>
+        <translation type="vanished">삭제</translation>
     </message>
     <message>
         <source>Command Settings</source>
-        <translation>명령 설정</translation>
+        <translation type="vanished">명령 설정</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>이름</translation>
+        <translation type="vanished">이름</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>저장</translation>
+        <translation type="vanished">저장</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation>다운로드</translation>
+        <translation type="vanished">다운로드</translation>
     </message>
     <message>
         <source>Command:</source>
-        <translation>명령:</translation>
+        <translation type="vanished">명령:</translation>
     </message>
     <message>
         <source>Download command field</source>
-        <translation>다운로드 명령 필드</translation>
+        <translation type="vanished">다운로드 명령 필드</translation>
     </message>
     <message>
         <source>e.g.: &quot;sftp user@hostname&quot; or &quot;scp user@hostname:DatabaseOnRemote.kdbx {TEMP_DATABASE}&quot;</source>
-        <translation>예제: &quot;sftp user@hostname&quot; 또는 &quot;scp user@hostname:DatabaseOnRemote.kdbx {TEMP_DATABASE}&quot;</translation>
+        <translation type="vanished">예제: &quot;sftp user@hostname&quot; 또는 &quot;scp user@hostname:DatabaseOnRemote.kdbx {TEMP_DATABASE}&quot;</translation>
     </message>
     <message>
         <source>Input:</source>
-        <translation>입력:</translation>
+        <translation type="vanished">입력:</translation>
     </message>
     <message>
         <source>Download input field</source>
-        <translation>다운로드 입력 필드</translation>
+        <translation type="vanished">다운로드 입력 필드</translation>
     </message>
     <message>
         <source>Upload</source>
-        <translation>업로드</translation>
+        <translation type="vanished">업로드</translation>
     </message>
     <message>
         <source>Upload command field</source>
-        <translation>업로드 명령 필드</translation>
+        <translation type="vanished">업로드 명령 필드</translation>
     </message>
     <message>
         <source>e.g.: &quot;sftp user@hostname&quot; or &quot;scp {TEMP_DATABASE} user@hostname:DatabaseOnRemote.kdbx&quot;</source>
-        <translation>예제: &quot;sftp user@hostname&quot; 또는 &quot;scp {TEMP_DATABASE} user@hostname:DatabaseOnRemote.kdbx&quot;</translation>
+        <translation type="vanished">예제: &quot;sftp user@hostname&quot; 또는 &quot;scp {TEMP_DATABASE} user@hostname:DatabaseOnRemote.kdbx&quot;</translation>
     </message>
     <message>
         <source>Upload input field</source>
-        <translation>업로드 입력 필드</translation>
+        <translation type="vanished">업로드 입력 필드</translation>
     </message>
     <message>
         <source>Name cannot be empty.</source>
-        <translation>이름을 비워 둘 수 없습니다.</translation>
+        <translation type="vanished">이름을 비워 둘 수 없습니다.</translation>
     </message>
     <message>
         <source>Test</source>
-        <translation>시험</translation>
+        <translation type="vanished">시험</translation>
     </message>
     <message>
         <source>Download command cannot be empty.</source>
-        <translation>다운로드 명령을 비워 둘 수 없습니다.</translation>
+        <translation type="vanished">다운로드 명령을 비워 둘 수 없습니다.</translation>
     </message>
     <message>
         <source>Download failed with error: %1</source>
-        <translation>다운로드 실패, 오류: %1</translation>
+        <translation type="vanished">다운로드 실패, 오류: %1</translation>
     </message>
     <message>
         <source>Download finished, but file %1 could not be found.</source>
-        <translation>다운로드가 완료되었지만 %1 파일을 찾을 수 없습니다.</translation>
+        <translation type="vanished">다운로드가 완료되었지만 %1 파일을 찾을 수 없습니다.</translation>
     </message>
     <message>
         <source>Download successful.</source>
-        <translation>다운로드에 성공했습니다.</translation>
+        <translation type="vanished">다운로드에 성공했습니다.</translation>
     </message>
     <message>
         <source>Save Remote Settings</source>
-        <translation>원격 설정 저장</translation>
+        <translation type="vanished">원격 설정 저장</translation>
     </message>
     <message>
         <source>You have unsaved changes. Do you want to save them?</source>
-        <translation>저장하지 않은 변경 사항이 있습니다. 저장하시겠습니까?</translation>
+        <translation type="vanished">저장하지 않은 변경 사항이 있습니다. 저장하시겠습니까?</translation>
     </message>
     <message>
         <source>e.g.:
@@ -2496,7 +2651,7 @@ exit
 {TEMP_DATABASE} is used as placeholder to store the database in a temporary location
 The command has to exit. In case of `sftp` as last command `exit` has to be sent
             </source>
-        <translation>예제.:
+        <translation type="vanished">예제.:
 get DatabaseOnRemote.kdbx {TEMP_DATABASE}
 exit
 ---
@@ -2512,21 +2667,17 @@ exit
 {TEMP_DATABASE} is used as placeholder to store the database in a temporary location
 The command has to exit. In case of `sftp` as last command `exit` has to be sent
             </source>
-        <translation>예제.:
+        <translation type="vanished">예제.:
 put {TEMP_DATABASE} DatabaseOnRemote.kdbx
 exit
 ---
 {TEMP_DATABASE}는 임시 위치에 저장된 데이터베이스를 가리키는 자리 비움자입니다
 명령은 종료되어야 합니다. `sftp`의 경우 마지막 `exit` 명령을 전송해야 합니다
             </translation>
-    </message>
-    <message>
-        <source>Timeout:</source>
-        <translation type="unfinished"/>
     </message>
     <message>
         <source> seconds</source>
-        <translation>초</translation>
+        <translation type="vanished">초</translation>
     </message>
 </context>
 <context>
@@ -2605,7 +2756,7 @@ This is definitely a bug, please report it to the developers.</source>
     <message>
         <source>%1 [Temporary]</source>
         <comment>Database tab name modifier</comment>
-        <translation>%1 [임시]</translation>
+        <translation type="vanished">%1 [임시]</translation>
     </message>
 </context>
 <context>
@@ -2664,7 +2815,9 @@ This is definitely a bug, please report it to the developers.</source>
     </message>
     <message numerus="yes">
         <source>Entries expiring within %1 day(s)</source>
-        <translation><numerusform>%1일 내에 만료되는 항목</numerusform></translation>
+        <translation>
+            <numerusform>%1일 내에 만료되는 항목</numerusform>
+        </translation>
     </message>
     <message>
         <source>No current database.</source>
@@ -2782,31 +2935,31 @@ Disable safe saves and try again?</source>
     </message>
     <message>
         <source>Remote Sync did not contain any download or upload commands.</source>
-        <translation>원격 동기화에 다운로드나 업로드 명령이 없습니다.</translation>
+        <translation type="vanished">원격 동기화에 다운로드나 업로드 명령이 없습니다.</translation>
     </message>
     <message>
         <source>Remote sync &apos;%1&apos; completed successfully!</source>
-        <translation>&apos;%1&apos; 원격 동기화에 성공했습니다!</translation>
+        <translation type="vanished">&apos;%1&apos; 원격 동기화에 성공했습니다!</translation>
     </message>
     <message>
         <source>Remote sync &apos;%1&apos; failed: %2</source>
-        <translation>&apos;%1&apos; 원격 동기화 실패: %2</translation>
+        <translation type="vanished">&apos;%1&apos; 원격 동기화 실패: %2</translation>
     </message>
     <message>
         <source>Error while saving database %1: %2</source>
-        <translation>%1 데이터베이스를 저장하는 중 오류 발생: %2</translation>
+        <translation type="vanished">%1 데이터베이스를 저장하는 중 오류 발생: %2</translation>
     </message>
     <message>
         <source>Downloading...</source>
-        <translation>다운로드 중...</translation>
+        <translation type="vanished">다운로드 중...</translation>
     </message>
     <message>
         <source>Uploading...</source>
-        <translation>업로드 중...</translation>
+        <translation type="vanished">업로드 중...</translation>
     </message>
     <message>
         <source>Syncing...</source>
-        <translation>동기화 중...</translation>
+        <translation type="vanished">동기화 중...</translation>
     </message>
     <message>
         <source>Remove passkey from entry</source>
@@ -2818,47 +2971,58 @@ Disable safe saves and try again?</source>
     </message>
     <message>
         <source>The database file &quot;%1&quot; was modified externally</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Do you want to load the changes?</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Reload database</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Reloading database…</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Reload canceled</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Reload successful</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Reload pending user action…</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>The database file &quot;%1&quot; was modified externally.&lt;br&gt;How would you like to proceed?&lt;br&gt;&lt;br&gt;Merge all changes&lt;br&gt;Ignore the changes on disk until save&lt;br&gt;Discard unsaved changes</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>The database file &quot;%1&quot; was modified externally.&lt;br&gt;How would you like to proceed?&lt;br&gt;&lt;br&gt;Merge all changes then save&lt;br&gt;Overwrite the changes on disk&lt;br&gt;Discard unsaved changes</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Database file overwritten.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Database file on disk cannot be unlocked with current credentials.&lt;br&gt;Enter new credentials and/or present hardware key to continue.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Failed to save backup database: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>EditEntryAttachmentsDialog</name>
+    <message>
+        <source>Edit: %1</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2999,19 +3163,27 @@ Would you like to correct it?</source>
     </message>
     <message numerus="yes">
         <source>%n hour(s)</source>
-        <translation><numerusform>%n시간</numerusform></translation>
+        <translation>
+            <numerusform>%n시간</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>%n week(s)</source>
-        <translation><numerusform>%n주</numerusform></translation>
+        <translation>
+            <numerusform>%n주</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>%n month(s)</source>
-        <translation><numerusform>%n개월</numerusform></translation>
+        <translation>
+            <numerusform>%n개월</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>%n year(s)</source>
-        <translation><numerusform>%n년</numerusform></translation>
+        <translation>
+            <numerusform>%n년</numerusform>
+        </translation>
     </message>
     <message>
         <source>Failed to decrypt SSH key, ensure password is correct.</source>
@@ -3420,7 +3592,7 @@ Would you like to correct it?</source>
     </message>
     <message>
         <source>Generate</source>
-        <translation>생성</translation>
+        <translation type="vanished">생성</translation>
     </message>
     <message>
         <source>Select attachment file</source>
@@ -3448,7 +3620,7 @@ Would you like to correct it?</source>
     </message>
     <message>
         <source>Clear agent</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -3798,7 +3970,9 @@ Supported extensions are: %1.</source>
     </message>
     <message numerus="yes">
         <source>Successfully loaded %1 of %n icon(s)</source>
-        <translation><numerusform>아이콘 %n개 중 %1개 불러옴</numerusform></translation>
+        <translation>
+            <numerusform>아이콘 %n개 중 %1개 불러옴</numerusform>
+        </translation>
     </message>
     <message>
         <source>No icons were loaded</source>
@@ -3806,11 +3980,15 @@ Supported extensions are: %1.</source>
     </message>
     <message numerus="yes">
         <source>%n icon(s) already exist in the database</source>
-        <translation><numerusform>데이터베이스에 아이콘 %n개가 이미 존재함</numerusform></translation>
+        <translation>
+            <numerusform>데이터베이스에 아이콘 %n개가 이미 존재함</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>The following icon(s) failed:</source>
-        <translation><numerusform>다음 아이콘에서 오류가 발생했습니다:</numerusform></translation>
+        <translation>
+            <numerusform>다음 아이콘에서 오류가 발생했습니다:</numerusform>
+        </translation>
     </message>
     <message>
         <source>You can enable the DuckDuckGo website icon service under Application Settings -&gt; Security</source>
@@ -3922,15 +4100,7 @@ This may cause the affected plugins to malfunction.</source>
     <name>EntryAttachmentsDialog</name>
     <message>
         <source>Form</source>
-        <translation>폼</translation>
-    </message>
-    <message>
-        <source>File name</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>File contents...</source>
-        <translation type="unfinished"/>
+        <translation type="vanished">폼</translation>
     </message>
 </context>
 <context>
@@ -3960,7 +4130,7 @@ This may cause the affected plugins to malfunction.</source>
     </message>
     <message>
         <source>Add</source>
-        <translation>추가</translation>
+        <translation type="vanished">추가</translation>
     </message>
     <message>
         <source>Remove selected attachment</source>
@@ -3984,7 +4154,7 @@ This may cause the affected plugins to malfunction.</source>
     </message>
     <message>
         <source>Save</source>
-        <translation>저장</translation>
+        <translation type="vanished">저장</translation>
     </message>
     <message>
         <source>Select files</source>
@@ -3996,7 +4166,9 @@ This may cause the affected plugins to malfunction.</source>
     </message>
     <message numerus="yes">
         <source>Are you sure you want to remove %n attachment(s)?</source>
-        <translation><numerusform>첨부 항목 %n개를 삭제하시겠습니까?</numerusform></translation>
+        <translation>
+            <numerusform>첨부 항목 %n개를 삭제하시겠습니까?</numerusform>
+        </translation>
     </message>
     <message>
         <source>Save attachments</source>
@@ -4037,8 +4209,10 @@ This may cause the affected plugins to malfunction.</source>
     <message numerus="yes">
         <source>Unable to open file(s):
 %1</source>
-        <translation><numerusform>파일을 열 수 없음:
-%1</numerusform></translation>
+        <translation>
+            <numerusform>파일을 열 수 없음:
+%1</numerusform>
+        </translation>
     </message>
     <message>
         <source>Confirm Overwrite Attachment</source>
@@ -4063,7 +4237,7 @@ Are you sure to add this file?</source>
         <translation>첨부 수정됨</translation>
     </message>
     <message>
-        <source>The attachment '%1' was modified.
+        <source>The attachment &apos;%1&apos; was modified.
 Do you want to save the changes to your database?</source>
         <translation>첨부 &apos;%1&apos;이(가) 수정되었습니다.
 변경 사항을 데이터베이스에 저장하시겠습니까?</translation>
@@ -4085,16 +4259,32 @@ Would you like to overwrite the existing attachment?</source>
 기존 첨부 항목을 덮어쓰시겠습니까?</translation>
     </message>
     <message>
-        <source>New</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>Preview</source>
         <translation>미리 보기</translation>
     </message>
     <message>
-        <source>Failed to preview an attachment: Attachment not found</source>
-        <translation type="unfinished"/>
+        <source>Add file…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation type="unfinished">편집</translation>
+    </message>
+    <message>
+        <source>Save…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>New Text Document</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Load from Disk…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>New Attachment</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -4296,7 +4486,7 @@ Would you like to overwrite the existing attachment?</source>
     </message>
     <message>
         <source>Group Path</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -4433,7 +4623,9 @@ Would you like to overwrite the existing attachment?</source>
     </message>
     <message numerus="yes">
         <source>+ %1 entry(s)...</source>
-        <translation><numerusform>+ 항목 %1개...</numerusform></translation>
+        <translation>
+            <numerusform>+ 항목 %1개...</numerusform>
+        </translation>
     </message>
 </context>
 <context>
@@ -4545,7 +4737,9 @@ This will leave your passwords and sensitive information vulnerable!
     <message numerus="yes">
         <source>%n Entry(s) was used by %1</source>
         <comment>%1 is the name of an application</comment>
-        <translation><numerusform>%1에서 항목 %n개 사용함</numerusform></translation>
+        <translation>
+            <numerusform>%1에서 항목 %n개 사용함</numerusform>
+        </translation>
     </message>
 </context>
 <context>
@@ -4657,6 +4851,17 @@ You can enable the DuckDuckGo website icon service in the security section of th
     </message>
 </context>
 <context>
+    <name>ImageAttachmentsWidget</name>
+    <message>
+        <source>Zoom:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Fit</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ImportWizard</name>
     <message>
         <source>Import Wizard</source>
@@ -4692,14 +4897,6 @@ You can enable the DuckDuckGo website icon service in the security section of th
     <message>
         <source>Url</source>
         <translation>URL</translation>
-    </message>
-    <message>
-        <source>Could not load key file.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Could not open remote database. Password or key file may be incorrect.</source>
-        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -4806,41 +5003,23 @@ You can enable the DuckDuckGo website icon service in the security section of th
     </message>
     <message>
         <source>Proton Pass (.json)</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Proton Pass JSON Export</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Temporary Database</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Command:</source>
-        <translation>명령:</translation>
+        <translation type="vanished">명령:</translation>
     </message>
     <message>
         <source>e.g.: &quot;sftp user@hostname&quot; or &quot;scp user@hostname:DatabaseOnRemote.kdbx {TEMP_DATABASE}&quot;</source>
-        <translation>예제: &quot;sftp user@hostname&quot; 또는 &quot;scp user@hostname:DatabaseOnRemote.kdbx {TEMP_DATABASE}&quot;</translation>
+        <translation type="vanished">예제: &quot;sftp user@hostname&quot; 또는 &quot;scp user@hostname:DatabaseOnRemote.kdbx {TEMP_DATABASE}&quot;</translation>
     </message>
     <message>
         <source>Input:</source>
-        <translation>입력:</translation>
-    </message>
-    <message>
-        <source>e.g.:
-get DatabaseOnRemote.kdbx {TEMP_DATABASE}
-exit
----
-{TEMP_DATABASE} is used as placeholder to store the database in a temporary location
-The command has to exit. In case of `sftp` as last commend `exit` has to be sent
-         </source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Remote Database (.kdbx)</source>
-        <translation type="unfinished"/>
+        <translation type="vanished">입력:</translation>
     </message>
 </context>
 <context>
@@ -5114,7 +5293,7 @@ If this reoccurs, then your database file may be corrupt.</source>
     <message>
         <source>The selected file is an old KeePass 1 database (.kdb).
 
-You can import it by clicking on Database &gt; 'Import KeePass 1 database…'.
+You can import it by clicking on Database &gt; &apos;Import KeePass 1 database…&apos;.
 This is a one-way migration. You won&apos;t be able to open the imported database with the old KeePassX 0.4 version.</source>
         <translation>선택한 파일은 KeePass 1 데이터베이스(.kdb)입니다.
 
@@ -5536,7 +5715,7 @@ If this reoccurs, then your database file may be corrupt.</source>
         <translation>KeePassXC에서 차후에 지원을 중단할 수도 있는&lt;br&gt;이전 키 파일 형식을 사용하고 있습니다.&lt;br&gt;&lt;br&gt;새 키 파일을 생성하기를 추천합니다:</translation>
     </message>
     <message>
-        <source>Error loading the key file '%1'
+        <source>Error loading the key file &apos;%1&apos;
 Message: %2</source>
         <translation>키 파일 &apos;%1&apos;을(를) 불러올 수 없음
 메시지: %2</translation>
@@ -5989,7 +6168,9 @@ Expect some bugs and minor issues, this version is meant for testing purposes.</
     </message>
     <message numerus="yes">
         <source>Restore Entry(s)</source>
-        <translation><numerusform>항목 복원</numerusform></translation>
+        <translation>
+            <numerusform>항목 복원</numerusform>
+        </translation>
     </message>
     <message>
         <source>Settings</source>
@@ -6017,7 +6198,9 @@ Expect some bugs and minor issues, this version is meant for testing purposes.</
     </message>
     <message numerus="yes">
         <source>%1 Entry(s)</source>
-        <translation><numerusform>항목 %1개</numerusform></translation>
+        <translation>
+            <numerusform>항목 %1개</numerusform>
+        </translation>
     </message>
     <message>
         <source>Please present or touch your YubiKey to continue…</source>
@@ -6057,111 +6240,111 @@ Expect some bugs and minor issues, this version is meant for testing purposes.</
     </message>
     <message>
         <source>Remote S&amp;ync…</source>
-        <translation>원격 동기화(&amp;Y)…</translation>
+        <translation type="vanished">원격 동기화(&amp;Y)…</translation>
     </message>
     <message>
         <source>Quit Application</source>
-        <translation>프로그램 끝내기</translation>
+        <translation type="vanished">프로그램 끝내기</translation>
     </message>
     <message>
         <source>Open About Dialog</source>
-        <translation>정보 대화 상자 열기</translation>
+        <translation type="vanished">정보 대화 상자 열기</translation>
     </message>
     <message>
         <source>Open Database</source>
-        <translation>데이터베이스 열기</translation>
+        <translation type="vanished">데이터베이스 열기</translation>
     </message>
     <message>
         <source>Create Database</source>
-        <translation>데이터베이스 만들기</translation>
+        <translation type="vanished">데이터베이스 만들기</translation>
     </message>
     <message>
         <source>Merge From Database</source>
-        <translation>데이터베이스에서 합치기</translation>
+        <translation type="vanished">데이터베이스에서 합치기</translation>
     </message>
     <message>
         <source>Create Entry</source>
-        <translation>항목 만들기</translation>
+        <translation type="vanished">항목 만들기</translation>
     </message>
     <message>
         <source>Edit Entry</source>
-        <translation>항목 편집</translation>
+        <translation type="vanished">항목 편집</translation>
     </message>
     <message>
         <source>Delete Entry</source>
-        <translation>항목 삭제</translation>
+        <translation type="vanished">항목 삭제</translation>
     </message>
     <message>
         <source>Create Group</source>
-        <translation>그룹 만들기</translation>
+        <translation type="vanished">그룹 만들기</translation>
     </message>
     <message>
         <source>Edit Group</source>
-        <translation>그룹 편집</translation>
+        <translation type="vanished">그룹 편집</translation>
     </message>
     <message>
         <source>Delete Group</source>
-        <translation>그룹 삭제</translation>
+        <translation type="vanished">그룹 삭제</translation>
     </message>
     <message>
         <source>Download All Favicons</source>
-        <translation>모든 파비콘 다운로드</translation>
+        <translation type="vanished">모든 파비콘 다운로드</translation>
     </message>
     <message>
         <source>Sort Groups A-Z</source>
-        <translation>그룹 가나다순 정렬</translation>
+        <translation type="vanished">그룹 가나다순 정렬</translation>
     </message>
     <message>
         <source>Sort Groups Z-A</source>
-        <translation>그룹 가나다 역순 정렬</translation>
+        <translation type="vanished">그룹 가나다 역순 정렬</translation>
     </message>
     <message>
         <source>Save Database As</source>
-        <translation>다른 이름으로 데이터베이스 저장</translation>
+        <translation type="vanished">다른 이름으로 데이터베이스 저장</translation>
     </message>
     <message>
         <source>Show Database Security</source>
-        <translation>데이터베이스 보안 표시</translation>
+        <translation type="vanished">데이터베이스 보안 표시</translation>
     </message>
     <message>
         <source>Show Database Reports</source>
-        <translation>데이터베이스 보고서 표시</translation>
+        <translation type="vanished">데이터베이스 보고서 표시</translation>
     </message>
     <message>
         <source>Show Database Settings</source>
-        <translation>데이터베이스 설정 표시</translation>
+        <translation type="vanished">데이터베이스 설정 표시</translation>
     </message>
     <message>
         <source>Show Passkeys</source>
-        <translation>Passkey 표시</translation>
+        <translation type="vanished">Passkey 표시</translation>
     </message>
     <message>
         <source>Clone Entry</source>
-        <translation>항목 복제</translation>
+        <translation type="vanished">항목 복제</translation>
     </message>
     <message>
         <source>Move Entry Up</source>
-        <translation>항목 위로 이동</translation>
+        <translation type="vanished">항목 위로 이동</translation>
     </message>
     <message>
         <source>Move Entry Down</source>
-        <translation>항목 아래로 이동</translation>
+        <translation type="vanished">항목 아래로 이동</translation>
     </message>
     <message>
         <source>Copy Username</source>
-        <translation>사용자 이름 복사</translation>
+        <translation type="vanished">사용자 이름 복사</translation>
     </message>
     <message>
         <source>Copy Password</source>
-        <translation>암호 복사</translation>
+        <translation type="vanished">암호 복사</translation>
     </message>
     <message>
         <source>Show Application Settings</source>
-        <translation>프로그램 설정 표시</translation>
+        <translation type="vanished">프로그램 설정 표시</translation>
     </message>
     <message>
         <source>Show Password Generator</source>
-        <translation>암호 생성기 표시</translation>
+        <translation type="vanished">암호 생성기 표시</translation>
     </message>
     <message>
         <source>Remove Passkey From Entry</source>
@@ -6169,63 +6352,63 @@ Expect some bugs and minor issues, this version is meant for testing purposes.</
     </message>
     <message>
         <source>Perform Auto-Type: {USERNAME}</source>
-        <translation>자동 입력 실행: {USERNAME}</translation>
+        <translation type="vanished">자동 입력 실행: {USERNAME}</translation>
     </message>
     <message>
         <source>Perform Auto-Type: {USERNAME}{ENTER}</source>
-        <translation>자동 입력 실행: {USERNAME}{ENTER}</translation>
+        <translation type="vanished">자동 입력 실행: {USERNAME}{ENTER}</translation>
     </message>
     <message>
         <source>Perform Auto-Type: {PASSWORD}</source>
-        <translation>자동 입력 실행: {PASSWORD}</translation>
+        <translation type="vanished">자동 입력 실행: {PASSWORD}</translation>
     </message>
     <message>
         <source>Perform Auto-Type: {PASSWORD}{ENTER}</source>
-        <translation>자동 입력 실행: {PASSWORD}{ENTER}</translation>
+        <translation type="vanished">자동 입력 실행: {PASSWORD}{ENTER}</translation>
     </message>
     <message>
         <source>Perform Auto-Type: {TOTP}</source>
-        <translation>자동 입력 실행: {TOTP}</translation>
+        <translation type="vanished">자동 입력 실행: {TOTP}</translation>
     </message>
     <message>
         <source>Copy Title</source>
-        <translation>제목 복사</translation>
+        <translation type="vanished">제목 복사</translation>
     </message>
     <message>
         <source>Copy URL</source>
-        <translation>URL 복사</translation>
+        <translation type="vanished">URL 복사</translation>
     </message>
     <message>
         <source>Copy Notes</source>
-        <translation>메모 복사</translation>
+        <translation type="vanished">메모 복사</translation>
     </message>
     <message>
         <source>Export to CSV</source>
-        <translation>CSV로 내보내기</translation>
+        <translation type="vanished">CSV로 내보내기</translation>
     </message>
     <message>
         <source>Export to HTML</source>
-        <translation>HTML로 내보내기</translation>
+        <translation type="vanished">HTML로 내보내기</translation>
     </message>
     <message>
         <source>Import KeePass1 Database</source>
-        <translation>KeePass1 데이터베이스 가져오기</translation>
+        <translation type="vanished">KeePass1 데이터베이스 가져오기</translation>
     </message>
     <message>
         <source>Import 1Password Vault</source>
-        <translation>1Password Valut에서 가져오기</translation>
+        <translation type="vanished">1Password Valut에서 가져오기</translation>
     </message>
     <message>
         <source>Import CSV File</source>
-        <translation>CSV 파일 가져오기</translation>
+        <translation type="vanished">CSV 파일 가져오기</translation>
     </message>
     <message>
         <source>Show TOTP QR Code</source>
-        <translation>TOTP QR 코드 표시</translation>
+        <translation type="vanished">TOTP QR 코드 표시</translation>
     </message>
     <message>
         <source>Set up TOTP</source>
-        <translation>TOTP 설정</translation>
+        <translation type="vanished">TOTP 설정</translation>
     </message>
     <message>
         <source>Empty Recycle Bin</source>
@@ -6233,51 +6416,51 @@ Expect some bugs and minor issues, this version is meant for testing purposes.</
     </message>
     <message>
         <source>Open Donation Website</source>
-        <translation>기부 웹사이트 열기</translation>
+        <translation type="vanished">기부 웹사이트 열기</translation>
     </message>
     <message>
         <source>Open Bug Report</source>
-        <translation>버그 보고 열기</translation>
+        <translation type="vanished">버그 보고 열기</translation>
     </message>
     <message>
         <source>Open Online Documentation</source>
-        <translation>온라인 문서 열기</translation>
+        <translation type="vanished">온라인 문서 열기</translation>
     </message>
     <message>
         <source>Open Keyboard Shortcuts Guide</source>
-        <translation>키보드 단축키 도움말 열기</translation>
+        <translation type="vanished">키보드 단축키 도움말 열기</translation>
     </message>
     <message>
         <source>Save Database Backup</source>
-        <translation>데이터베이스 백업 저장</translation>
+        <translation type="vanished">데이터베이스 백업 저장</translation>
     </message>
     <message>
         <source>SSH Agent: Add Key</source>
-        <translation>SSH 에이전트: 키 추가</translation>
+        <translation type="vanished">SSH 에이전트: 키 추가</translation>
     </message>
     <message>
         <source>SSH Agent: Remove Key</source>
-        <translation>SSH 에이전트: 키 삭제</translation>
+        <translation type="vanished">SSH 에이전트: 키 삭제</translation>
     </message>
     <message>
         <source>Toggle Compact Mode</source>
-        <translation>축소 모드 전환</translation>
+        <translation type="vanished">축소 모드 전환</translation>
     </message>
     <message>
         <source>Set Theme: Automatic</source>
-        <translation>테마 설정: 자동</translation>
+        <translation type="vanished">테마 설정: 자동</translation>
     </message>
     <message>
         <source>Set Theme: Light</source>
-        <translation>테마 설정: 밝음</translation>
+        <translation type="vanished">테마 설정: 밝음</translation>
     </message>
     <message>
         <source>Set Theme: Dark</source>
-        <translation>테마 설정: 어두움</translation>
+        <translation type="vanished">테마 설정: 어두움</translation>
     </message>
     <message>
         <source>Set Theme: Classic</source>
-        <translation>테마 설정: 고전</translation>
+        <translation type="vanished">테마 설정: 고전</translation>
     </message>
     <message>
         <source>Toggle Show Menubar</source>
@@ -6285,43 +6468,43 @@ Expect some bugs and minor issues, this version is meant for testing purposes.</
     </message>
     <message>
         <source>Toggle Show Toolbar</source>
-        <translation>도구 모음 표시 전환</translation>
+        <translation type="vanished">도구 모음 표시 전환</translation>
     </message>
     <message>
         <source>Toggle Show Preview Panel</source>
-        <translation>미리 보기 패널 표시 전환</translation>
+        <translation type="vanished">미리 보기 패널 표시 전환</translation>
     </message>
     <message>
         <source>Toggle Always on Top</source>
-        <translation>항상 위 전환</translation>
+        <translation type="vanished">항상 위 전환</translation>
     </message>
     <message>
         <source>Toggle Hide Usernames</source>
-        <translation>사용자 이름 숨기기 전환</translation>
+        <translation type="vanished">사용자 이름 숨기기 전환</translation>
     </message>
     <message>
         <source>Toggle Hide Passwords</source>
-        <translation>암호 숨기기 전환</translation>
+        <translation type="vanished">암호 숨기기 전환</translation>
     </message>
     <message>
         <source>Export to XML</source>
-        <translation>XML로 내보내기</translation>
+        <translation type="vanished">XML로 내보내기</translation>
     </message>
     <message>
         <source>Toggle Allow Screen Capture</source>
-        <translation>화면 캡처 허용 전환</translation>
+        <translation type="vanished">화면 캡처 허용 전환</translation>
     </message>
     <message>
         <source>Show Group Panel</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Toggle Show Group Panel</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Setup Remote Sync…</source>
-        <translation>원격 동기화 설정…</translation>
+        <translation type="vanished">원격 동기화 설정…</translation>
     </message>
     <message>
         <source>Password Generator</source>
@@ -6329,15 +6512,100 @@ Expect some bugs and minor issues, this version is meant for testing purposes.</
     </message>
     <message>
         <source>E&amp;xpire Entry…</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Clear SSH Agent</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Clear all identities in ssh-agent</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Create a new database</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Merge from another KDBX database</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Add a new entry</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>View or edit entry</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Add a new group</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Statistics, health check, etc.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Database settings</source>
+        <translation type="unfinished">데이터베이스 설정</translation>
+    </message>
+    <message>
+        <source>Passkeys</source>
+        <translation type="unfinished">패스키</translation>
+    </message>
+    <message>
+        <source>Move entry one step up</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Move entry one step down</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy username to clipboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy password to clipboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy title to clipboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy URL to clipboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy notes to clipboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Import a KeePass 1 database</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Import a 1Password Vault</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Import a CSV file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Go to online documentation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>XML File…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>WARNING: Your Qt version may cause KeePassXC to crash with an On-Screen Keyboard.
+We recommend you use the AppImage available on our downloads page.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -6428,6 +6696,26 @@ Expect some bugs and minor issues, this version is meant for testing purposes.</
         <source>Adding custom data %1 [%2]</source>
         <translation>사용자 정의 데이터 %1[%2] 추가 중</translation>
     </message>
+    <message>
+        <source>older entry merged from database &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Adding backup for older target %1 [%2]</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Adding backup for older source %1 [%2]</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Reapplying older target entry on top of newer source %1 [%2]</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Reapplying older source entry on top of newer target %1 [%2]</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>NewDatabaseWizard</name>
@@ -6492,20 +6780,8 @@ Expect some bugs and minor issues, this version is meant for testing purposes.</
 <context>
     <name>NewEntryAttachmentsDialog</name>
     <message>
-        <source>Attachment name cannot be empty</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Attachment with the same name already exists</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <source>Save attachment</source>
-        <translation>첨부 항목 저장</translation>
-    </message>
-    <message>
-        <source>New entry attachment</source>
-        <translation type="unfinished"/>
+        <translation type="vanished">첨부 항목 저장</translation>
     </message>
 </context>
 <context>
@@ -6704,19 +6980,19 @@ Expect some bugs and minor issues, this version is meant for testing purposes.</
     <name>OpenSSHKeyGenDialog</name>
     <message>
         <source>SSH Key Generator</source>
-        <translation>SSH 키 생성기</translation>
+        <translation type="vanished">SSH 키 생성기</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>형식</translation>
+        <translation type="vanished">형식</translation>
     </message>
     <message>
         <source>Bits</source>
-        <translation>비트</translation>
+        <translation type="vanished">비트</translation>
     </message>
     <message>
         <source>Comment</source>
-        <translation>주석</translation>
+        <translation type="vanished">주석</translation>
     </message>
 </context>
 <context>
@@ -7151,11 +7427,11 @@ The following data is missing:
     </message>
     <message>
         <source>Confirm Delete Wordlist</source>
-        <translation>단어 목록 삭제 확인</translation>
+        <translation type="vanished">단어 목록 삭제 확인</translation>
     </message>
     <message>
         <source>Do you really want to delete the wordlist &quot;%1&quot;?</source>
-        <translation>정말 단어 목록 &quot;%1&quot;을(를) 삭제하시겠습니까?</translation>
+        <translation type="vanished">정말 단어 목록 &quot;%1&quot;을(를) 삭제하시겠습니까?</translation>
     </message>
     <message>
         <source>Failed to delete wordlist</source>
@@ -7205,11 +7481,23 @@ Do you want to overwrite it?</source>
     </message>
     <message>
         <source>MIXED case</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Excluded characters: &quot;0&quot;, &quot;1&quot;, &quot;l&quot;, &quot;I&quot;, &quot;O&quot;, &quot;|&quot;, &quot;﹒&quot;, &quot;B&quot;, &quot;8&quot;, &quot;G&quot;, &quot;6&quot;</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Warning: the chosen wordlist is smaller than the minimum recommended size!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Confirm Remove Wordlist</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Do you really want to remove the wordlist &quot;%1&quot;?</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -7260,7 +7548,11 @@ Do you want to overwrite it?</source>
     </message>
     <message>
         <source>Toggle password visibility using Control + H. Open the password generator using Control + G.</source>
-        <translation>Ctrl+H 키를 사용하여 암호 표시 여부를 전환하십시오. Ctrl+G 키를 사용하여 암호 생성기를 여십시오.</translation>
+        <translation type="vanished">Ctrl+H 키를 사용하여 암호 표시 여부를 전환하십시오. Ctrl+G 키를 사용하여 암호 생성기를 여십시오.</translation>
+    </message>
+    <message>
+        <source>Toggle password visibilty using Control + H. Open the password generator using Control + G.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -7281,16 +7573,16 @@ Do you want to overwrite it?</source>
 <context>
     <name>PreviewEntryAttachmentsDialog</name>
     <message>
-        <source>Preview entry attachment</source>
-        <translation type="unfinished"/>
+        <source>Form</source>
+        <translation type="unfinished">폼</translation>
     </message>
     <message>
-        <source>No preview available</source>
-        <translation type="unfinished"/>
+        <source>Save…</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Image format not supported</source>
-        <translation type="unfinished"/>
+        <source>Preview: %1</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -7532,7 +7824,9 @@ Do you want to overwrite it?</source>
     </message>
     <message numerus="yes">
         <source>Password for &apos;%1&apos; has been leaked %2 time(s)!</source>
-        <translation><numerusform>&apos;%1&apos;의 암호가 %2번 유출되었습니다!</numerusform></translation>
+        <translation>
+            <numerusform>&apos;%1&apos;의 암호가 %2번 유출되었습니다!</numerusform>
+        </translation>
     </message>
     <message>
         <source>Password for &apos;%1&apos; has been leaked!</source>
@@ -7620,7 +7914,7 @@ Do you want to overwrite it?</source>
     </message>
     <message>
         <source>Copy the given attribute to the clipboard. Defaults to &quot;password&quot; if not specified.</source>
-        <comment>Don't translate &quot;password&quot;, it refers to the attribute.</comment>
+        <comment>Don&apos;t translate &quot;password&quot;, it refers to the attribute.</comment>
         <translation>지정한 속성을 클립보드에 복사합니다. 지정하지 않았을 때의 기본값은 &quot;password&quot;입니다.</translation>
     </message>
     <message>
@@ -7682,7 +7976,9 @@ Do you want to overwrite it?</source>
     </message>
     <message numerus="yes">
         <source>Clearing the clipboard in %1 second(s)...</source>
-        <translation><numerusform>%1초 후 클립보드를 지웁니다...</numerusform></translation>
+        <translation>
+            <numerusform>%1초 후 클립보드를 지웁니다...</numerusform>
+        </translation>
     </message>
     <message>
         <source>Clipboard cleared!</source>
@@ -8537,7 +8833,9 @@ Please consider generating a new key file.</source>
     </message>
     <message numerus="yes">
         <source>Password is used %1 time(s)</source>
-        <translation><numerusform>암호가 %1회 사용됨</numerusform></translation>
+        <translation>
+            <numerusform>암호가 %1회 사용됨</numerusform>
+        </translation>
     </message>
     <message>
         <source>Password has expired</source>
@@ -8557,7 +8855,9 @@ Please consider generating a new key file.</source>
     </message>
     <message numerus="yes">
         <source>Password expires in %1 day(s)</source>
-        <translation><numerusform>암호가 %1일 후에 만료됨</numerusform></translation>
+        <translation>
+            <numerusform>암호가 %1일 후에 만료됨</numerusform>
+        </translation>
     </message>
     <message>
         <source>Password will expire soon</source>
@@ -8629,27 +8929,39 @@ CPU 아키텍처: %2
     </message>
     <message numerus="yes">
         <source>over %1 year(s)</source>
-        <translation><numerusform>%1년 이상</numerusform></translation>
+        <translation>
+            <numerusform>%1년 이상</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>about %1 month(s)</source>
-        <translation><numerusform>약 %1개월</numerusform></translation>
+        <translation>
+            <numerusform>약 %1개월</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>%1 week(s)</source>
-        <translation><numerusform>%1주</numerusform></translation>
+        <translation>
+            <numerusform>%1주</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>%1 day(s)</source>
-        <translation><numerusform>%1일</numerusform></translation>
+        <translation>
+            <numerusform>%1일</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>%1 hour(s)</source>
-        <translation><numerusform>%1시간</numerusform></translation>
+        <translation>
+            <numerusform>%1시간</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>%1 minute(s)</source>
-        <translation><numerusform>%1분</numerusform></translation>
+        <translation>
+            <numerusform>%1분</numerusform>
+        </translation>
     </message>
     <message>
         <source>Botan library must be at least %1, found %2.%3.%4</source>
@@ -8741,7 +9053,9 @@ CPU 아키텍처: %2
     </message>
     <message numerus="yes">
         <source>Clearing the clipboard in %1 second(s)…</source>
-        <translation><numerusform>%1초 후 클립보드를 지웁니다...</numerusform></translation>
+        <translation>
+            <numerusform>%1초 후 클립보드를 지웁니다...</numerusform>
+        </translation>
     </message>
     <message>
         <source>Group</source>
@@ -8782,12 +9096,16 @@ CPU 아키텍처: %2
     <message numerus="yes">
         <source>%1 ms</source>
         <comment>milliseconds</comment>
-        <translation><numerusform>%1 ms</numerusform></translation>
+        <translation>
+            <numerusform>%1 ms</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>%1 s</source>
         <comment>seconds</comment>
-        <translation><numerusform>%1초</numerusform></translation>
+        <translation>
+            <numerusform>%1초</numerusform>
+        </translation>
     </message>
     <message>
         <source>Do you really want to delete the entry &quot;%1&quot; for good?</source>
@@ -8795,11 +9113,15 @@ CPU 아키텍처: %2
     </message>
     <message numerus="yes">
         <source>Do you really want to delete %n entry(s) for good?</source>
-        <translation><numerusform>정말 항목 %n개를 삭제하시겠습니까?</numerusform></translation>
+        <translation>
+            <numerusform>정말 항목 %n개를 삭제하시겠습니까?</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>Delete entry(s)?</source>
-        <translation><numerusform>항목을 삭제하시겠습니까?</numerusform></translation>
+        <translation>
+            <numerusform>항목을 삭제하시겠습니까?</numerusform>
+        </translation>
     </message>
     <message>
         <source>Do you really want to move entry &quot;%1&quot; to the recycle bin?</source>
@@ -8807,11 +9129,15 @@ CPU 아키텍처: %2
     </message>
     <message numerus="yes">
         <source>Do you really want to move %n entry(s) to the recycle bin?</source>
-        <translation><numerusform>항목 %n개를 휴지통으로 이동하시겠습니까?</numerusform></translation>
+        <translation>
+            <numerusform>항목 %n개를 휴지통으로 이동하시겠습니까?</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>Move entry(s) to recycle bin?</source>
-        <translation><numerusform>항목을 휴지통으로 이동하시겠습니까?</numerusform></translation>
+        <translation>
+            <numerusform>항목을 휴지통으로 이동하시겠습니까?</numerusform>
+        </translation>
     </message>
     <message>
         <source>Replace references to entry?</source>
@@ -8819,7 +9145,9 @@ CPU 아키텍처: %2
     </message>
     <message numerus="yes">
         <source>Entry &quot;%1&quot; has %2 reference(s). Do you want to overwrite references with values, skip this entry, or delete anyway?</source>
-        <translation><numerusform>항목 &quot;%1&quot;이(가) %2회 참조되었습니다. 해당 참조를 값으로 덮어쓰거나, 이 항목을 건너뛰거나, 그래도 삭제하시겠습니까?</numerusform></translation>
+        <translation>
+            <numerusform>항목 &quot;%1&quot;이(가) %2회 참조되었습니다. 해당 참조를 값으로 덮어쓰거나, 이 항목을 건너뛰거나, 그래도 삭제하시겠습니까?</numerusform>
+        </translation>
     </message>
     <message>
         <source>User name</source>
@@ -8983,59 +9311,59 @@ This option is deprecated, use --set-key-file instead.</source>
     </message>
     <message>
         <source>AES initialization failed</source>
-        <translation>AES 초기화 실패</translation>
+        <translation type="vanished">AES 초기화 실패</translation>
     </message>
     <message>
         <source>AES encrypt failed</source>
-        <translation>AES 암호화 실패</translation>
+        <translation type="vanished">AES 암호화 실패</translation>
     </message>
     <message>
         <source>Failed to store in Linux Keyring</source>
-        <translation>리눅스 키링에 저장할 수 없음</translation>
+        <translation type="vanished">리눅스 키링에 저장할 수 없음</translation>
     </message>
     <message>
         <source>Polkit returned an error: %1</source>
-        <translation>Polkit에서 오류를 반환함: %1</translation>
+        <translation type="vanished">Polkit에서 오류를 반환함: %1</translation>
     </message>
     <message>
         <source>Could not locate key in keyring</source>
-        <translation>키링에서 키를 찾을 수 없음</translation>
+        <translation type="vanished">키링에서 키를 찾을 수 없음</translation>
     </message>
     <message>
         <source>Could not read key in keyring</source>
-        <translation>키링에서 키를 읽을 수 없음</translation>
+        <translation type="vanished">키링에서 키를 읽을 수 없음</translation>
     </message>
     <message>
         <source>AES decrypt failed</source>
-        <translation>AES 복호화 실패</translation>
+        <translation type="vanished">AES 복호화 실패</translation>
     </message>
     <message>
         <source>No Polkit authentication agent was available</source>
-        <translation>Polkit 인증 에이전트를 사용할 수 없음</translation>
+        <translation type="vanished">Polkit 인증 에이전트를 사용할 수 없음</translation>
     </message>
     <message>
         <source>Polkit authorization failed</source>
-        <translation>Polkit 인증 실패</translation>
+        <translation type="vanished">Polkit 인증 실패</translation>
     </message>
     <message>
         <source>No Quick Unlock provider is available</source>
-        <translation>빠른 잠금 해제 공급자를 사용할 수 없음</translation>
+        <translation type="vanished">빠른 잠금 해제 공급자를 사용할 수 없음</translation>
     </message>
     <message>
         <source>Failed to init KeePassXC crypto.</source>
-        <translation>KeePassXC 암호화를 초기화할 수 없습니다.</translation>
+        <translation type="vanished">KeePassXC 암호화를 초기화할 수 없습니다.</translation>
     </message>
     <message>
         <source>Failed to encrypt key data.</source>
-        <translation>키 데이터를 암호화할 수 없습니다.</translation>
+        <translation type="vanished">키 데이터를 암호화할 수 없습니다.</translation>
     </message>
     <message>
         <source>Failed to get Windows Hello credential.</source>
-        <translation>Windows Hello 자격 증명을 가져올 수 없습니다.</translation>
+        <translation type="vanished">Windows Hello 자격 증명을 가져올 수 없습니다.</translation>
     </message>
     <message>
         <source>Failed to decrypt key data.</source>
-        <translation>키 데이터를 복호화할 수 없습니다.</translation>
+        <translation type="vanished">키 데이터를 복호화할 수 없습니다.</translation>
     </message>
     <message>
         <source>Origin is empty or not allowed</source>
@@ -9137,15 +9465,15 @@ This option is deprecated, use --set-key-file instead.</source>
     </message>
     <message>
         <source>Enter Shortcut</source>
-        <translation>단축키 입력</translation>
+        <translation type="vanished">단축키 입력</translation>
     </message>
     <message>
         <source>Action</source>
-        <translation>동작</translation>
+        <translation type="vanished">동작</translation>
     </message>
     <message>
         <source>Shortcuts</source>
-        <translation>단축키</translation>
+        <translation type="vanished">단축키</translation>
     </message>
     <message>
         <source>Unknown passkeys error</source>
@@ -9165,35 +9493,31 @@ This option is deprecated, use --set-key-file instead.</source>
     </message>
     <message>
         <source>Reset Shortcuts</source>
-        <translation>단축키 초기화</translation>
+        <translation type="vanished">단축키 초기화</translation>
     </message>
     <message>
         <source>Double click an action to change its shortcut</source>
-        <translation>동작을 두 번 클릭해서 단축키 변경</translation>
+        <translation type="vanished">동작을 두 번 클릭해서 단축키 변경</translation>
     </message>
     <message>
         <source>Filter...</source>
-        <translation>필터...</translation>
+        <translation type="vanished">필터...</translation>
     </message>
     <message>
         <source>Shortcut Conflict</source>
-        <translation>단축키 충돌</translation>
+        <translation type="vanished">단축키 충돌</translation>
     </message>
     <message>
         <source>Shortcut %1 conflicts with &apos;%2&apos;. Overwrite shortcut?</source>
-        <translation>%1 단축키가 &apos;%2&apos;와(과) 충돌합니다. 단축키를 덮어쓰시겠습니까?</translation>
-    </message>
-    <message>
-        <source>Cannot generate valid passphrases because the wordlist is too short</source>
-        <translation type="unfinished"/>
+        <translation type="vanished">%1 단축키가 &apos;%2&apos;와(과) 충돌합니다. 단축키를 덮어쓰시겠습니까?</translation>
     </message>
     <message>
         <source>Encrypted files are not supported.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Proton Pass Import</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete plugin data?</source>
@@ -9201,7 +9525,9 @@ This option is deprecated, use --set-key-file instead.</source>
     </message>
     <message numerus="yes">
         <source>Delete plugin data from Entry(s)?</source>
-        <translation type="unfinished"><numerusform></numerusform></translation>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+        </translation>
     </message>
     <message>
         <source>Passkey</source>
@@ -9209,27 +9535,45 @@ This option is deprecated, use --set-key-file instead.</source>
     </message>
     <message>
         <source>Format to use when exporting. Available choices are &apos;xml&apos;, &apos;csv&apos; or &apos;html&apos;. Defaults to &apos;xml&apos;.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>start minimized to the system tray</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>malformed string, possible unescaped delimiter</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>missing closing delimiter</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>%1, row: %2, column: %3</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Tags</source>
         <translation>태그</translation>
+    </message>
+    <message>
+        <source>Warning: the chosen wordlist is smaller than the minimum recommended size!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Unable to open file for writing: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Invalid Step</source>
+        <comment>TOTP</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Invalid Digits</source>
+        <comment>TOTP</comment>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -9270,31 +9614,31 @@ This option is deprecated, use --set-key-file instead.</source>
     <name>RemoteHandler</name>
     <message>
         <source>Command `%1` did not finish in time. Process was killed.</source>
-        <translation>`%1` 명령이 시간 내에 완료되지 않았습니다. 프로세스가 종료되었습니다.</translation>
+        <translation type="vanished">`%1` 명령이 시간 내에 완료되지 않았습니다. 프로세스가 종료되었습니다.</translation>
     </message>
     <message>
         <source>Failed to upload merged database. Command `%1` did not finish in time. Process was killed.</source>
-        <translation>병합된 데이터베이스를 업로드하지 못했습니다. `%1` 명령이 시간 내에 완료되지 않았습니다. 프로세스가 종료되었습니다.</translation>
+        <translation type="vanished">병합된 데이터베이스를 업로드하지 못했습니다. `%1` 명령이 시간 내에 완료되지 않았습니다. 프로세스가 종료되었습니다.</translation>
     </message>
     <message>
         <source>Invalid download parameters provided.</source>
-        <translation>잘못된 다운로드 인자가 지정되었습니다.</translation>
+        <translation type="vanished">잘못된 다운로드 인자가 지정되었습니다.</translation>
     </message>
     <message>
         <source>Command `%1` failed to download database.</source>
-        <translation>`%1` 명령으로 데이터베이스를 다운로드하지 못했습니다.</translation>
+        <translation type="vanished">`%1` 명령으로 데이터베이스를 다운로드하지 못했습니다.</translation>
     </message>
     <message>
         <source>Invalid database pointer or upload parameters provided.</source>
-        <translation>잘못된 데이터베이스 포인터나 업로드 인자가 지정되었습니다.</translation>
+        <translation type="vanished">잘못된 데이터베이스 포인터나 업로드 인자가 지정되었습니다.</translation>
     </message>
     <message>
         <source>Command `%1` exited with status code: %2</source>
-        <translation>`%1` 명령이 종료되면서 다음 상태 코드를 반환함: %2</translation>
+        <translation type="vanished">`%1` 명령이 종료되면서 다음 상태 코드를 반환함: %2</translation>
     </message>
     <message>
         <source>Failed to upload merged database. Command `%1` exited with status code: %2</source>
-        <translation>병합된 데이터베이스를 업로드하지 못했습니다. `%1` 명령이 다음 상태 코드를 반환함: %2</translation>
+        <translation type="vanished">병합된 데이터베이스를 업로드하지 못했습니다. `%1` 명령이 다음 상태 코드를 반환함: %2</translation>
     </message>
 </context>
 <context>
@@ -9357,7 +9701,9 @@ This option is deprecated, use --set-key-file instead.</source>
     </message>
     <message numerus="yes">
         <source>Delete Entry(s)…</source>
-        <translation><numerusform>항목 삭제...</numerusform></translation>
+        <translation>
+            <numerusform>항목 삭제...</numerusform>
+        </translation>
     </message>
     <message>
         <source>Exclude from reports</source>
@@ -9365,7 +9711,9 @@ This option is deprecated, use --set-key-file instead.</source>
     </message>
     <message numerus="yes">
         <source>Expire Entry(s)…</source>
-        <translation type="unfinished"><numerusform></numerusform></translation>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+        </translation>
     </message>
     <message>
         <source>Only show entries that have a URL</source>
@@ -9385,7 +9733,9 @@ This option is deprecated, use --set-key-file instead.</source>
     </message>
     <message numerus="yes">
         <source>Delete plugin data from Entry(s)…</source>
-        <translation type="unfinished"><numerusform></numerusform></translation>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+        </translation>
     </message>
 </context>
 <context>
@@ -9452,7 +9802,9 @@ This option is deprecated, use --set-key-file instead.</source>
     </message>
     <message numerus="yes">
         <source>Delete Entry(s)…</source>
-        <translation><numerusform>항목 삭제...</numerusform></translation>
+        <translation>
+            <numerusform>항목 삭제...</numerusform>
+        </translation>
     </message>
     <message>
         <source>Exclude from reports</source>
@@ -9460,7 +9812,9 @@ This option is deprecated, use --set-key-file instead.</source>
     </message>
     <message numerus="yes">
         <source>Expire Entry(s)…</source>
-        <translation type="unfinished"><numerusform></numerusform></translation>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+        </translation>
     </message>
     <message>
         <source>Show entries that have been excluded from reports</source>
@@ -9555,7 +9909,9 @@ This option is deprecated, use --set-key-file instead.</source>
     </message>
     <message numerus="yes">
         <source>Delete Entry(s)…</source>
-        <translation><numerusform>항목 삭제...</numerusform></translation>
+        <translation>
+            <numerusform>항목 삭제...</numerusform>
+        </translation>
     </message>
     <message>
         <source>Exclude from reports</source>
@@ -9563,7 +9919,9 @@ This option is deprecated, use --set-key-file instead.</source>
     </message>
     <message numerus="yes">
         <source>Expire Entry(s)…</source>
-        <translation type="unfinished"><numerusform></numerusform></translation>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+        </translation>
     </message>
 </context>
 <context>
@@ -9602,7 +9960,9 @@ This option is deprecated, use --set-key-file instead.</source>
     </message>
     <message numerus="yes">
         <source>Delete Entry(s)…</source>
-        <translation><numerusform>항목 삭제...</numerusform></translation>
+        <translation>
+            <numerusform>항목 삭제...</numerusform>
+        </translation>
     </message>
     <message>
         <source>Relying Party</source>
@@ -9808,11 +10168,11 @@ This option is deprecated, use --set-key-file instead.</source>
     </message>
     <message>
         <source>Failed to remove all SSH identities from agent.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>All SSH identities removed from agent.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -9896,6 +10256,10 @@ This option is deprecated, use --set-key-file instead.</source>
     <message>
         <source>Limit search to selected group</source>
         <translation>지정한 그룹에서만 찾기</translation>
+    </message>
+    <message>
+        <source>Press Enter to search</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -10117,6 +10481,10 @@ This option is deprecated, use --set-key-file instead.</source>
         <source>Weak Passwords</source>
         <translation>약한 암호</translation>
     </message>
+    <message>
+        <source>TOTP Entries</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>TagView</name>
@@ -10138,6 +10506,24 @@ This option is deprecated, use --set-key-file instead.</source>
     </message>
 </context>
 <context>
+    <name>TextAttachmentsEditWidget</name>
+    <message>
+        <source>Preview</source>
+        <translation type="unfinished">미리 보기</translation>
+    </message>
+</context>
+<context>
+    <name>TextAttachmentsPreviewWidget</name>
+    <message>
+        <source>Form</source>
+        <translation type="unfinished">폼</translation>
+    </message>
+    <message>
+        <source>Type:</source>
+        <translation type="unfinished">형식:</translation>
+    </message>
+</context>
+<context>
     <name>TotpDialog</name>
     <message>
         <source>Timed Password</source>
@@ -10149,7 +10535,9 @@ This option is deprecated, use --set-key-file instead.</source>
     </message>
     <message numerus="yes">
         <source>Expires in &lt;b&gt;%n&lt;/b&gt; second(s)</source>
-        <translation><numerusform>&lt;b&gt;%n&lt;/b&gt;초 후 만료됨</numerusform></translation>
+        <translation>
+            <numerusform>&lt;b&gt;%n&lt;/b&gt;초 후 만료됨</numerusform>
+        </translation>
     </message>
 </context>
 <context>
@@ -10249,6 +10637,10 @@ Example: JBSWY3DPEHPK3PXP</source>
         <source>Are you sure you want to delete TOTP settings for this entry?</source>
         <translation>이 항목의 TOTP 설정을 삭제하시겠습니까?</translation>
     </message>
+    <message>
+        <source>Error: secret key is invalid</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>URLEdit</name>
@@ -10335,6 +10727,25 @@ Example: JBSWY3DPEHPK3PXP</source>
     </message>
 </context>
 <context>
+    <name>WindowsHello</name>
+    <message>
+        <source>Failed to init KeePassXC crypto.</source>
+        <translation type="unfinished">KeePassXC 암호화를 초기화할 수 없습니다.</translation>
+    </message>
+    <message>
+        <source>Failed to encrypt key data.</source>
+        <translation type="unfinished">키 데이터를 암호화할 수 없습니다.</translation>
+    </message>
+    <message>
+        <source>Failed to get Windows Hello credential.</source>
+        <translation type="unfinished">Windows Hello 자격 증명을 가져올 수 없습니다.</translation>
+    </message>
+    <message>
+        <source>Failed to decrypt key data.</source>
+        <translation type="unfinished">키 데이터를 복호화할 수 없습니다.</translation>
+    </message>
+</context>
+<context>
     <name>YubiKey</name>
     <message>
         <source>General: </source>
@@ -10393,11 +10804,11 @@ Example: JBSWY3DPEHPK3PXP</source>
     </message>
     <message>
         <source>&lt;p&gt;If you own a &lt;a href=&quot;https://www.yubico.com/&quot;&gt;YubiKey&lt;/a&gt; or &lt;a href=&quot;https://onlykey.io&quot;&gt;OnlyKey&lt;/a&gt;, you can use it for additional security.&lt;/p&gt;&lt;p&gt;The key requires one of its slots to be programmed with &lt;a href=&quot;https://keepassxc.org/docs/#faq-yubikey-howto&quot;&gt;Challenge-Response&lt;/a&gt;.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Hardware keys found, but no slots are configured</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
