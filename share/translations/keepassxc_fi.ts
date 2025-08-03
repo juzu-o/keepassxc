@@ -785,13 +785,15 @@ Ctrl+F - Toggle database search&lt;br/&gt;
 Ctrl+1 - Type username&lt;br/&gt;
 Ctrl+2 - Type password&lt;br/&gt;
 Ctrl+3 - Type TOTP&lt;br/&gt;
-Ctrl+4 - Use Virtual Keyboard (Windows Only)&lt;/p&gt;</source>
+Ctrl+4 - Type URL&lt;br/&gt;
+Ctrl+5 - Use Virtual Keyboard (Windows Only)&lt;/p&gt;</source>
         <translation>&lt;p&gt;Voit etsiä minkä tahansa tietueen avoimista tietokannoistasi käyttämällä haun lisäasetuksia. Seuraavat pikanäppäimet ovat hyödyllisiä:&lt;br/&gt;
 Ctrl+F - Etsi tietokannasta&lt;br/&gt;
 Ctrl+1 - Kirjoita käyttäjätunnus&lt;br/&gt;
 Ctrl+2 - Kirjoita salasana&lt;br/&gt;
 Ctrl+3 - Kirjoita TOTP&lt;br/&gt;
-Ctrl+4 - Käytä virtuaalista näppäimistöä (vain Windows)&lt;/p&gt;</translation>
+Ctrl+4 - Kopioi URL-osoiteL&lt;br/&gt;
+Ctrl+5 - Käytä virtuaalista näppäimistöä (vain Windows)&lt;/p&gt;</translation>
     </message>
     <message>
         <source>Search all open databases</source>
@@ -822,6 +824,10 @@ Ctrl+4 - Käytä virtuaalista näppäimistöä (vain Windows)&lt;/p&gt;</transla
         <translation>Kirjoita {TOTP}</translation>
     </message>
     <message>
+        <source>Type {URL}</source>
+        <translation>Kirjoita {URL}</translation>
+    </message>
+    <message>
         <source>Copy Username</source>
         <translation>Kopioi käyttäjätunnus</translation>
     </message>
@@ -832,6 +838,10 @@ Ctrl+4 - Käytä virtuaalista näppäimistöä (vain Windows)&lt;/p&gt;</transla
     <message>
         <source>Copy TOTP</source>
         <translation>Kopioi TOTP</translation>
+    </message>
+    <message>
+        <source>Copy URL</source>
+        <translation>Kopioi URL-osoite</translation>
     </message>
     <message>
         <source>Use Virtual Keyboard</source>
