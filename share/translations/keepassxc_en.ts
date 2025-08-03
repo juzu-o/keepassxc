@@ -554,10 +554,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Open browser on double clicking URL field in entry view</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Font size:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -571,6 +567,26 @@
     </message>
     <message>
         <source>Show passwords in color</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Double-click action for URL:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Double-click action for URL field</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Edit entry</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open entry URL in browser</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy entry URL to clipboard</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -797,15 +813,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>&lt;p&gt;You can use advanced search queries to find any entry in your open databases. The following shortcuts are useful:&lt;br/&gt;
-Ctrl+F - Toggle database search&lt;br/&gt;
-Ctrl+1 - Type username&lt;br/&gt;
-Ctrl+2 - Type password&lt;br/&gt;
-Ctrl+3 - Type TOTP&lt;br/&gt;
-Ctrl+4 - Use Virtual Keyboard (Windows Only)&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Search all open databases</source>
         <translation type="unfinished"></translation>
     </message>
@@ -847,6 +854,24 @@ Ctrl+4 - Use Virtual Keyboard (Windows Only)&lt;/p&gt;</source>
     </message>
     <message>
         <source>Use Virtual Keyboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&lt;p&gt;You can use advanced search queries to find any entry in your open databases. The following shortcuts are useful:&lt;br/&gt;
+Ctrl+F - Toggle database search&lt;br/&gt;
+Ctrl+1 - Type username&lt;br/&gt;
+Ctrl+2 - Type password&lt;br/&gt;
+Ctrl+3 - Type TOTP&lt;br/&gt;
+Ctrl+4 - Type URL&lt;br/&gt;
+Ctrl+5 - Use Virtual Keyboard (Windows Only)&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Type {URL}</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy URL</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -8874,6 +8899,10 @@ This option is deprecated, use --set-key-file instead.</source>
     </message>
     <message>
         <source>Only PBKDF and Argon2 are supported, cannot decrypt json file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Unable to open file for writing: %1</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
