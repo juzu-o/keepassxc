@@ -78,7 +78,7 @@ private slots:
 #endif
 
 private:
-    void addTriStateItems(QComboBox* comboBox, bool inheritValue);
+    void addTriStateItems(QComboBox* comboBox, Group::TriState inheritValue);
     int indexFromTriState(Group::TriState triState);
     Group::TriState triStateFromIndex(int index);
     void setupModifiedTracking();

@@ -154,11 +154,13 @@ void EditGroupWidget::loadGroup(Group* group, bool create, const QSharedPointer<
     }
 
     if (m_group->parentGroup()) {
-        addTriStateItems(m_mainUi->searchComboBox, m_group->parentGroup()->resolveSearchingEnabled());
-        addTriStateItems(m_mainUi->autotypeComboBox, m_group->parentGroup()->resolveAutoTypeEnabled());
+        addTriStateItems(m_mainUi->searchComboBox, 
+                         m_group->parentGroup()->resolveSearchingEnabled() ? Group::Enable : Group::Disable);
+        addTriStateItems(m_mainUi->autotypeComboBox, 
+                         m_group->parentGroup()->resolveAutoTypeEnabled() ? Group::Enable : Group::Disable);
     } else {
-        addTriStateItems(m_mainUi->searchComboBox, true);
-        addTriStateItems(m_mainUi->autotypeComboBox, true);
+        addTriStateItems(m_mainUi->searchComboBox, Group::Enable);
+        addTriStateItems(m_mainUi->autotypeComboBox, Group::Enable);
     }
 
     m_mainUi->editName->setText(m_group->name());
@@ -193,11 +195,11 @@ void EditGroupWidget::loadGroup(Group* group, bool create, const QSharedPointer<
 
 #ifdef WITH_XC_BROWSER
     if (config()->get(Config::Browser_Enabled).toBool()) {
-        auto inheritHideEntries = false;
-        auto inheritSkipSubmit = false;
-        auto inheritOnlyHttp = false;
-        auto inheritNoHttp = false;
-        auto inheritOmitWww = false;
+        auto inheritHideEntries = Group::Inherit;
+        auto inheritSkipSubmit = Group::Inherit;
+        auto inheritOnlyHttp = Group::Inherit;
+        auto inheritNoHttp = Group::Inherit;
+        auto inheritOmitWww = Group::Inherit;
         auto inheritRestrictKey = QString();
 
         auto parent = group->parentGroup();
@@ -407,13 +409,19 @@ void EditGroupWidget::addEditPage(IEditGroupPage* page)
     addPage(page->name(), page->icon(), widget);
 }
 
-void EditGroupWidget::addTriStateItems(QComboBox* comboBox, bool inheritDefault)
+void EditGroupWidget::addTriStateItems(QComboBox* comboBox, Group::TriState inheritValue)
 {
     QString inheritDefaultString;
-    if (inheritDefault) {
+    switch (inheritValue) {
+    case Group::Inherit:
+        inheritDefaultString = tr("Inherit");
+        break;
+    case Group::Enable:
         inheritDefaultString = tr("Enable");
-    } else {
+        break;
+    case Group::Disable:
         inheritDefaultString = tr("Disable");
+        break;
     }
 
     comboBox->clear();
