@@ -243,19 +243,19 @@
     </message>
     <message>
         <source>Small</source>
-        <translation type="unfinished"/>
+        <translation>Pieni</translation>
     </message>
     <message>
         <source>Normal</source>
-        <translation type="unfinished"/>
+        <translation>Normaali</translation>
     </message>
     <message>
         <source>Medium</source>
-        <translation type="unfinished"/>
+        <translation>Keskikokoinen</translation>
     </message>
     <message>
         <source>Large</source>
-        <translation type="unfinished"/>
+        <translation>Suuri</translation>
     </message>
     <message>
         <source>Custom</source>
@@ -565,11 +565,35 @@
     </message>
     <message>
         <source>Font size:</source>
-        <translation type="unfinished"/>
+        <translation>Fonttien koko:</translation>
     </message>
     <message>
         <source>Font size selection</source>
-        <translation type="unfinished"/>
+        <translation>Fonttien kokovalinta</translation>
+    </message>
+    <message>
+        <source>Double-click action for URL:</source>
+        <translation>Verkko-osoitteen kaksoisnapsautustoiminto</translation>
+    </message>
+    <message>
+        <source>Double-click action for URL field</source>
+        <translation>Kaksoisnapsautustoiminto verkko-osoitekentälle</translation>
+    </message>
+    <message>
+        <source>Edit entry</source>
+        <translation>Muokkaa tietuetta</translation>
+    </message>
+    <message>
+        <source>Open entry URL in browser</source>
+        <translation>Avaa tietueen URL selaimessa</translation>
+    </message>
+    <message>
+        <source>Copy entry URL to clipboard</source>
+        <translation>Kopioi tietueen URL leikepöydälle</translation>
+    </message>
+    <message>
+        <source>Skip confirmation for main window Auto-Type actions</source>
+        <translation>Ohita varmistus pääikkunan automaattisyötön toiminnoille</translation>
     </message>
 </context>
 <context>
@@ -748,6 +772,10 @@
     <message>
         <source>Sequence</source>
         <translation>Sekvenssi</translation>
+    </message>
+    <message>
+        <source>URL</source>
+        <translation>URL</translation>
     </message>
 </context>
 <context>
