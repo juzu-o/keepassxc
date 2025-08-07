@@ -294,7 +294,7 @@ void ApplicationSettingsWidget::loadSettings()
     showExpiredEntriesOnDatabaseUnlockToggled(m_generalUi->showExpiredEntriesOnDatabaseUnlockCheckBox->isChecked());
 
     m_generalUi->autoTypeAskCheckBox->setChecked(config()->get(Config::Security_AutoTypeAsk).toBool());
-    m_generalUi->autoTypeSkipContextMenuConfirmationCheckBox->setChecked(config()->get(Config::Security_AutoTypeSkipContextMenuConfirmation).toBool());
+    m_generalUi->autoTypeSkipMainWindowConfirmationCheckBox->setChecked(config()->get(Config::Security_AutoTypeSkipMainWindowConfirmation).toBool());
     autoTypeAskToggled(m_generalUi->autoTypeAskCheckBox->isChecked());
     m_generalUi->autoTypeRelockDatabaseCheckBox->setChecked(config()->get(Config::Security_RelockAutoType).toBool());
 
@@ -446,7 +446,7 @@ void ApplicationSettingsWidget::saveSettings()
                   m_generalUi->showExpiredEntriesOnDatabaseUnlockOffsetSpinBox->value());
 
     config()->set(Config::Security_AutoTypeAsk, m_generalUi->autoTypeAskCheckBox->isChecked());
-    config()->set(Config::Security_AutoTypeSkipContextMenuConfirmation, m_generalUi->autoTypeSkipContextMenuConfirmationCheckBox->isChecked());
+    config()->set(Config::Security_AutoTypeSkipMainWindowConfirmation, m_generalUi->autoTypeSkipMainWindowConfirmationCheckBox->isChecked());
     config()->set(Config::Security_RelockAutoType, m_generalUi->autoTypeRelockDatabaseCheckBox->isChecked());
 
     if (autoType()->isAvailable()) {
@@ -622,7 +622,7 @@ void ApplicationSettingsWidget::showExpiredEntriesOnDatabaseUnlockToggled(bool c
 
 void ApplicationSettingsWidget::autoTypeAskToggled(bool checked)
 {
-    m_generalUi->autoTypeSkipContextMenuConfirmationCheckBox->setEnabled(checked);
+    m_generalUi->autoTypeSkipMainWindowConfirmationCheckBox->setEnabled(checked);
 }
 
 void ApplicationSettingsWidget::selectBackupDirectory()
