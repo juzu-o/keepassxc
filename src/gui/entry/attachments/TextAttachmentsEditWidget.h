@@ -39,7 +39,6 @@ public:
 
 signals:
     void textChanged();
-    void scrollChanged(double percent);
     void previewButtonClicked(bool isChecked);
 
 private:

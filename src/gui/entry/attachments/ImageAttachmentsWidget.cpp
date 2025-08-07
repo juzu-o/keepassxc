@@ -37,6 +37,8 @@ namespace
     constexpr std::array ZoomList = {0.25, 0.5, 0.75, 1.0, 2.0};
     constexpr double WheelZoomStep = 1.1;
 
+    const QString FitText = QObject::tr("Fit");
+
     QString formatZoomText(double zoomFactor)
     {
         return QString("%1%").arg(QString::number(zoomFactor * 100, 'f', 0));
@@ -90,10 +92,9 @@ void ImageAttachmentsWidget::initZoomComboBox()
 {
     m_ui->zoomComboBox->clear();
 
-    auto fitText = tr("Fit");
-    auto textWidth = m_ui->zoomComboBox->fontMetrics().horizontalAdvance(fitText);
+    auto textWidth = m_ui->zoomComboBox->fontMetrics().horizontalAdvance(FitText);
 
-    m_ui->zoomComboBox->addItem(fitText, 0.0);
+    m_ui->zoomComboBox->addItem(FitText, 0.0);
 
     for (const auto& zoom : ZoomList) {
         auto zoomText = formatZoomText(zoom);
@@ -145,7 +146,7 @@ void ImageAttachmentsWidget::onZoomChanged(const QString& zoomText)
 {
     auto zoomFactor = 1.0;
 
-    if (zoomText == tr("Fit")) {
+    if (zoomText == FitText) {
         m_ui->imagesView->enableAutoFitInView();
 
         zoomFactor = std::min(m_ui->imagesView->calculateFitInViewFactor(), zoomFactor);

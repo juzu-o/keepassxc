@@ -23,10 +23,8 @@
 #include <QComboBox>
 #include <QDebug>
 #include <QMetaEnum>
-#include <QScrollBar>
 #include <QSortFilterProxyModel>
 #include <QStandardItemModel>
-#include <QTimer>
 
 namespace
 {
@@ -50,7 +48,6 @@ namespace
 TextAttachmentsPreviewWidget::TextAttachmentsPreviewWidget(QWidget* parent)
     : QWidget(parent)
     , m_ui(new Ui::TextAttachmentsPreviewWidget())
-    , m_userManuallySelectedType(false)
 {
     m_ui->setupUi(this);
 
@@ -91,14 +88,10 @@ void TextAttachmentsPreviewWidget::initTypeCombobox()
     filterProxyMode->sort(0, Qt::SortOrder::DescendingOrder);
     m_ui->typeComboBox->setModel(filterProxyMode);
 
-    connect(m_ui->typeComboBox, QOverload<int>::of(&QComboBox::currentIndexChanged), this, [this](int index) {
-
-        m_userManuallySelectedType = true;
-        onTypeChanged(index);
-    });
-
-    // Configure text browser to open external links
-    m_ui->previewTextBrowser->setOpenExternalLinks(true);
+    connect(m_ui->typeComboBox,
+            QOverload<int>::of(&QComboBox::currentIndexChanged),
+            this,
+            &TextAttachmentsPreviewWidget::onTypeChanged);
 
     m_ui->typeComboBox->setCurrentIndex(m_ui->typeComboBox->findData(PlainText));
 
@@ -107,17 +100,11 @@ void TextAttachmentsPreviewWidget::initTypeCombobox()
 
 void TextAttachmentsPreviewWidget::updateUi()
 {
-    // Only auto-select format based on file extension if user hasn't manually chosen one
-    if (!m_userManuallySelectedType && !m_attachment.name.isEmpty()) {
+    if (!m_attachment.name.isEmpty()) {
         const auto mimeType = Tools::getMimeType(QFileInfo(m_attachment.name));
 
         auto index = m_ui->typeComboBox->findData(ConvertToPreviewTextType(mimeType));
-        if (index >= 0) {
-            // Temporarily block signals to avoid triggering manual selection flag
-            m_ui->typeComboBox->blockSignals(true);
-            m_ui->typeComboBox->setCurrentIndex(index);
-            m_ui->typeComboBox->blockSignals(false);
-        }
+        m_ui->typeComboBox->setCurrentIndex(index);
     }
 
     onTypeChanged(m_ui->typeComboBox->currentIndex());
@@ -129,7 +116,6 @@ void TextAttachmentsPreviewWidget::onTypeChanged(int index)
         qWarning() << "TextAttachmentsPreviewWidget: Unknown text format";
     }
 
-    const auto scrollPos = m_ui->previewTextBrowser->verticalScrollBar()->value();
     const auto fileType = m_ui->typeComboBox->itemData(index).toInt();
     if (fileType == TextAttachmentsPreviewWidget::PreviewTextType::PlainText) {
         m_ui->previewTextBrowser->setPlainText(m_attachment.data);
@@ -144,16 +130,4 @@ void TextAttachmentsPreviewWidget::onTypeChanged(int index)
         m_ui->previewTextBrowser->setMarkdown(m_attachment.data);
     }
 #endif
-
-    // Delay setting the scrollbar position to ensure the text is rendered first
-    QTimer::singleShot(
-        100, this, [this, scrollPos] { m_ui->previewTextBrowser->verticalScrollBar()->setValue(scrollPos); });
-}
-
-void TextAttachmentsPreviewWidget::matchScroll(double percent)
-{
-    // Match the scroll position of the text browser to the given percentage
-    int maxScroll = m_ui->previewTextBrowser->verticalScrollBar()->maximum();
-    int newScrollPos = static_cast<int>(maxScroll * percent);
-    m_ui->previewTextBrowser->verticalScrollBar()->setValue(newScrollPos);
 }

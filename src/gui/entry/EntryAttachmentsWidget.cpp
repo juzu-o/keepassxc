@@ -37,6 +37,7 @@
 
 namespace
 {
+    constexpr const char* DefaultName = "New Attachment";
     constexpr const char* Suffix = ".txt";
 
     QString generateUniqueName(const QString& name, const QStringList& existingNames)
@@ -211,7 +212,7 @@ void EntryAttachmentsWidget::newAttachments()
     }
 
     // Create a temporary file to allow the user to edit the attachment
-    auto newFileName = generateUniqueName(tr("New Attachment"), m_entryAttachments->keys());
+    auto newFileName = generateUniqueName(DefaultName, m_entryAttachments->keys());
     m_entryAttachments->set(newFileName, QByteArray());
 
     auto currentIndex = m_attachmentsModel->index(m_attachmentsModel->rowByKey(newFileName), 0);

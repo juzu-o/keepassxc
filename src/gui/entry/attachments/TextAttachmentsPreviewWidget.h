@@ -48,9 +48,6 @@ public:
 
     Q_ENUM(PreviewTextType)
 
-public slots:
-    void matchScroll(double percent);
-
 private slots:
     void onTypeChanged(int index);
 
@@ -61,5 +58,4 @@ private:
     QScopedPointer<Ui::TextAttachmentsPreviewWidget> m_ui;
 
     attachments::Attachment m_attachment;
-    bool m_userManuallySelectedType;
 };
