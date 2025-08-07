@@ -872,12 +872,18 @@ void DatabaseWidget::performAutoType(const QString& sequence)
 {
     auto currentEntry = currentSelectedEntry();
     if (currentEntry) {
-        // TODO: Include name of previously active window in confirmation question
-        if (config()->get(Config::Security_AutoTypeAsk).toBool()
-            && MessageBox::question(
+        // Check if we need to ask for confirmation
+        bool shouldAsk = config()->get(Config::Security_AutoTypeAsk).toBool();
+        bool skipContextMenuConfirmation = config()->get(Config::Security_AutoTypeSkipContextMenuConfirmation).toBool();
+        
+        // Show confirmation if Security_AutoTypeAsk is true AND Security_AutoTypeSkipContextMenuConfirmation is false
+        if (shouldAsk && !skipContextMenuConfirmation) {
+            // TODO: Include name of previously active window in confirmation question
+            if (MessageBox::question(
                    this, tr("Confirm Auto-Type"), tr("Perform Auto-Type into the previously active window?"))
                    != MessageBox::Yes) {
-            return;
+                return;
+            }
         }
 
         if (sequence.isEmpty()) {

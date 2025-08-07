@@ -129,6 +129,7 @@ public:
         Security_HidePasswordPreviewPanel,
         Security_HideTotpPreviewPanel,
         Security_AutoTypeAsk,
+        Security_AutoTypeSkipContextMenuConfirmation,
         Security_IconDownloadFallback,
         Security_NoConfirmMoveEntryToRecycleBin,
         Security_EnableCopyOnDoubleClick,
