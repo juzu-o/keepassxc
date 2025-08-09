@@ -4686,6 +4686,17 @@ Voit aktivoida DuckDuckGon kuvakepalvelun sovelluksen suojausasetuksista.</trans
     </message>
 </context>
 <context>
+    <name>ImageAttachmentsWidget</name>
+    <message>
+        <source>Zoom:</source>
+        <translation>Zoomaus:</translation>
+    </message>
+    <message>
+        <source>Fit</source>
+        <translation>Sovita</translation>
+    </message>
+</context>
+<context>
     <name>ImportWizard</name>
     <message>
         <source>Import Wizard</source>
