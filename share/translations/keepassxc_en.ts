@@ -566,6 +566,10 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Skip confirmation for main window Auto-Type actions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source> recent files</source>
         <translation type="unfinished"></translation>
     </message>
