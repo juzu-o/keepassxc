@@ -875,13 +875,13 @@ void DatabaseWidget::performAutoType(const QString& sequence)
         // Check if we need to ask for confirmation
         bool shouldAsk = config()->get(Config::Security_AutoTypeAsk).toBool();
         bool skipMainWindowConfirmation = config()->get(Config::Security_AutoTypeSkipMainWindowConfirmation).toBool();
-        
+
         // Show confirmation if Security_AutoTypeAsk is true AND Security_AutoTypeSkipMainWindowConfirmation is false
         if (shouldAsk && !skipMainWindowConfirmation) {
             // TODO: Include name of previously active window in confirmation question
             if (MessageBox::question(
-                   this, tr("Confirm Auto-Type"), tr("Perform Auto-Type into the previously active window?"))
-                   != MessageBox::Yes) {
+                    this, tr("Confirm Auto-Type"), tr("Perform Auto-Type into the previously active window?"))
+                != MessageBox::Yes) {
                 return;
             }
         }
