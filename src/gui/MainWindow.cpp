@@ -530,8 +530,7 @@ MainWindow::MainWindow()
     m_actionMultiplexer.connect(
         m_ui->actionEntryAutoTypePasswordEnter, SIGNAL(triggered()), SLOT(performAutoTypePasswordEnter()));
     m_actionMultiplexer.connect(m_ui->actionEntryAutoTypeTOTP, SIGNAL(triggered()), SLOT(performAutoTypeTOTP()));
-    m_actionMultiplexer.connect(
-        m_ui->actionEntryAutoTypeURL, SIGNAL(triggered()), SLOT(performAutoTypeURL()));
+    m_actionMultiplexer.connect(m_ui->actionEntryAutoTypeURL, SIGNAL(triggered()), SLOT(performAutoTypeURL()));
     m_actionMultiplexer.connect(
         m_ui->actionEntryAutoTypeURLEnter, SIGNAL(triggered()), SLOT(performAutoTypeURLEnter()));
     m_actionMultiplexer.connect(m_ui->actionEntryOpenUrl, SIGNAL(triggered()), SLOT(openUrl()));
