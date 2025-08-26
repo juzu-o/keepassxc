@@ -1689,9 +1689,6 @@ void MainWindow::applySettingsChanges()
 
     m_ui->actionShowToolbar->setChecked(!config()->get(Config::GUI_HideToolbar).toBool());
     m_ui->actionShowMenubar->setChecked(!config()->get(Config::GUI_HideMenubar).toBool());
-    m_ui->actionHideUsernames->setChecked(config()->get(Config::GUI_HideUsernames).toBool());
-    m_ui->actionHidePasswords->setChecked(config()->get(Config::GUI_HidePasswords).toBool());
-    m_ui->actionShowSubgroupEntries->setChecked(config()->get(Config::GUI_ShowSubgroupEntries).toBool());
     m_ui->menubar->setHidden(config()->get(Config::GUI_HideMenubar).toBool());
     m_ui->toolBar->setHidden(config()->get(Config::GUI_HideToolbar).toBool());
     auto movable = config()->get(Config::GUI_MovableToolbar).toBool();
@@ -2099,11 +2096,6 @@ void MainWindow::initViewMenu()
     m_ui->actionHidePasswords->setChecked(config()->get(Config::GUI_HidePasswords).toBool());
     connect(m_ui->actionHidePasswords, &QAction::toggled, this, [](bool checked) {
         config()->set(Config::GUI_HidePasswords, checked);
-    });
-
-    m_ui->actionShowSubgroupEntries->setChecked(config()->get(Config::GUI_ShowSubgroupEntries).toBool());
-    connect(m_ui->actionShowSubgroupEntries, &QAction::toggled, this, [](bool checked) {
-        config()->set(Config::GUI_ShowSubgroupEntries, checked);
     });
 }
 

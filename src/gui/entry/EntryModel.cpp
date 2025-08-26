@@ -541,12 +541,7 @@ void EntryModel::entryAdded(Entry* entry)
     }
 
     if (m_group) {
-        // Check if we should show subgroup entries
-        if (config()->get(Config::GUI_ShowSubgroupEntries).toBool()) {
-            m_entries = m_group->entriesRecursive();
-        } else {
-            m_entries = m_group->entries();
-        }
+        m_entries = m_group->entries();
     }
     endInsertRows();
 }
@@ -562,12 +557,7 @@ void EntryModel::entryAboutToRemove(Entry* entry)
 void EntryModel::entryRemoved()
 {
     if (m_group) {
-        // Check if we should show subgroup entries
-        if (config()->get(Config::GUI_ShowSubgroupEntries).toBool()) {
-            m_entries = m_group->entriesRecursive();
-        } else {
-            m_entries = m_group->entries();
-        }
+        m_entries = m_group->entries();
     }
     endRemoveRows();
 }
@@ -583,12 +573,7 @@ void EntryModel::entryAboutToMoveUp(int row)
 void EntryModel::entryMovedUp()
 {
     if (m_group) {
-        // Check if we should show subgroup entries
-        if (config()->get(Config::GUI_ShowSubgroupEntries).toBool()) {
-            m_entries = m_group->entriesRecursive();
-        } else {
-            m_entries = m_group->entries();
-        }
+        m_entries = m_group->entries();
     }
     endMoveRows();
 }
@@ -604,12 +589,7 @@ void EntryModel::entryAboutToMoveDown(int row)
 void EntryModel::entryMovedDown()
 {
     if (m_group) {
-        // Check if we should show subgroup entries
-        if (config()->get(Config::GUI_ShowSubgroupEntries).toBool()) {
-            m_entries = m_group->entriesRecursive();
-        } else {
-            m_entries = m_group->entries();
-        }
+        m_entries = m_group->entries();
     }
     endMoveRows();
 }
