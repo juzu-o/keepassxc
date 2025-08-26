@@ -22,6 +22,7 @@
 #include <QTreeView>
 
 #include "gui/entry/EntryModel.h"
+#include "core/Config.h"
 
 #include <QtCore/QUuid>
 
@@ -77,6 +78,7 @@ private slots:
     void resetViewToDefaults();
     void contextMenuShortcutPressed();
     void sortIndicatorChanged(int logicalIndex, Qt::SortOrder order);
+    void onConfigChanged(Config::ConfigKey key);
 
 private:
     void resetFixedColumns();
