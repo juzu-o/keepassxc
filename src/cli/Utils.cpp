@@ -122,7 +122,7 @@ namespace Utils
                                             const QString& yubiKeySlot,
                                             bool quiet)
     {
-        auto& err = STDERR;
+        auto& err = quiet ? DEVNULL : STDERR;
         auto compositeKey = QSharedPointer<CompositeKey>::create();
 
         QFileInfo dbFileInfo(databaseFilename);
