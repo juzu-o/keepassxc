@@ -392,9 +392,10 @@
     <addaction name="actionShowMenubar"/>
     <addaction name="actionShowToolbar"/>
     <addaction name="separator"/>
+    <addaction name="actionShowSubgroupEntries"/>
+    <addaction name="separator"/>
     <addaction name="actionHideUsernames"/>
     <addaction name="actionHidePasswords"/>
-    <addaction name="actionShowSubgroupEntries"/>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuEntries"/>
