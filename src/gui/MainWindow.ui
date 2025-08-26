@@ -394,6 +394,7 @@
     <addaction name="separator"/>
     <addaction name="actionHideUsernames"/>
     <addaction name="actionHidePasswords"/>
+    <addaction name="actionShowSubgroupEntries"/>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuEntries"/>
@@ -1068,6 +1069,17 @@
    </property>
    <property name="shortcut">
     <string notr="true">Ctrl+Shift+C</string>
+   </property>
+  </action>
+  <action name="actionShowSubgroupEntries">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Show Subgroup Entries</string>
+   </property>
+   <property name="toolTip">
+    <string>Show entries from subgroups in the entry list view</string>
    </property>
   </action>
   <action name="actionEntryAutoTypeSequence">

@@ -2097,6 +2097,11 @@ void MainWindow::initViewMenu()
     connect(m_ui->actionHidePasswords, &QAction::toggled, this, [](bool checked) {
         config()->set(Config::GUI_HidePasswords, checked);
     });
+
+    m_ui->actionShowSubgroupEntries->setChecked(config()->get(Config::GUI_ShowSubgroupEntries).toBool());
+    connect(m_ui->actionShowSubgroupEntries, &QAction::toggled, this, [](bool checked) {
+        config()->set(Config::GUI_ShowSubgroupEntries, checked);
+    });
 }
 
 MainWindowEventFilter::MainWindowEventFilter(QObject* parent)

@@ -68,7 +68,13 @@ void EntryModel::setGroup(Group* group)
 
     m_group = group;
     m_allGroups.clear();
-    m_entries = group->entries();
+    
+    // Check if we should show subgroup entries
+    if (config()->get(Config::GUI_ShowSubgroupEntries).toBool()) {
+        m_entries = group->entriesRecursive();
+    } else {
+        m_entries = group->entries();
+    }
     m_orgEntries.clear();
 
     makeConnections(group);
@@ -602,6 +608,12 @@ void EntryModel::onConfigChanged(Config::ConfigKey key)
         break;
     case Config::GUI_HidePasswords:
         emit dataChanged(index(0, Password), index(rowCount() - 1, Password), {Qt::DisplayRole});
+        break;
+    case Config::GUI_ShowSubgroupEntries:
+        // Refresh the entry list when the subgroup setting changes
+        if (m_group) {
+            setGroup(m_group);
+        }
         break;
     default:
         break;
