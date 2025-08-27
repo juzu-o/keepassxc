@@ -743,6 +743,13 @@
                 </item>
                </layout>
               </item>
+              <item>
+               <widget class="QCheckBox" name="showSubgroupEntriesCheckBox">
+                <property name="text">
+                 <string>Show subgroup entries in entry list view</string>
+                </property>
+               </widget>
+              </item>
              </layout>
             </widget>
            </item>
@@ -1481,6 +1488,7 @@
   <tabstop>minimizeOnCopyRadioButton</tabstop>
   <tabstop>dropToBackgroundOnCopyRadioButton</tabstop>
   <tabstop>faviconTimeoutSpinBox</tabstop>
+  <tabstop>showSubgroupEntriesCheckBox</tabstop>
   <tabstop>languageComboBox</tabstop>
   <tabstop>toolButtonStyleComboBox</tabstop>
   <tabstop>toolbarMovableCheckBox</tabstop>
