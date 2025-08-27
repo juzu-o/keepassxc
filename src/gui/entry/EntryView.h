@@ -98,6 +98,7 @@ private:
     int m_lastSortColumn = -1;
     Qt::SortOrder m_lastSortOrder = Qt::AscendingOrder;
     QUuid m_lastSelectedEntryUuid;
+    bool m_userHidGroupColumnInSubgroupMode = false;
 };
 
 #endif // KEEPASSX_ENTRYVIEW_H
