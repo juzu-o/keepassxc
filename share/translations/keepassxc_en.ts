@@ -577,6 +577,10 @@
         <source>Skip confirmation for main window Auto-Type actions</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Show subgroup entries in entry list view</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ApplicationSettingsWidgetSecurity</name>

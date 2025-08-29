@@ -33,6 +33,8 @@
 #include "gui/Icons.h"
 #include "gui/SortFilterHideProxyModel.h"
 
+#include "core/Config.h"
+
 #define ICON_ONLY_SECTION_SIZE 26
 
 class PasswordStrengthItemDelegate : public QStyledItemDelegate
@@ -93,6 +95,9 @@ EntryView::EntryView(QWidget* parent)
     connect(selectionModel(), &QItemSelectionModel::selectionChanged, this, [this] {
         emit entrySelectionChanged(currentEntry());
     });
+
+    // Listen for config changes to update Group column visibility
+    connect(config(), &Config::changed, this, &EntryView::onConfigChanged);
 
     new QShortcut(Qt::CTRL + Qt::Key_F10, this, SLOT(contextMenuShortcutPressed()), nullptr, Qt::WidgetShortcut);
 
@@ -209,7 +214,16 @@ void EntryView::focusInEvent(QFocusEvent* event)
 void EntryView::displayGroup(Group* group)
 {
     m_model->setGroup(group);
-    header()->hideSection(EntryModel::ParentGroup);
+
+    // Show Group column when subgroup entries are enabled, since entries from different groups will be shown
+    // But respect user's preference if they've manually hidden it
+    if (config()->get(Config::GUI_ShowSubgroupEntries).toBool() && !m_userHidGroupColumnInSubgroupMode) {
+        header()->showSection(EntryModel::ParentGroup);
+    } else if (!config()->get(Config::GUI_ShowSubgroupEntries).toBool()) {
+        header()->hideSection(EntryModel::ParentGroup);
+    }
+    // If user has hidden the column in subgroup mode, don't force it to show
+
     setFirstEntryActive();
     m_inSearchMode = false;
 }
@@ -355,7 +369,8 @@ void EntryView::showHeaderMenu(const QPoint& position)
         int columnIndex = action->data().toInt();
         action->setChecked(!isColumnHidden(columnIndex));
     }
-    actions[EntryModel::ParentGroup]->setVisible(inSearchMode());
+    actions[EntryModel::ParentGroup]->setVisible(inSearchMode()
+                                                 || config()->get(Config::GUI_ShowSubgroupEntries).toBool());
 
     m_headerMenu->popup(mapToGlobal(position));
 }
@@ -385,11 +400,21 @@ void EntryView::toggleColumnVisibility(QAction* action)
         if (header()->sectionSize(columnIndex) == 0) {
             header()->resizeSection(columnIndex, header()->defaultSectionSize());
         }
+        // Reset flag when user manually shows Group column
+        if (columnIndex == EntryModel::ParentGroup && !m_inSearchMode
+            && config()->get(Config::GUI_ShowSubgroupEntries).toBool()) {
+            m_userHidGroupColumnInSubgroupMode = false;
+        }
         resetFixedColumns();
         return;
     }
     if ((header()->count() - header()->hiddenSectionCount()) > 1) {
         header()->hideSection(columnIndex);
+        // Track when user manually hides Group column while subgroup entries is enabled
+        if (columnIndex == EntryModel::ParentGroup && !m_inSearchMode
+            && config()->get(Config::GUI_ShowSubgroupEntries).toBool()) {
+            m_userHidGroupColumnInSubgroupMode = true;
+        }
         return;
     }
     action->setChecked(true);
@@ -461,7 +486,8 @@ void EntryView::resetFixedColumns()
 void EntryView::resetViewToDefaults()
 {
     // Reduce number of columns that are shown by default
-    if (m_inSearchMode) {
+    if (m_inSearchMode
+        || (config()->get(Config::GUI_ShowSubgroupEntries).toBool() && !m_userHidGroupColumnInSubgroupMode)) {
         header()->showSection(EntryModel::ParentGroup);
     } else {
         header()->hideSection(EntryModel::ParentGroup);
@@ -594,4 +620,20 @@ void EntryView::startDrag(Qt::DropActions supportedActions)
 bool EntryView::isColumnHidden(int logicalIndex)
 {
     return header()->isSectionHidden(logicalIndex) || header()->sectionSize(logicalIndex) == 0;
+}
+
+void EntryView::onConfigChanged(Config::ConfigKey key)
+{
+    if (key == Config::GUI_ShowSubgroupEntries && !m_inSearchMode) {
+        // Reset user preference when setting is toggled - this allows the
+        // Group column to auto-appear when re-enabling the feature
+        m_userHidGroupColumnInSubgroupMode = false;
+
+        // Update Group column visibility when subgroup entries setting changes
+        if (config()->get(Config::GUI_ShowSubgroupEntries).toBool()) {
+            header()->showSection(EntryModel::ParentGroup);
+        } else {
+            header()->hideSection(EntryModel::ParentGroup);
+        }
+    }
 }
