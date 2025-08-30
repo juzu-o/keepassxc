@@ -361,6 +361,10 @@
         <translation>Käytä ryhmän kuvaketta tietuetta luodessa</translation>
     </message>
     <message>
+        <source>Show subgroup entries in entry list view</source>
+        <translation>Näytä aliryhmien tietueet tietueluettelossa</translation>
+    </message>
+    <message>
         <source>Minimize when opening a URL</source>
         <translation>Pienennä ikkuna URL:ää avatessa</translation>
     </message>
