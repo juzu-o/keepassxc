@@ -72,12 +72,24 @@ void EntryModel::setGroup(Group* group)
     // Check if we should show subgroup entries
     if (config()->get(Config::GUI_ShowSubgroupEntries).toBool()) {
         m_entries = group->entriesRecursive();
+        
+        // When showing subgroup entries, we need to connect to all groups
+        // that contain the entries being displayed
+        for (const auto entry : asConst(m_entries)) {
+            if (entry->group()) {
+                m_allGroups.insert(entry->group());
+            }
+        }
+        
+        // Connect to all groups that have entries in the view
+        for (const auto groupToConnect : m_allGroups) {
+            makeConnections(groupToConnect);
+        }
     } else {
         m_entries = group->entries();
+        makeConnections(group);
     }
     m_orgEntries.clear();
-
-    makeConnections(group);
 
     endResetModel();
 }
