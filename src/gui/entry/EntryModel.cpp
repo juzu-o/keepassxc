@@ -85,6 +85,9 @@ void EntryModel::setGroup(Group* group)
         for (const auto groupToConnect : m_allGroups) {
             makeConnections(groupToConnect);
         }
+        
+        // Also connect to groupAdded signal from the main group to detect new subgroups
+        connect(group, SIGNAL(groupAdded()), SLOT(groupAdded()));
     } else {
         m_entries = group->entries();
         makeConnections(group);
@@ -624,6 +627,16 @@ void EntryModel::entryMovedDown()
         }
     }
     endMoveRows();
+}
+
+void EntryModel::groupAdded()
+{
+    // When a new subgroup is added to the current group and we're showing subgroup entries,
+    // we need to refresh our connections to include the new subgroup
+    if (m_group && config()->get(Config::GUI_ShowSubgroupEntries).toBool()) {
+        // Refresh the entry list and connections to include new subgroups
+        setGroup(m_group);
+    }
 }
 
 void EntryModel::entryDataChanged(Entry* entry)
