@@ -81,7 +81,10 @@ void EntryModel::setGroup(Group* group)
             }
         }
         
-        // Connect to all groups that have entries in the view
+        // Always include the current group itself to handle new entries added directly to it
+        m_allGroups.insert(group);
+        
+        // Connect to all groups that have entries in the view (or could have entries)
         for (const auto groupToConnect : m_allGroups) {
             makeConnections(groupToConnect);
         }
