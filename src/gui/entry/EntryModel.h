@@ -81,6 +81,7 @@ private slots:
     void entryAboutToMoveDown(int row);
     void entryMovedDown();
     void entryDataChanged(Entry* entry);
+    void groupAdded();
 
     void onConfigChanged(Config::ConfigKey key);
 
