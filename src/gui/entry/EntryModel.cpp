@@ -86,7 +86,9 @@ void EntryModel::setGroup(Group* group)
         
         // Connect to all groups that have entries in the view (or could have entries)
         for (const auto groupToConnect : m_allGroups) {
-            makeConnections(groupToConnect);
+            if (groupToConnect) {
+                makeConnections(groupToConnect);
+            }
         }
         
         // Also connect to groupAdded signal from the main group to detect new subgroups
@@ -118,7 +120,9 @@ void EntryModel::setEntries(const QList<Entry*>& entries)
     }
 
     for (const auto group : m_allGroups) {
-        makeConnections(group);
+        if (group) {
+            makeConnections(group);
+        }
     }
 
     endResetModel();
@@ -674,8 +678,17 @@ void EntryModel::severConnections()
         disconnect(m_group, nullptr, this, nullptr);
     }
 
-    for (const Group* group : asConst(m_allGroups)) {
-        disconnect(group, nullptr, this, nullptr);
+    // Use an iterator to safely remove null pointers while iterating
+    auto it = m_allGroups.begin();
+    while (it != m_allGroups.end()) {
+        if (*it) {
+            // Group is still valid, disconnect from it
+            disconnect(*it, nullptr, this, nullptr);
+            ++it;
+        } else {
+            // Group has been deleted, remove the null pointer
+            it = m_allGroups.erase(it);
+        }
     }
 }
 
