@@ -20,6 +20,7 @@
 
 #include <QAbstractTableModel>
 #include <QPixmap>
+#include <QPointer>
 #include <QSet>
 
 #include "core/Config.h"
@@ -90,10 +91,10 @@ private:
     void makeConnections(const Group* group);
 
     bool m_backgroundColorVisible = true;
-    Group* m_group;
+    QPointer<Group> m_group;
     QList<Entry*> m_entries;
     QList<Entry*> m_orgEntries;
-    QSet<const Group*> m_allGroups;
+    QSet<QPointer<const Group>> m_allGroups;
 
     const QString HiddenContentDisplay;
     const Qt::DateFormat DateFormat;
