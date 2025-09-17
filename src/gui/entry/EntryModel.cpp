@@ -76,13 +76,15 @@ void EntryModel::setGroup(Group* group)
         // When showing subgroup entries, we need to connect to all groups
         // that contain the entries being displayed
         for (const auto entry : asConst(m_entries)) {
-            if (entry->group()) {
-                m_allGroups.insert(entry->group());
+            if (entry->group() && !m_allGroups.contains(entry->group())) {
+                m_allGroups.append(entry->group());
             }
         }
         
         // Always include the current group itself to handle new entries added directly to it
-        m_allGroups.insert(group);
+        if (!m_allGroups.contains(group)) {
+            m_allGroups.append(group);
+        }
         
         // Connect to all groups that have entries in the view (or could have entries)
         for (const auto groupToConnect : m_allGroups) {
@@ -114,8 +116,8 @@ void EntryModel::setEntries(const QList<Entry*>& entries)
     m_orgEntries = entries;
 
     for (const auto entry : asConst(m_entries)) {
-        if (entry->group()) {
-            m_allGroups.insert(entry->group());
+        if (entry->group() && !m_allGroups.contains(entry->group())) {
+            m_allGroups.append(entry->group());
         }
     }
 
