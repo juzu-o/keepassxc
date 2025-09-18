@@ -75,7 +75,7 @@ void EntryModel::setGroup(Group* group)
         
         // When showing subgroup entries, we need to connect to all groups
         // that contain the entries being displayed
-        for (const auto entry : asConst(m_entries)) {
+        for (const auto& entry : asConst(m_entries)) {
             if (entry->group() && !m_allGroups.contains(entry->group())) {
                 m_allGroups.append(entry->group());
             }
@@ -87,7 +87,7 @@ void EntryModel::setGroup(Group* group)
         }
         
         // Connect to all groups that have entries in the view (or could have entries)
-        for (const auto groupToConnect : m_allGroups) {
+        for (const auto& groupToConnect : m_allGroups) {
             if (groupToConnect) {
                 makeConnections(groupToConnect);
             }
