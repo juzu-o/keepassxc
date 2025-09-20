@@ -493,8 +493,8 @@ void Config::migrate()
     }
 
     // Migrate from boolean OpenURLOnDoubleClick to enum URLDoubleClickAction
-    if (m_settings->contains(configStrings[OpenURLOnDoubleClick].name) && 
-        !m_settings->contains(configStrings[URLDoubleClickAction].name)) {
+    if (m_settings->contains(configStrings[OpenURLOnDoubleClick].name)
+        && !m_settings->contains(configStrings[URLDoubleClickAction].name)) {
         bool openUrlOnDoubleClick = get(OpenURLOnDoubleClick).toBool();
         // Convert: true (open browser) -> 1, false (edit entry) -> 0
         set(URLDoubleClickAction, openUrlOnDoubleClick ? 1 : 0);
