@@ -578,17 +578,17 @@
                   </property>
                   <item>
                    <property name="text">
-                    <string>Edit entry</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
                     <string>Open entry URL in browser</string>
                    </property>
                   </item>
                   <item>
                    <property name="text">
                     <string>Copy entry URL to clipboard</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Edit entry</string>
                    </property>
                   </item>
                  </widget>

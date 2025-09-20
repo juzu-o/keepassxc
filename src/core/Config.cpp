@@ -67,7 +67,7 @@ static const QHash<Config::ConfigKey, ConfigDirective> configStrings = {
     {Config::SearchLimitGroup,{QS("SearchLimitGroup"), Roaming, false}},
     {Config::MinimizeOnOpenUrl,{QS("MinimizeOnOpenUrl"), Roaming, false}},
     {Config::OpenURLOnDoubleClick, {QS("OpenURLOnDoubleClick"), Roaming, true}},
-    {Config::URLDoubleClickAction, {QS("URLDoubleClickAction"), Roaming, 1}},
+    {Config::URLDoubleClickAction, {QS("URLDoubleClickAction"), Roaming, 0}},
     {Config::HideWindowOnCopy,{QS("HideWindowOnCopy"), Roaming, false}},
     {Config::MinimizeOnCopy,{QS("MinimizeOnCopy"), Roaming, true}},
     {Config::AutoGeneratePasswordForNewEntries,{QS("AutoGeneratePasswordForNewEntries"), Roaming, false}},
@@ -496,8 +496,8 @@ void Config::migrate()
     if (m_settings->contains(configStrings[OpenURLOnDoubleClick].name)
         && !m_settings->contains(configStrings[URLDoubleClickAction].name)) {
         bool openUrlOnDoubleClick = get(OpenURLOnDoubleClick).toBool();
-        // Convert: true (open browser) -> 1, false (edit entry) -> 0
-        set(URLDoubleClickAction, openUrlOnDoubleClick ? 1 : 0);
+        // Convert: true (open browser) -> 0, false (edit entry) -> 2
+        set(URLDoubleClickAction, openUrlOnDoubleClick ? 0 : 2);
         // Keep the old setting for now for compatibility
     }
 

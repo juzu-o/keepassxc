@@ -56,8 +56,8 @@ void TestConfig::testURLDoubleClickMigration()
 
     Config::createConfigFromFile(tempFile.fileName());
 
-    // Should migrate to URLDoubleClickAction = 1 (open browser)
-    QCOMPARE(config()->get(Config::URLDoubleClickAction).toInt(), 1);
+    // Should migrate to URLDoubleClickAction = 0 (open browser)
+    QCOMPARE(config()->get(Config::URLDoubleClickAction).toInt(), 0);
 
     tempFile.remove();
 
@@ -72,8 +72,8 @@ void TestConfig::testURLDoubleClickMigration()
 
     Config::createConfigFromFile(tempFile2.fileName());
 
-    // Should migrate to URLDoubleClickAction = 0 (edit entry)
-    QCOMPARE(config()->get(Config::URLDoubleClickAction).toInt(), 0);
+    // Should migrate to URLDoubleClickAction = 2 (edit entry)
+    QCOMPARE(config()->get(Config::URLDoubleClickAction).toInt(), 2);
 
     tempFile2.remove();
 }
