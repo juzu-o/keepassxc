@@ -1689,6 +1689,7 @@ void MainWindow::applySettingsChanges()
 
     m_ui->actionShowToolbar->setChecked(!config()->get(Config::GUI_HideToolbar).toBool());
     m_ui->actionShowMenubar->setChecked(!config()->get(Config::GUI_HideMenubar).toBool());
+    m_ui->actionShowSubgroupEntries->setChecked(config()->get(Config::GUI_ShowSubgroupEntries).toBool());
     m_ui->menubar->setHidden(config()->get(Config::GUI_HideMenubar).toBool());
     m_ui->toolBar->setHidden(config()->get(Config::GUI_HideToolbar).toBool());
     auto movable = config()->get(Config::GUI_MovableToolbar).toBool();
@@ -2087,6 +2088,11 @@ void MainWindow::initViewMenu()
     });
     // Set checked after connecting to act on a toggle in state (default state is unchecked)
     m_ui->actionAlwaysOnTop->setChecked(config()->get(Config::GUI_AlwaysOnTop).toBool());
+
+    m_ui->actionShowSubgroupEntries->setChecked(config()->get(Config::GUI_ShowSubgroupEntries).toBool());
+    connect(m_ui->actionShowSubgroupEntries, &QAction::toggled, this, [](bool checked) {
+        config()->set(Config::GUI_ShowSubgroupEntries, checked);
+    });
 
     m_ui->actionHideUsernames->setChecked(config()->get(Config::GUI_HideUsernames).toBool());
     connect(m_ui->actionHideUsernames, &QAction::toggled, this, [](bool checked) {
