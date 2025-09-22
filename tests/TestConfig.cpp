@@ -17,8 +17,8 @@
 
 #include "TestConfig.h"
 
-#include <QTest>
 #include <QSettings>
+#include <QTest>
 
 #include "config-keepassx-tests.h"
 #include "util/TemporaryFile.h"
@@ -47,33 +47,33 @@ void TestConfig::testURLDoubleClickMigration()
     // Test migration from OpenURLOnDoubleClick to URLDoubleClickAction
     TemporaryFile tempFile;
     tempFile.open();
-    
+
     // Create a config with old setting = true (open browser)
     QSettings oldConfig(tempFile.fileName(), QSettings::IniFormat);
     oldConfig.setValue("OpenURLOnDoubleClick", true);
     oldConfig.sync();
     tempFile.close();
-    
+
     Config::createConfigFromFile(tempFile.fileName());
-    
+
     // Should migrate to URLDoubleClickAction = 1 (open browser)
     QCOMPARE(config()->get(Config::URLDoubleClickAction).toInt(), 1);
-    
+
     tempFile.remove();
-    
+
     // Test migration from OpenURLOnDoubleClick = false (edit entry)
     TemporaryFile tempFile2;
     tempFile2.open();
-    
+
     QSettings oldConfig2(tempFile2.fileName(), QSettings::IniFormat);
     oldConfig2.setValue("OpenURLOnDoubleClick", false);
     oldConfig2.sync();
     tempFile2.close();
-    
+
     Config::createConfigFromFile(tempFile2.fileName());
-    
+
     // Should migrate to URLDoubleClickAction = 0 (edit entry)
     QCOMPARE(config()->get(Config::URLDoubleClickAction).toInt(), 0);
-    
+
     tempFile2.remove();
 }
