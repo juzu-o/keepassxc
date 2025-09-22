@@ -1030,7 +1030,7 @@
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>Show entries of Subgroups</string>
+    <string>Show Entries of Subgroups</string>
    </property>
   </action>
   <action name="actionShowPreviewPanel">

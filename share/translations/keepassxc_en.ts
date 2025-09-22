@@ -5912,6 +5912,10 @@ Are you sure you want to continue with this file?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Show Entries of Subgroups</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Hide Usernames</source>
         <translation type="unfinished"></translation>
     </message>
