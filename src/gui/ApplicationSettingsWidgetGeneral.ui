@@ -1488,7 +1488,6 @@
   <tabstop>minimizeOnCopyRadioButton</tabstop>
   <tabstop>dropToBackgroundOnCopyRadioButton</tabstop>
   <tabstop>faviconTimeoutSpinBox</tabstop>
-  <tabstop>showSubgroupEntriesCheckBox</tabstop>
   <tabstop>languageComboBox</tabstop>
   <tabstop>toolButtonStyleComboBox</tabstop>
   <tabstop>toolbarMovableCheckBox</tabstop>
