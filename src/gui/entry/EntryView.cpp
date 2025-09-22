@@ -28,7 +28,6 @@
 #include <QScreen>
 #include <QShortcut>
 #include <QStyledItemDelegate>
-#include <QTimer>
 #include <QWindow>
 
 #include "gui/Icons.h"
@@ -677,12 +676,8 @@ void EntryView::onConfigChanged(Config::ConfigKey key)
             header()->hideSection(EntryModel::ParentGroup);
         }
         
-        // Ensure the entry list refreshes after the config change
-        // Use a timer to defer the refresh until after all signal processing is complete
-        QTimer::singleShot(0, this, [this]() {
-            if (m_model) {
-                m_model->onConfigChanged(Config::GUI_ShowSubgroupEntries);
-            }
-        });
+        // The EntryModel should already handle the refresh via its own onConfigChanged,
+        // but ensure the view updates its display
+        viewport()->update();
     }
 }
