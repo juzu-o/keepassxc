@@ -361,10 +361,6 @@
         <translation>Käytä ryhmän kuvaketta tietuetta luodessa</translation>
     </message>
     <message>
-        <source>Show subgroup entries in entry list view</source>
-        <translation>Näytä aliryhmien tietueet tietueluettelossa</translation>
-    </message>
-    <message>
         <source>Minimize when opening a URL</source>
         <translation>Pienennä ikkuna URL:ää avatessa</translation>
     </message>
@@ -5984,6 +5980,10 @@ Haluatko jatkaa käyttämällä tätä tiedostoa?</translation>
     <message>
         <source>Always on Top</source>
         <translation>Aina päällimmäisenä</translation>
+    </message>
+    <message>
+        <source>Show Entries of Subgroups</source>
+        <translation>Näytä aliryhmien tietueet</translation>
     </message>
     <message>
         <source>Hide Usernames</source>
