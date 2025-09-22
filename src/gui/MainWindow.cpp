@@ -1674,6 +1674,7 @@ void MainWindow::applySettingsChanges()
 
     m_ui->actionShowToolbar->setChecked(!config()->get(Config::GUI_HideToolbar).toBool());
     m_ui->actionShowMenubar->setChecked(!config()->get(Config::GUI_HideMenubar).toBool());
+    m_ui->actionShowSubgroupEntries->setChecked(config()->get(Config::GUI_ShowSubgroupEntries).toBool());
     m_ui->menubar->setHidden(config()->get(Config::GUI_HideMenubar).toBool());
     m_ui->toolBar->setHidden(config()->get(Config::GUI_HideToolbar).toBool());
     auto movable = config()->get(Config::GUI_MovableToolbar).toBool();
@@ -2023,6 +2024,11 @@ void MainWindow::initViewMenu()
     connect(m_ui->actionShowToolbar, &QAction::toggled, this, [this](bool checked) {
         config()->set(Config::GUI_HideToolbar, !checked);
         applySettingsChanges();
+    });
+
+    m_ui->actionShowSubgroupEntries->setChecked(config()->get(Config::GUI_ShowSubgroupEntries).toBool());
+    connect(m_ui->actionShowSubgroupEntries, &QAction::toggled, this, [](bool checked) {
+        config()->set(Config::GUI_ShowSubgroupEntries, checked);
     });
 
     m_ui->actionShowGroupPanel->setChecked(!config()->get(Config::GUI_HideGroupPanel).toBool());

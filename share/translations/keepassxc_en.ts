@@ -577,10 +577,6 @@
         <source>Skip confirmation for main window Auto-Type actions</source>
         <translation type="unfinished"></translation>
     </message>
-    <message>
-        <source>Show subgroup entries in entry list view</source>
-        <translation type="unfinished"></translation>
-    </message>
 </context>
 <context>
     <name>ApplicationSettingsWidgetSecurity</name>
@@ -6349,6 +6345,10 @@ Expect some bugs and minor issues, this version is meant for testing purposes.</
     </message>
     <message>
         <source>Clear all identities in ssh-agent</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Show entries of Subgroups</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
