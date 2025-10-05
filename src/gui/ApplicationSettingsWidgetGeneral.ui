@@ -574,13 +574,6 @@
                </widget>
               </item>
               <item>
-               <widget class="QCheckBox" name="showSubgroupEntriesCheckBox">
-                <property name="text">
-                 <string>Show subgroup entries in entry list view</string>
-                </property>
-               </widget>
-              </item>
-              <item>
                <widget class="QCheckBox" name="minimizeOnOpenUrlCheckBox">
                 <property name="text">
                  <string>Minimize when opening a URL</string>
@@ -1448,7 +1441,6 @@
   <tabstop>EnableCopyOnDoubleClickCheckBox</tabstop>
   <tabstop>openUrlOnDoubleClick</tabstop>
   <tabstop>useGroupIconOnEntryCreationCheckBox</tabstop>
-  <tabstop>showSubgroupEntriesCheckBox</tabstop>
   <tabstop>minimizeOnOpenUrlCheckBox</tabstop>
   <tabstop>hideWindowOnCopyCheckBox</tabstop>
   <tabstop>minimizeOnCopyRadioButton</tabstop>

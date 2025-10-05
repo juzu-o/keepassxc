@@ -218,7 +218,6 @@ void ApplicationSettingsWidget::loadSettings()
     m_generalUi->dropToBackgroundOnCopyRadioButton->setChecked(config()->get(Config::DropToBackgroundOnCopy).toBool());
     m_generalUi->useGroupIconOnEntryCreationCheckBox->setChecked(
         config()->get(Config::UseGroupIconOnEntryCreation).toBool());
-    m_generalUi->showSubgroupEntriesCheckBox->setChecked(config()->get(Config::GUI_ShowSubgroupEntries).toBool());
     m_generalUi->autoTypeEntryTitleMatchCheckBox->setChecked(config()->get(Config::AutoTypeEntryTitleMatch).toBool());
     m_generalUi->autoTypeEntryURLMatchCheckBox->setChecked(config()->get(Config::AutoTypeEntryURLMatch).toBool());
     m_generalUi->autoTypeHideExpiredEntryCheckBox->setChecked(config()->get(Config::AutoTypeHideExpiredEntry).toBool());
@@ -395,7 +394,6 @@ void ApplicationSettingsWidget::saveSettings()
     config()->set(Config::MinimizeOnCopy, m_generalUi->minimizeOnCopyRadioButton->isChecked());
     config()->set(Config::DropToBackgroundOnCopy, m_generalUi->dropToBackgroundOnCopyRadioButton->isChecked());
     config()->set(Config::UseGroupIconOnEntryCreation, m_generalUi->useGroupIconOnEntryCreationCheckBox->isChecked());
-    config()->set(Config::GUI_ShowSubgroupEntries, m_generalUi->showSubgroupEntriesCheckBox->isChecked());
     config()->set(Config::AutoTypeEntryTitleMatch, m_generalUi->autoTypeEntryTitleMatchCheckBox->isChecked());
     config()->set(Config::AutoTypeEntryURLMatch, m_generalUi->autoTypeEntryURLMatchCheckBox->isChecked());
     config()->set(Config::AutoTypeHideExpiredEntry, m_generalUi->autoTypeHideExpiredEntryCheckBox->isChecked());
