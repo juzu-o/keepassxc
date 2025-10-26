@@ -570,6 +570,10 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Auto-generate password for new entries</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source> recent files</source>
         <translation type="unfinished"></translation>
     </message>

@@ -540,6 +540,13 @@
                </widget>
               </item>
               <item>
+               <widget class="QCheckBox" name="autoGeneratePasswordForNewEntriesCheckBox">
+                <property name="text">
+                 <string>Auto-generate password for new entries</string>
+                </property>
+               </widget>
+              </item>
+              <item>
                <widget class="QCheckBox" name="EnableCopyOnDoubleClickCheckBox">
                 <property name="text">
                  <string>Copy data on double clicking field in entry view</string>
