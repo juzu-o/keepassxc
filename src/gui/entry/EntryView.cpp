@@ -29,7 +29,9 @@
 #include <QShortcut>
 #include <QStyledItemDelegate>
 #include <QWindow>
+#include <QtCore/QUuid>
 
+#include "core/Entry.h"
 #include "gui/Icons.h"
 #include "gui/SortFilterHideProxyModel.h"
 
@@ -221,14 +223,14 @@ void EntryView::displayGroup(Group* group)
 
 void EntryView::displaySearch(const QList<Entry*>& entries)
 {
+    // Save state before changing
+    saveViewState();
+
     m_model->setEntries(entries);
     header()->showSection(EntryModel::ParentGroup);
 
-    setFirstEntryActive();
-
-    // Reset sort column to 'Group', overrides DatabaseWidgetStateSync
-    m_sortModel->sort(EntryModel::ParentGroup, Qt::AscendingOrder);
-    sortByColumn(EntryModel::ParentGroup, Qt::AscendingOrder);
+    // Restore state after entries change
+    restoreViewState(entries);
 
     m_inSearchMode = true;
 }
@@ -614,4 +616,34 @@ void EntryView::jumpToGroupShortcut()
         // Emit the entryActivated signal with ParentGroup column to trigger jump to group
         emit entryActivated(entry, EntryModel::ParentGroup);
     }
+}
+
+void EntryView::saveViewState()
+{
+    // Save current sort state and selected entry UUID
+    m_lastSortColumn = header()->sortIndicatorSection();
+    m_lastSortOrder = header()->sortIndicatorOrder();
+    Entry* selected = currentEntry();
+    m_lastSelectedEntryUuid = selected ? selected->uuid() : QUuid();
+}
+
+void EntryView::restoreViewState(const QList<Entry*>& entries)
+{
+    // Restore sort state if previously saved
+    if (m_lastSortColumn >= 0) {
+        sortByColumn(m_lastSortColumn, m_lastSortOrder);
+    }
+
+    // Try to restore selection by UUID
+    if (!m_lastSelectedEntryUuid.isNull()) {
+        for (const auto& entry : entries) {
+            if (entry->uuid() == m_lastSelectedEntryUuid) {
+                setCurrentEntry(entry);
+                return;
+            }
+        }
+    }
+
+    // Fallback: select first entry if no previous selection found
+    setFirstEntryActive();
 }
