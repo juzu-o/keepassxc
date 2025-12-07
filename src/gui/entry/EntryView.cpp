@@ -636,7 +636,7 @@ void EntryView::restoreViewState(const QList<Entry*>& entries)
 
     // Try to restore selection by UUID
     if (!m_lastSelectedEntryUuid.isNull()) {
-        for (Entry* entry : entries) {
+        for (const auto& entry : entries) {
             if (entry->uuid() == m_lastSelectedEntryUuid) {
                 setCurrentEntry(entry);
                 return;
