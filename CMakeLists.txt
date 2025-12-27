@@ -170,6 +170,11 @@ if(OVERRIDE_VERSION)
     elseif(OVERRIDE_VERSION MATCHES "^[\\.0-9]+$")
         set(KEEPASSXC_BUILD_TYPE "Release")
         set(KEEPASSXC_VERSION ${OVERRIDE_VERSION})
+    # PATCH START: treat custom -jz versions as Release
+    elseif(OVERRIDE_VERSION MATCHES "^[\\.0-9]+-jz[0-9]*$")
+        set(KEEPASSXC_BUILD_TYPE "Release")
+        set(KEEPASSXC_VERSION ${OVERRIDE_VERSION})
+    # PATCH END
     else()
         set(KEEPASSXC_BUILD_TYPE "Snapshot")
         set(KEEPASSXC_VERSION ${OVERRIDE_VERSION})
