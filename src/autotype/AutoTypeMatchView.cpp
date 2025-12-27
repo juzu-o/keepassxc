@@ -31,16 +31,18 @@ public:
         : QSortFilterProxyModel(parent){};
     ~CustomSortFilterProxyModel() override = default;
 
-    // Only search the first three columns (ie, ignore sequence column)
+    // Only search the first three columns and URL column (ie, ignore sequence column)
     bool filterAcceptsRow(int sourceRow, const QModelIndex& sourceParent) const override
     {
         auto index0 = sourceModel()->index(sourceRow, 0, sourceParent);
         auto index1 = sourceModel()->index(sourceRow, 1, sourceParent);
         auto index2 = sourceModel()->index(sourceRow, 2, sourceParent);
+        auto index4 = sourceModel()->index(sourceRow, 4, sourceParent);
 
         return sourceModel()->data(index0).toString().contains(filterRegExp())
                || sourceModel()->data(index1).toString().contains(filterRegExp())
-               || sourceModel()->data(index2).toString().contains(filterRegExp());
+               || sourceModel()->data(index2).toString().contains(filterRegExp())
+               || sourceModel()->data(index4).toString().contains(filterRegExp());
     }
 };
 
