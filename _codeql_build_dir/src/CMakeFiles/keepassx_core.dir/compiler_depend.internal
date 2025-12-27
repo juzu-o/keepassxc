@@ -27280,6 +27280,7 @@ src/CMakeFiles/keepassx_core.dir/gui/CloneDialog.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QDateTime
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QFileSystemWatcher
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QHash
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QList
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QMap
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QMetaType
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QMutex
@@ -28112,6 +28113,7 @@ src/CMakeFiles/keepassx_core.dir/gui/DatabaseOpenWidget.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QDateTime
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QFileSystemWatcher
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QHash
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QList
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QMap
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QMetaType
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QMultiMap
@@ -29631,6 +29633,7 @@ src/CMakeFiles/keepassx_core.dir/gui/DatabaseWidgetStateSync.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QDateTime
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QFileSystemWatcher
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QHash
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QList
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QMap
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QMetaType
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QMutex
@@ -31717,6 +31720,7 @@ src/CMakeFiles/keepassx_core.dir/gui/EntryPreviewWidget.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QDateTime
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QFileSystemWatcher
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QHash
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QList
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QMap
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QMetaType
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QMutex
