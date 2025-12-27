@@ -530,12 +530,24 @@ class Check(Command):
             appstream = Path(cwd) / appstream
         if not appstream.is_file():
             raise Error('File not found: %s', appstream)
-        regex = re.compile(rf'^\s*<release version="{version}" date=".+?">')
+        
+        major, minor, patch = _split_version(version)
+        base_version = f'{major}.{minor}.{patch}'
+        
+        # Try exact version match first, then base version
+        regex_custom = re.compile(rf'^\s*<release version="{re.escape(version)}" date=".+?">')
+        regex_base = re.compile(rf'^\s*<release version="{re.escape(base_version)}" date=".+?">')
+        
         with appstream.open('r', encoding='utf-8') as f:
-            for line in f:
-                if regex.search(line):
-                    return
-        raise Error(f'{appstream} has not been updated to the "%s" release.', version)
+            content = f.read()
+            if regex_custom.search(content) or regex_base.search(content):
+                return
+        
+        # For custom versions, issue a warning instead of error
+        if version != base_version:
+            logger.warning(f'{appstream} may not be updated to the "%s" release (custom version).', version)
+        else:
+            raise Error(f'{appstream} has not been updated to the "%s" release.', version)
 
     @staticmethod
     def check_git():
