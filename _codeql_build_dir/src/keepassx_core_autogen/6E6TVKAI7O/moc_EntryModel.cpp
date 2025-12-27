@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_EntryModel_t {
-    QByteArrayData data[17];
-    char stringdata0[211];
+    QByteArrayData data[18];
+    char stringdata0[222];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -46,9 +46,10 @@ QT_MOC_LITERAL(10, 107, 12), // "entryMovedUp"
 QT_MOC_LITERAL(11, 120, 20), // "entryAboutToMoveDown"
 QT_MOC_LITERAL(12, 141, 14), // "entryMovedDown"
 QT_MOC_LITERAL(13, 156, 16), // "entryDataChanged"
-QT_MOC_LITERAL(14, 173, 15), // "onConfigChanged"
-QT_MOC_LITERAL(15, 189, 17), // "Config::ConfigKey"
-QT_MOC_LITERAL(16, 207, 3) // "key"
+QT_MOC_LITERAL(14, 173, 10), // "groupAdded"
+QT_MOC_LITERAL(15, 184, 15), // "onConfigChanged"
+QT_MOC_LITERAL(16, 200, 17), // "Config::ConfigKey"
+QT_MOC_LITERAL(17, 218, 3) // "key"
 
     },
     "EntryModel\0entryAboutToAdd\0\0Entry*\0"
@@ -56,7 +57,8 @@ QT_MOC_LITERAL(16, 207, 3) // "key"
     "entryRemoved\0entryAboutToMoveUp\0row\0"
     "entryMovedUp\0entryAboutToMoveDown\0"
     "entryMovedDown\0entryDataChanged\0"
-    "onConfigChanged\0Config::ConfigKey\0key"
+    "groupAdded\0onConfigChanged\0Config::ConfigKey\0"
+    "key"
 };
 #undef QT_MOC_LITERAL
 
@@ -66,7 +68,7 @@ static const uint qt_meta_data_EntryModel[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-      10,   14, // methods
+      11,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -74,16 +76,17 @@ static const uint qt_meta_data_EntryModel[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    1,   64,    2, 0x08 /* Private */,
-       5,    1,   67,    2, 0x08 /* Private */,
-       6,    1,   70,    2, 0x08 /* Private */,
-       7,    0,   73,    2, 0x08 /* Private */,
-       8,    1,   74,    2, 0x08 /* Private */,
-      10,    0,   77,    2, 0x08 /* Private */,
-      11,    1,   78,    2, 0x08 /* Private */,
-      12,    0,   81,    2, 0x08 /* Private */,
-      13,    1,   82,    2, 0x08 /* Private */,
-      14,    1,   85,    2, 0x08 /* Private */,
+       1,    1,   69,    2, 0x08 /* Private */,
+       5,    1,   72,    2, 0x08 /* Private */,
+       6,    1,   75,    2, 0x08 /* Private */,
+       7,    0,   78,    2, 0x08 /* Private */,
+       8,    1,   79,    2, 0x08 /* Private */,
+      10,    0,   82,    2, 0x08 /* Private */,
+      11,    1,   83,    2, 0x08 /* Private */,
+      12,    0,   86,    2, 0x08 /* Private */,
+      13,    1,   87,    2, 0x08 /* Private */,
+      14,    0,   90,    2, 0x08 /* Private */,
+      15,    1,   91,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void, 0x80000000 | 3,    4,
@@ -95,7 +98,8 @@ static const uint qt_meta_data_EntryModel[] = {
     QMetaType::Void, QMetaType::Int,    9,
     QMetaType::Void,
     QMetaType::Void, 0x80000000 | 3,    4,
-    QMetaType::Void, 0x80000000 | 15,   16,
+    QMetaType::Void,
+    QMetaType::Void, 0x80000000 | 16,   17,
 
        0        // eod
 };
@@ -115,7 +119,8 @@ void EntryModel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 6: _t->entryAboutToMoveDown((*reinterpret_cast< int(*)>(_a[1]))); break;
         case 7: _t->entryMovedDown(); break;
         case 8: _t->entryDataChanged((*reinterpret_cast< Entry*(*)>(_a[1]))); break;
-        case 9: _t->onConfigChanged((*reinterpret_cast< Config::ConfigKey(*)>(_a[1]))); break;
+        case 9: _t->groupAdded(); break;
+        case 10: _t->onConfigChanged((*reinterpret_cast< Config::ConfigKey(*)>(_a[1]))); break;
         default: ;
         }
     }
@@ -150,13 +155,13 @@ int EntryModel::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 10)
+        if (_id < 11)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 10;
+        _id -= 11;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 10)
+        if (_id < 11)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 10;
+        _id -= 11;
     }
     return _id;
 }

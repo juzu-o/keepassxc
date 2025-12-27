@@ -382,6 +382,8 @@ src/CMakeFiles/keepassx_core.dir/gui/MainWindow.cpp.o: \
  /home/runner/work/keepassxc/keepassxc/src/gui/entry/EntryModel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QAbstractTableModel \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QList \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qlist.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPixmap \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpixmap.h \
  /home/runner/work/keepassxc/keepassxc/src/core/Config.h \
@@ -442,8 +444,6 @@ src/CMakeFiles/keepassx_core.dir/gui/MainWindow.cpp.o: \
  /home/runner/work/keepassxc/keepassxc/src/gui/DatabaseOpenDialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/QList \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qlist.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QTabBar \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabbar.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QTabWidget \
