@@ -3,6 +3,6 @@
 #ifndef KEEPASSXC_GIT_INFO_H
 #define KEEPASSXC_GIT_INFO_H
 
-#define GIT_HEAD "9ad231d"
+#define GIT_HEAD "e64c4a8"
 
 #endif // KEEPASSXC_GIT_INFO_H
