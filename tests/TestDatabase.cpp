@@ -156,7 +156,8 @@ void TestDatabase::testBackupTo()
     QVERIFY(db->isModified());
 
     // Test backupTo: should save backup without changing database state
-    QString backupFileName = QStringLiteral(KEEPASSX_TEST_DATA_DIR).append("/BackupDatabase.kdbx");
+    TemporaryFile backupFile;
+    QString backupFileName = backupFile.fileName();
     QVERIFY2(db->backupTo(backupFileName, &error), error.toLatin1());
 
     // Verify database state is unchanged
@@ -168,10 +169,6 @@ void TestDatabase::testBackupTo()
     auto backupDb = QSharedPointer<Database>::create();
     QVERIFY(backupDb->open(backupFileName, key, &error));
     QCOMPARE(backupDb->metadata()->name(), QString("Modified Database"));
-
-    // Cleanup
-    QFile::remove(backupFileName);
-    QVERIFY(!QFile::exists(backupFileName));
 }
 
 void TestDatabase::testSignals()
