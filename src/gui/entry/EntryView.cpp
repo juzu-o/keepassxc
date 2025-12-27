@@ -223,9 +223,10 @@ void EntryView::displayGroup(Group* group)
 
     // Show Group column when subgroup entries are enabled, since entries from different groups will be shown
     // But respect user's preference if they've manually hidden it
-    if (config()->get(Config::GUI_ShowSubgroupEntries).toBool() && !m_userHidGroupColumnInSubgroupMode) {
+    bool showSubgroupEntries = config()->get(Config::GUI_ShowSubgroupEntries).toBool();
+    if (showSubgroupEntries && !m_userHidGroupColumnInSubgroupMode) {
         header()->showSection(EntryModel::ParentGroup);
-    } else if (!config()->get(Config::GUI_ShowSubgroupEntries).toBool()) {
+    } else if (!showSubgroupEntries) {
         header()->hideSection(EntryModel::ParentGroup);
     }
     // If user has hidden the column in subgroup mode, don't force it to show
@@ -375,8 +376,8 @@ void EntryView::showHeaderMenu(const QPoint& position)
         int columnIndex = action->data().toInt();
         action->setChecked(!isColumnHidden(columnIndex));
     }
-    actions[EntryModel::ParentGroup]->setVisible(inSearchMode()
-                                                 || config()->get(Config::GUI_ShowSubgroupEntries).toBool());
+    bool showSubgroupEntries = config()->get(Config::GUI_ShowSubgroupEntries).toBool();
+    actions[EntryModel::ParentGroup]->setVisible(inSearchMode() || showSubgroupEntries);
 
     m_headerMenu->popup(mapToGlobal(position));
 }

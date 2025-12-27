@@ -94,7 +94,7 @@ void EntryModel::setGroup(Group* group)
         }
 
         // Also connect to groupAdded signal from the main group to detect new subgroups
-        connect(group, SIGNAL(groupAdded()), SLOT(groupAdded()));
+        connect(group, &Group::groupAdded, this, &EntryModel::groupAdded);
     } else {
         m_entries = group->entries();
         makeConnections(group);
