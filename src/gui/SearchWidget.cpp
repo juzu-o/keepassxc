@@ -184,7 +184,7 @@ void SearchWidget::startSearchTimer()
     if (m_actionWaitForEnter->isChecked()) {
         m_searchTimer->stop();
     } else {
-        m_searchTimer->start(500);
+        m_searchTimer->start(100);
     }
 }
 
