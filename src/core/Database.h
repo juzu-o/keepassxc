@@ -165,6 +165,8 @@ public:
 
     static Database* databaseByUuid(const QUuid& uuid);
 
+    bool backupTo(const QString& backupFilePath, QString* error = nullptr) const;
+
 public slots:
     void markAsModified();
     void markAsClean();
