@@ -121,7 +121,7 @@ void EntryModel::setEntries(const QList<Entry*>& entries)
         }
     }
 
-    for (const auto group : m_allGroups) {
+    for (const auto& group : m_allGroups) {
         if (group) {
             makeConnections(group);
         }

@@ -809,6 +809,10 @@
         <source>Sequence</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>URL</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>AutoTypePlatformX11</name>

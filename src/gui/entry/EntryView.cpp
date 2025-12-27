@@ -31,8 +31,8 @@
 #include <QWindow>
 #include <QtCore/QUuid>
 
-#include "core/Entry.h"
 #include "core/Config.h"
+#include "core/Entry.h"
 #include "gui/Icons.h"
 #include "gui/SortFilterHideProxyModel.h"
 
