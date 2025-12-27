@@ -138,6 +138,42 @@ void TestDatabase::testSaveAs()
     QCOMPARE(error, QString("Could not save, database has not been initialized!"));
 }
 
+void TestDatabase::testBackupTo()
+{
+    TemporaryFile tempFile;
+    QVERIFY(tempFile.copyFromFile(dbFileName));
+
+    auto db = QSharedPointer<Database>::create();
+    auto key = QSharedPointer<CompositeKey>::create();
+    key->addKey(QSharedPointer<PasswordKey>::create("a"));
+
+    QString error;
+    QVERIFY(db->open(tempFile.fileName(), key, &error));
+
+    // Get original file path and modified state
+    QString originalPath = db->filePath();
+    db->metadata()->setName("Modified Database");
+    QVERIFY(db->isModified());
+
+    // Test backupTo: should save backup without changing database state
+    QString backupFileName = QStringLiteral(KEEPASSX_TEST_DATA_DIR).append("/BackupDatabase.kdbx");
+    QVERIFY2(db->backupTo(backupFileName, &error), error.toLatin1());
+
+    // Verify database state is unchanged
+    QCOMPARE(db->filePath(), originalPath);
+    QVERIFY(db->isModified()); // Still modified
+    QVERIFY(QFile::exists(backupFileName));
+
+    // Verify backup can be opened
+    auto backupDb = QSharedPointer<Database>::create();
+    QVERIFY(backupDb->open(backupFileName, key, &error));
+    QCOMPARE(backupDb->metadata()->name(), QString("Modified Database"));
+
+    // Cleanup
+    QFile::remove(backupFileName);
+    QVERIFY(!QFile::exists(backupFileName));
+}
+
 void TestDatabase::testSignals()
 {
     TemporaryFile tempFile;

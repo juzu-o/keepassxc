@@ -1172,3 +1172,17 @@ void Database::setPublicIcon(int iconIndex)
     }
     markAsModified();
 }
+
+bool Database::backupTo(const QString& backupFilePath, QString* error) const
+{
+    QFile file(backupFilePath);
+    if (!file.open(QIODevice::WriteOnly)) {
+        if (error) {
+            *error = QObject::tr("Unable to open file for writing: %1").arg(file.errorString());
+        }
+        return false;
+    }
+    // Use writeDatabase, but do NOT change any member variables.
+    // writeDatabase is not const, so use const_cast.
+    return const_cast<Database*>(this)->writeDatabase(&file, error);
+}
