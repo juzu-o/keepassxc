@@ -108,6 +108,7 @@ public:
     QAction *actionThemeClassic;
     QAction *actionShowMenubar;
     QAction *actionShowToolbar;
+    QAction *actionShowEntriesOfSubgroups;
     QAction *actionShowPreviewPanel;
     QAction *actionAlwaysOnTop;
     QAction *actionHideUsernames;
@@ -388,6 +389,9 @@ public:
         actionShowToolbar->setObjectName(QString::fromUtf8("actionShowToolbar"));
         actionShowToolbar->setCheckable(true);
         actionShowToolbar->setChecked(true);
+        actionShowEntriesOfSubgroups = new QAction(MainWindow);
+        actionShowEntriesOfSubgroups->setObjectName(QString::fromUtf8("actionShowEntriesOfSubgroups"));
+        actionShowEntriesOfSubgroups->setCheckable(true);
         actionShowPreviewPanel = new QAction(MainWindow);
         actionShowPreviewPanel->setObjectName(QString::fromUtf8("actionShowPreviewPanel"));
         actionShowPreviewPanel->setCheckable(true);
@@ -687,6 +691,8 @@ public:
         menuView->addAction(actionShowMenubar);
         menuView->addAction(actionShowToolbar);
         menuView->addSeparator();
+        menuView->addAction(actionShowEntriesOfSubgroups);
+        menuView->addSeparator();
         menuView->addAction(actionHideUsernames);
         menuView->addAction(actionHidePasswords);
         menuTheme->addAction(actionThemeAuto);
@@ -873,6 +879,10 @@ public:
         actionShowMenubar->setToolTip(QCoreApplication::translate("MainWindow", "Toggle Show Menubar", nullptr));
 #endif // QT_CONFIG(tooltip)
         actionShowToolbar->setText(QCoreApplication::translate("MainWindow", "Show Toolbar", nullptr));
+        actionShowEntriesOfSubgroups->setText(QCoreApplication::translate("MainWindow", "Show Entries of Subgroups", nullptr));
+#if QT_CONFIG(tooltip)
+        actionShowEntriesOfSubgroups->setToolTip(QCoreApplication::translate("MainWindow", "Toggle Show Entries of Subgroups", nullptr));
+#endif // QT_CONFIG(tooltip)
         actionShowPreviewPanel->setText(QCoreApplication::translate("MainWindow", "Show Preview Panel", nullptr));
         actionAlwaysOnTop->setText(QCoreApplication::translate("MainWindow", "Always on Top", nullptr));
         actionHideUsernames->setText(QCoreApplication::translate("MainWindow", "Hide Usernames", nullptr));

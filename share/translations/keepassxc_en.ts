@@ -809,6 +809,10 @@
         <source>Sequence</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>URL</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>AutoTypePlatformX11</name>
@@ -5907,6 +5911,10 @@ Are you sure you want to continue with this file?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Show Entries of Subgroups</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Show Preview Panel</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6061,6 +6069,10 @@ Expect some bugs and minor issues, this version is meant for testing purposes.</
     </message>
     <message>
         <source>Toggle Show Menubar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Toggle Show Entries of Subgroups</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

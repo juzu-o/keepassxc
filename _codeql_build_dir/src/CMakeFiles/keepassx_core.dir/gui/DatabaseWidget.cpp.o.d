@@ -366,6 +366,8 @@ src/CMakeFiles/keepassx_core.dir/gui/DatabaseWidget.cpp.o: \
  /home/runner/work/keepassxc/keepassxc/src/gui/entry/EntryModel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QAbstractTableModel \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QList \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qlist.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPixmap \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpixmap.h \
  /home/runner/work/keepassxc/keepassxc/src/core/Config.h \
@@ -447,8 +449,6 @@ src/CMakeFiles/keepassx_core.dir/gui/DatabaseWidget.cpp.o: \
  /home/runner/work/keepassxc/keepassxc/src/core/Tools.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QFileInfo \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qfileinfo.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/QList \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qlist.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QProcessEnvironment \
  /home/runner/work/keepassxc/keepassxc/src/gui/Clipboard.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QElapsedTimer \
