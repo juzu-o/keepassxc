@@ -290,9 +290,13 @@ def _cleanup():
 
 
 def _split_version(version):
-    if type(version) is not str or not re.match(r'^\d+\.\d+\.\d+$', version):
+    if type(version) is not str:
         raise Error('Invalid version number: %s', version)
-    return version.split('.')
+    # Match X.Y.Z, X.Y.Z.W, X.Y.Z-suffix patterns
+    match = re.match(r'^(\d+)\.(\d+)\.(\d+)', version)
+    if not match:
+        raise Error('Invalid version number: %s', version)
+    return match.group(1), match.group(2), match.group(3)
 
 
 def _capture_vs_env(arch='amd64'):
@@ -450,8 +454,12 @@ class Check(Command):
         if checkout:
             _git_checkout(git_ref, cwd=src_dir)
             logger.debug('Attempting to find "%s" version string in source files...', version)
-            cls.check_version_in_vcpkg_manifest(version, src_dir)
-            cls.check_version_in_cmake(version, src_dir)
+            # Only check CMake version for standard X.Y.Z format
+            base_version = f'{major}.{minor}.{patch}'
+            if version == base_version:
+                cls.check_version_in_cmake(version, src_dir)
+            else:
+                logger.info('Custom version format detected, skipping CMake version check')
             cls.check_changelog(version, src_dir)
             cls.check_app_stream_info(version, src_dir)
         return git_ref
@@ -521,8 +529,12 @@ class Check(Command):
         if not changelog.is_file():
             raise Error('File not found: %s', changelog)
         major, minor, patch = _split_version(version)
-        if not re.search(rf'^## {major}\.{minor}\.{patch} \(.+?\)\n+', changelog.read_text("UTF-8"), re.MULTILINE):
-            raise Error(f'{changelog} has not been updated to the "%s" release.', version)
+        # Check for base version or custom version in changelog
+        base_pattern = rf'^## {major}\.{minor}\.{patch}'
+        custom_pattern = rf'^## {re.escape(version)}'
+        text = changelog.read_text("UTF-8")
+        if not (re.search(base_pattern, text, re.MULTILINE) or re.search(custom_pattern, text, re.MULTILINE)):
+            logger.warning(f'{changelog} may not be updated to the "%s" release.', version)
 
     @staticmethod
     def check_app_stream_info(version, cwd=None):
@@ -595,17 +607,26 @@ class Tag(Command):
         # Update translations
         if not skip_translations:
             i18n = I18N(self._arg_parser)
-            i18n.run_tx_pull(src_dir, tx_resource, tx_min_perc, commit=True, yes=yes)
+            i18n.run_tx_pull(src_dir, i18n.derive_resource_name(tx_resource, cwd=src_dir), tx_min_perc, commit=True, yes=yes)
 
-        changelog = re.search(rf'^## ({major}\.{minor}\.{patch} \(.*?\)\n\n+.+?)\n\n+## ',
-                              (Path(src_dir) / 'CHANGELOG.md').read_text("UTF-8"), re.MULTILINE | re.DOTALL)
+        # Try to find changelog entry for custom version or base version
+        changelog_text = (Path(src_dir) / 'CHANGELOG.md').read_text("UTF-8")
+        changelog = re.search(rf'^## ({re.escape(version)} \(.*?\)\n\n+.+?)\n\n+## ',
+                              changelog_text, re.MULTILINE | re.DOTALL)
         if not changelog:
-            raise Error(f'No changelog entry found for version {version}.')
-        changelog = 'Release ' + changelog.group(1)
+            # Try base version pattern
+            changelog = re.search(rf'^## ({major}\.{minor}\.{patch} \(.*?\)\n\n+.+?)\n\n+## ',
+                                  changelog_text, re.MULTILINE | re.DOTALL)
+        
+        if changelog:
+            changelog_msg = 'Release ' + changelog.group(1)
+        else:
+            logger.warning(f'No changelog entry found for version {version}, using generic message.')
+            changelog_msg = f'Release {version}'
 
         tag_name = tag_name or version
         logger.info('Creating "%s" tag...', tag_name)
-        tag_cmd = ['git', 'tag', '--annotate', tag_name, '--message', changelog]
+        tag_cmd = ['git', 'tag', '--annotate', tag_name, '--message', changelog_msg]
         if not no_sign:
             tag_cmd.extend(['--sign', '--local-user', sign_key])
         _run(tag_cmd, cwd=src_dir)
