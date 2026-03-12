@@ -5938,6 +5938,10 @@ Are you sure you want to continue with this file?</translation>
         <translation>Show Toolbar</translation>
     </message>
     <message>
+        <source>Show Entries of Subgroups</source>
+        <translation>Show Entries of Subgroups</translation>
+    </message>
+    <message>
         <source>Show Preview Panel</source>
         <translation>Show Preview Panel</translation>
     </message>

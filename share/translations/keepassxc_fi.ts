@@ -5927,6 +5927,10 @@ Haluatko jatkaa käyttämällä tätä tiedostoa?</translation>
         <translation>Näytä työkalupalkki</translation>
     </message>
     <message>
+        <source>Show Entries of Subgroups</source>
+        <translation>Näytä alaryhmien tietueet</translation>
+    </message>
+    <message>
         <source>Show Preview Panel</source>
         <translation>Näytä esikatselupaneeli</translation>
     </message>
