@@ -485,6 +485,20 @@ void EntryView::resetFixedColumns()
     header()->resizeSection(EntryModel::Color, ICON_ONLY_SECTION_SIZE);
 }
 
+void EntryView::onConfigChanged(Config::ConfigKey key)
+{
+    if (key != Config::GUI_ShowSubgroupEntries) {
+        return;
+    }
+
+    m_userHidGroupColumnInSubgroupMode = false;
+    if (config()->get(Config::GUI_ShowSubgroupEntries).toBool() || m_inSearchMode) {
+        header()->showSection(EntryModel::ParentGroup);
+    } else {
+        header()->hideSection(EntryModel::ParentGroup);
+    }
+}
+
 /**
  * Reset item view to defaults.
  */
