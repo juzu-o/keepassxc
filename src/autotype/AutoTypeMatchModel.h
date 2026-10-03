@@ -36,7 +36,8 @@ public:
         ParentGroup = 0,
         Title = 1,
         Username = 2,
-        Sequence = 3
+        Sequence = 3,
+        URL = 4
     };
 
     explicit AutoTypeMatchModel(QObject* parent = nullptr);
