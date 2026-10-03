@@ -107,7 +107,7 @@ int AutoTypeMatchModel::rowCount(const QModelIndex& parent) const
 int AutoTypeMatchModel::columnCount(const QModelIndex& parent) const
 {
     Q_UNUSED(parent);
-    return 4;
+    return 5;
 }
 
 QVariant AutoTypeMatchModel::data(const QModelIndex& index, int role) const
@@ -131,6 +131,8 @@ QVariant AutoTypeMatchModel::data(const QModelIndex& index, int role) const
             return match.first->resolveMultiplePlaceholders(match.first->username());
         case Sequence:
             return match.second;
+        case URL:
+            return match.first->resolveMultiplePlaceholders(match.first->url());
         }
     } else if (role == Qt::DecorationRole) {
         switch (index.column()) {
@@ -165,6 +167,8 @@ QVariant AutoTypeMatchModel::headerData(int section, Qt::Orientation orientation
             return tr("Username");
         case Sequence:
             return tr("Sequence");
+        case URL:
+            return tr("URL");
         }
     }
 
