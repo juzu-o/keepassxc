@@ -395,11 +395,10 @@
     <addaction name="separator"/>
     <addaction name="actionShowPreviewPanel"/>
     <addaction name="actionShowGroupPanel"/>
+    <addaction name="actionShowEntriesOfSubgroups"/>
     <addaction name="separator"/>
     <addaction name="actionShowMenubar"/>
     <addaction name="actionShowToolbar"/>
-    <addaction name="separator"/>
-    <addaction name="actionShowEntriesOfSubgroups"/>
     <addaction name="separator"/>
     <addaction name="actionHideUsernames"/>
     <addaction name="actionHidePasswords"/>
