@@ -27,6 +27,7 @@
 #include "format/KeePass2Writer.h"
 #include "streams/HashingStream.h"
 
+#include <QFile>
 #include <QFileInfo>
 #include <QJsonObject>
 #include <QRegularExpression>
@@ -353,6 +354,33 @@ bool Database::saveAs(const QString& filePath, SaveAction action, const QString&
     }
 
     return ok;
+}
+
+bool Database::backupTo(const QString& filePath, QString* error)
+{
+    if (isSaving()) {
+        if (error) {
+            *error = tr("Database save is already in progress.");
+        }
+        return false;
+    }
+
+    if (!isInitialized()) {
+        if (error) {
+            *error = tr("Could not save, database has not been initialized!");
+        }
+        return false;
+    }
+
+    QFile file(filePath);
+    if (!file.open(QIODevice::WriteOnly)) {
+        if (error) {
+            *error = tr("Unable to open file for writing: %1").arg(file.errorString());
+        }
+        return false;
+    }
+
+    return writeDatabase(&file, error);
 }
 
 bool Database::performSave(const QString& filePath, SaveAction action, const QString& backupFilePath, QString* error)

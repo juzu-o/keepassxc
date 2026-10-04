@@ -91,6 +91,7 @@ public:
                 SaveAction action = Atomic,
                 const QString& backupFilePath = QString(),
                 QString* error = nullptr);
+    bool backupTo(const QString& filePath, QString* error = nullptr);
     bool extract(QByteArray&, QString* error = nullptr);
     bool import(const QString& xmlExportPath, QString* error = nullptr);
 
