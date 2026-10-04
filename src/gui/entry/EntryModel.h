@@ -90,6 +90,7 @@ private slots:
 private:
     void severConnections();
     void makeConnections(const Group* group);
+    void reloadGroup(Group* group);
 
     bool m_backgroundColorVisible = true;
     QPointer<Group> m_group;
