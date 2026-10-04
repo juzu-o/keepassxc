@@ -63,6 +63,15 @@ void EntryModel::setGroup(Group* group)
         return;
     }
 
+    reloadGroup(group);
+}
+
+void EntryModel::reloadGroup(Group* group)
+{
+    if (!group) {
+        return;
+    }
+
     beginResetModel();
 
     severConnections();
@@ -642,7 +651,7 @@ void EntryModel::groupAdded()
     // we need to refresh our connections to include the new subgroup
     if (m_group && config()->get(Config::GUI_ShowSubgroupEntries).toBool()) {
         // Refresh the entry list and connections to include new subgroups
-        setGroup(m_group);
+        reloadGroup(m_group);
     }
 }
 
@@ -658,7 +667,7 @@ void EntryModel::onConfigChanged(Config::ConfigKey key)
     case Config::GUI_ShowSubgroupEntries:
         // Refresh the entry list when the subgroup setting changes
         if (m_group) {
-            setGroup(m_group);
+            reloadGroup(m_group);
         }
         break;
     default:
