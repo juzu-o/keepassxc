@@ -1668,6 +1668,8 @@ void TestGui::testSaveBackup()
     fileInfo.refresh();
     QCOMPARE(fileInfo.lastModified(), lastModified);
     tmpFile.remove();
+
+    checkSaveDatabase();
 }
 
 void TestGui::testSave()
