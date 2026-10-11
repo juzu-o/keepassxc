@@ -1,4 +1,11 @@
 # Changelog
+## 2.8.0-jz (2026-10-11)
+
+### Changes
+- Show Entries of Subgroups: Show flat view of entries
+- Adjust auto-search delay back to 100ms
+- Add URL column to auto-type selection popup
+- Dedicated database backup method to fix Save Database Backup bug
 
 ## 2.8.0-beta1 (2026-09-23)
 
