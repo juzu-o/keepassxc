@@ -290,9 +290,9 @@ def _cleanup():
 
 
 def _split_version(version):
-    if type(version) is not str or not re.match(r'^\d+\.\d+\.\d+$', version):
+    if type(version) is not str or not re.match(r'^\d+\.\d+\.\d+(?:-[0-9A-Za-z-]+(?:\.[0-9A-Za-z-]+)*)?$', version):
         raise Error('Invalid version number: %s', version)
-    return version.split('.')
+    return version.split('-', 1)[0].split('.')
 
 
 def _capture_vs_env(arch='amd64'):
@@ -500,7 +500,8 @@ class Check(Command):
         minor = re.search(r'^set\(KEEPASSXC_VERSION_MINOR "(\d+)"\)$', cmakelists_text, re.MULTILINE).group(1)
         patch = re.search(r'^set\(KEEPASSXC_VERSION_PATCH "(\d+)"\)$', cmakelists_text, re.MULTILINE).group(1)
         cmake_version = '.'.join([major, minor, patch])
-        if cmake_version != version:
+        version_number = '.'.join(_split_version(version))
+        if cmake_version != version_number:
             raise Error(f'Version number in {cmakelists} not updated! Expected: %s, found: %s.', version, cmake_version)
 
     @staticmethod
@@ -509,7 +510,8 @@ class Check(Command):
         if cwd:
             manifest = Path(cwd) / manifest
         manifest_json = json.load(manifest.open('r'))
-        if version != manifest_json['version-string']:
+        version_number = '.'.join(_split_version(version))
+        if version_number != manifest_json['version-string']:
             raise Error(f'Version number in {manifest} not updated! Expected: %s, found: %s.',
                         version, manifest_json['version-string'])
 
@@ -540,7 +542,8 @@ class Check(Command):
             raise Error(f'{appstream} is not well-formed. Error: %s at line %s, column %s',
                         e.getMessage(), e.getLineNumber(), e.getColumnNumber())
 
-        regex = re.compile(rf'^\s*<release version="{version}" date=".+?">')
+        version_number = '.'.join(_split_version(version))
+        regex = re.compile(rf'^\s*<release version="{version_number}" date=".+?">')
         with appstream.open('r', encoding='utf-8') as f:
             for line in f:
                 if regex.search(line):
