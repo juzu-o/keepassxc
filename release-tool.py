@@ -415,13 +415,15 @@ class Check(Command):
         parser.add_argument('-s', '--src-dir', help='Source directory.', default='.')
         parser.add_argument('-b', '--release-branch', help='Release source branch (default: inferred from --version).')
         parser.add_argument('--skip-changelog', help='Skip checking CHANGELOG.md.', action='store_true')
+        parser.add_argument('--skip-appdata', help='Skip checking AppStream appdata.', action='store_true')
 
-    def run(self, version, src_dir, release_branch, skip_changelog):
+    def run(self, version, src_dir, release_branch, skip_changelog, skip_appdata):
         if not version:
             logger.warning('No version specified, performing only basic checks.')
         self.perform_basic_checks(src_dir)
         if version:
-            self.perform_version_checks(version, src_dir, release_branch, skip_changelog=skip_changelog)
+            self.perform_version_checks(version, src_dir, release_branch, skip_changelog=skip_changelog,
+                                        skip_appdata=skip_appdata)
         logger.info('All checks passed.')
 
     @classmethod
@@ -438,7 +440,7 @@ class Check(Command):
 
     @classmethod
     def perform_version_checks(cls, version, src_dir, git_ref=None, version_exists=False, checkout=True,
-                               skip_changelog=False):
+                               skip_changelog=False, skip_appdata=False):
         logger.info('Performing version checks...')
         major, minor, patch = _split_version(version)
         cls.check_working_tree_clean(src_dir)
@@ -456,7 +458,8 @@ class Check(Command):
             cls.check_version_in_cmake(version, src_dir)
             if not skip_changelog:
                 cls.check_changelog(version, src_dir)
-            cls.check_app_stream_info(version, src_dir)
+            if not skip_appdata:
+                cls.check_app_stream_info(version, src_dir)
         return git_ref
 
     @staticmethod
@@ -646,6 +649,7 @@ class Build(Command):
                             help='Build install prefix (default: %(default)s).')
         parser.add_argument('--snapshot', help='Build snapshot from current HEAD.', action='store_true')
         parser.add_argument('--skip-changelog', help='Skip checking CHANGELOG.md.', action='store_true')
+        parser.add_argument('--skip-appdata', help='Skip checking AppStream appdata.', action='store_true')
         parser.add_argument('--use-system-deps', help='Use system dependencies instead of vcpkg.', action='store_true')
         parser.add_argument('-j', '--parallelism', default=os.cpu_count(), type=int,
                             help='Build parallelism (default: %(default)s).')
@@ -725,7 +729,8 @@ class Build(Command):
             version += '-snapshot'
         else:
             Check.perform_version_checks(version, src_dir, tag_name, version_exists=True, checkout=True,
-                                         skip_changelog=kwargs['skip_changelog'])
+                                         skip_changelog=kwargs['skip_changelog'],
+                                         skip_appdata=kwargs['skip_appdata'])
             cmake_opts.append('-DKEEPASSXC_BUILD_TYPE=Release')
 
         if kwargs['override_version']:
