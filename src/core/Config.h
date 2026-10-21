@@ -227,6 +227,7 @@ public:
     ~Config() override;
     QVariant get(ConfigKey key);
     QVariant getDefault(ConfigKey key);
+    bool isManaged(ConfigKey key);
     QString getFileName();
     void set(ConfigKey key, const QVariant& value);
     void remove(ConfigKey key);
@@ -259,6 +260,9 @@ private:
 
     QScopedPointer<QSettings> m_settings;
     QScopedPointer<QSettings> m_localSettings;
+#if defined(Q_OS_WIN)
+    QScopedPointer<QSettings> m_managedSettings;
+#endif
     QHash<QString, QVariant> m_defaults;
 };
 
